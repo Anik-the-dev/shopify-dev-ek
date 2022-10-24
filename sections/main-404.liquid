@@ -1,11 +1,5 @@
-
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
-
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}
-</noscript>
-<noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
-</noscript>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -24,7 +18,7 @@
     .nf-image {
       display: block;
       margin: auto;
-      width: 100%;
+      width: 90%;
       max-width: 500px;
     }
   }
@@ -34,7 +28,7 @@
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
-        <h1 class="nf-heading">404 - Page Not Found</h1>
+        <h1 class="nf-heading">404 - Anik Not Found</h1>
         <img class="nf-image" src="{{ section.settings.head_image | img_url: 'grande' }}" alt="image" height="" width="">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -296,13 +290,12 @@
           }
         ]
       }
+    ],
+    "presets": [
+      {
+        "category": "content",
+        "name": "Test Anik One Preset"
+      }
     ]
-
-// "presets":[
-// {
-//     "category": "content",
-//     "name": "Test Anik One Preset"
-// }
-// ]
   }
 {% endschema %}

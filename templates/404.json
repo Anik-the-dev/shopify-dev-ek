@@ -7,7 +7,11 @@
     "category": {
       "type": "not-found-category",
       "settings": {}
+    },
+    "shopsec": {
+      "type": "shop-section",
+      "settings": {}
     }
   },
-  "order": ["main", "category"]
+  "order": ["main", "category","shopsec"]
 }

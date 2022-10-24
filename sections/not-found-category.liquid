@@ -1,14 +1,44 @@
 <link rel="stylesheet" href="{{ 'not-found-category.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <div class="category_container">
-  <h2>Anik Ji
-  </h2>
+  <div class="category-list-items">
+    {% for block in section.blocks %}
+      <div class="category-list-item">
+        <a href="{{ block.settings.category_link }}">
+          <img src="{{ block.settings.category_image | img_url: 'master' }}" loading="lazy" width="" height=""/>
+          <p>{{ block.settings.category_title }}
+          </p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
 </div>
 {% schema %}
   {
     "name": "Categories",
     "settings": [],
-    "blocks": [],
+    "blocks": [
+      {
+        "type": "images",
+        "name": "Category image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "category_image",
+            "label": "Select Page Image"
+          }, {
+            "type": "text",
+            "id": "category_title",
+            "label": "Select a title!"
+          }, {
+            "type": "url",
+            "id": "category_link",
+            "label": "Enter Link!"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "category": "content",
@@ -16,4 +46,4 @@
       }
     ]
   }
-{% endschema %}}
+{% endschema %}
