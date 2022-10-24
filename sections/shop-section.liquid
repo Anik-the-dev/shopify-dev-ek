@@ -14,8 +14,25 @@
 
 <div class="section-container">
   <div class="inner-section  {{ section.settings.inner-section-content-alignment }}">
-    <h1>I am Anik</h1>
-    <p>I am Anik Anik Anik</p>
+      {% for block in section.blocks %}
+        {% if block.type == 'heading' %}
+          <h2>{{ block.settings.inner-section-heading }}</h2>
+
+          
+        {% endif %}
+        {% if block.type == 'button' %}
+          <div class="inner-btn">
+           <p>{{ block.settings.button_label }} 
+            <a href="{{ block.settings.button_link }}" > </a>
+           </p>
+          
+
+
+          </div>
+          
+        {% endif %}
+        
+      {% endfor %}
   </div>
 </div>
 
@@ -97,14 +114,40 @@
         "label": "Content Alignment"
       }
     ],
+
     "blocks": [
-        {
-            "type": "heading",
-            "name": "Add Headline",
-            "settings":[
-                "type":
-            ]
-        }
+      {
+        "type": "heading",
+        "name": "Headline",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "inner-section-heading",
+            "default": "<p>Add your Headline</p>",
+            "label": "Headline"
+
+          }
+
+        ]
+      },
+      {
+        "type": "button",
+        "name": "Button",
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label",
+            "default": "Add Something",
+            "label": "Button Text"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Url"
+          }
+        ]
+      }
+
     ],
     "presets": [
       {
