@@ -120,6 +120,7 @@
       "predictive_search_show_vendor": false,
       "predictive_search_show_price": false,
       "currency_code_enabled": true,
+      "nav_item_active_an": true,
       "sections": {
         "announcement-bar": {
           "type": "announcement-bar",

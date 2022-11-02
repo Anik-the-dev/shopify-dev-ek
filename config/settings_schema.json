@@ -14,6 +14,7 @@
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
+
       {
         "type": "color",
         "id": "colors_solid_button_labels",
@@ -92,6 +93,13 @@
       {
         "type": "header",
         "content": "t:settings_schema.typography.settings.header__1.content"
+      },
+      {
+        "type":"checkbox",
+        "id": "nav_item_active_an",
+        "label": "Enable Active Nav Item",
+        "default": true
+
       },
       {
         "type": "font_picker",

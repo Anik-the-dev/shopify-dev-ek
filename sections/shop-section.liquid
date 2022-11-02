@@ -10,41 +10,45 @@
     opacity: {{ section.settings.inner-section-opacity }};
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
-    
 {%- endstyle -%}
 <style>
 
-  .line-height-0p{
+  .line-height-0p {
     line-height: 0;
 
   }
   {% for block in section.blocks %}
-    .text-margin {
+    #wrapper-{{ block.id }}{
       margin-top: {{ block.settings.text_padding_top }}px;
       margin-bottom: {{ block.settings.text_padding_bottom }}px;
     }
 
   {% endfor %}
-  
 </style>
 
 <div class="section-container">
   <div class="inner-section  {{ section.settings.inner-section-content-alignment }}">
     {% for block in section.blocks %}
-      {% if block.type == 'heading' %}
-        <h2 class="line-height-0p text-margin {{ block.settings.heading_size }}">{{ block.settings.inner-section-heading }}</h2>
+      <div class="wrapper" id="wrapper-{{ block.id }}">
+        {% if block.type == 'heading' %}
+          <h2 class="line-height-0p text-margin {{ block.settings.heading_size }}">{{ block.settings.inner-section-heading }}</h2>
 
 
-      {% endif %}
-      {% if block.type == 'button' %}
-        <a class='inner-btn' href="{{ block.settings.button_link }}">
-          <p>{{ block.settings.button_label }}
-          </p>
-        </a>
+        {% endif %}
+
+
+        {% if block.type == 'button' %}
+          <a class='inner-btn' href="{{ block.settings.button_link }}">
+            <p>{{ block.settings.button_label }}
+            </p>
+          </a>
 
 
 
-      {% endif %}
+        {% endif %}
+
+      </div>
+
 
     {% endfor %}
   </div>
@@ -208,13 +212,12 @@
         "category": "content",
         "name": "Shop Section",
         "blocks": [
-        {
-          "type": "heading"
-        },
-        {
-          "type": "button"
-        }
-      ]
+          {
+            "type": "heading"
+          }, {
+            "type": "button"
+          }
+        ]
 
 
       }

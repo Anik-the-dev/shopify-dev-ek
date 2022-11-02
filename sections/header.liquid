@@ -27,6 +27,14 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
+  
+  {% if settings.nav_item_active_an %}
+    .header .list-menu li:nth-child(2) a span{
+      color: rgb(215, 73, 96) !important;
+    }
+    
+  {% endif %}
+
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
