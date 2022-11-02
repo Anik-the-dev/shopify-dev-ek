@@ -31,8 +31,8 @@
       "block_order": [
         "featured_image",
         "title",
-        "share",
-        "content"
+        "content",
+        "share"
       ],
       "settings": {
       }
