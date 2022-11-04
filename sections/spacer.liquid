@@ -1,0 +1,36 @@
+{%- style -%}
+  .section-container {
+    height: {{ section.settings.spacer-height }}px;
+  }
+{%- endstyle -%}
+
+<div class="section-container">
+  <p></p>
+</div>
+
+{% schema %}
+  {
+    "name": "Spacer",
+    "settings": [
+      {
+        "type": "range",
+        "id": "spacer-height",
+        "min": 10,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "label": "Space height",
+        "default": 50
+
+      }
+    ],
+    "presets": [
+      {
+        "category": "content",
+        "name": "Spacer height"
+      }
+
+    ]
+
+  }
+{% endschema %}

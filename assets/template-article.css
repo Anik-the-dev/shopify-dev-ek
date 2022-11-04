@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line-height {
+  line-height: 1;
+}
+
+.my-4 {
+  margin: 40px 0;
+}
+.mt-8 {
+  margin-top: 80px;
+}
+.px-2 {
+  padding: 0 20px;
+}
+.px-6 {
+  padding: 0 60px;
+}
+.fs-5 {
+  font-size: 5rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* containers */
+.small-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.tow-col-section {
+  margin: 0 auto;
+  height: auto;
+  padding: 15px 0;
+}
+.wax-grid-container-2-col {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+}

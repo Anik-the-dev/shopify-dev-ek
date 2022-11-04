@@ -1,0 +1,103 @@
+{%- style -%}
+  .tow-col-section {
+    width: {{ section.settings.full-text-section-width }}px
+  }
+  .wax-grid-container-2-col {
+    column-gap: {{ section.settings.column-gap }}px
+  }
+
+  {% for block in section.blocks %}
+    #wrapper-{{ block.id }}{}
+  {% endfor %}
+{%- endstyle -%}
+
+<div class="tow-col-section">
+  <div class="wax-grid-container-2-col">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when "left_img" %}
+            <img src=" {{ block.settings.left_image | img_url: 'grande' }} " alt="" width="" height="" loading="lazy">
+
+        {% when "right_img" %}
+            <img src=" {{ block.settings.right_image | img_url: 'grande' }} " alt="" width="" height="" loading="lazy">
+
+
+
+
+      {% endcase %}
+
+    {% endfor %}
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Grid Two Column Text",
+    "settings": [
+      {
+        "type": "range",
+        "id": "full-text-section-width",
+        "min": 300,
+        "max": 1400,
+        "step": 50,
+        "unit": "px",
+        "label": "Section Width",
+        "default": 600
+
+      }, {
+        "type": "range",
+        "id": "column-gap",
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "label": "Column Gap",
+        "default": 50
+
+      }
+    ],
+    "max_blocks": 2,
+    "blocks": [
+      {
+        "type": "left_img",
+        "name": "Left image section",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "left_image",
+            "label": "Choose left image"
+          }
+        ]
+      }, {
+        "type": "right_img",
+        "name": "Right image section",
+        "settings": [
+
+          {
+            "type": "image_picker",
+            "id": "right_image",
+            "label": "Choose Right image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "content",
+        "name": "Grid Two Column image",
+
+        "blocks": [
+          {
+            "type": "left_img"
+          }, {
+            "type": "right_img"
+          }
+        ]
+      }
+
+    ]
+
+  }
+{% endschema %}

@@ -1,0 +1,124 @@
+{%- style -%}
+  .tow-col-section {
+    width: {{ section.settings.full-text-section-width }}px
+  }
+  .wax-grid-container-2-col {
+    column-gap: {{ section.settings.column-gap }}px
+  }
+
+  {% for block in section.blocks %}
+    #wrapper-{{ block.id }}{}
+  {% endfor %}
+{%- endstyle -%}
+
+<div class="tow-col-section">
+  <div class="wax-grid-container-2-col">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when "left_text" %}
+          <div class="left-text" id="wrapper-{{ block.id }}">
+            <p class=" ">
+              {% if block.settings.left_text_section == blank %}
+                Anik ipsum dolor sit amet consectetur adipisicing elit. Corporis corrupti, labore consectetur ad eum consequatur doloribus cum, quod molestias soluta architecto eos pariatur ex. Quibusdam impedit sed totam natus nam.
+              {% else %}
+                {{ block.settings.left_text_section }}
+
+              {% endif %}
+            </p>
+
+          </div>
+        {% when "right_text" %}
+
+          <div class="right-text" id="wrapper-{{ block.id }}">
+            <p class=" ">
+              {% if block.settings.right_text_section == blank %}
+                Anik ipsum dolor sit amet consectetur adipisicing elit. Corporis corrupti, labore consectetur ad eum consequatur doloribus cum, quod molestias soluta architecto eos pariatur ex. Quibusdam impedit sed totam natus nam.
+              {% else %}
+                {{ block.settings.left_text_section }}
+
+              {% endif %}
+            </p>
+
+          </div>
+
+
+
+      {% endcase %}
+
+    {% endfor %}
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Grid Two Column Text",
+    "settings": [
+      {
+        "type": "range",
+        "id": "full-text-section-width",
+        "min": 300,
+        "max": 1400,
+        "step": 50,
+        "unit": "px",
+        "label": "Section Width",
+        "default": 1000
+
+      }, {
+        "type": "range",
+        "id": "column-gap",
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "label": "Column Gap",
+        "default": 50
+
+      }
+    ],
+    "max_blocks": 2,
+    "blocks": [
+      {
+        "type": "left_text",
+        "name": "Left Text Section",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "left_text_section",
+            "label": "Add some text here"
+
+          }
+        ]
+      }, {
+        "type": "right_text",
+        "name": "Right Text Section",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "right_text_section",
+            "label": "Add some text here"
+
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "content",
+        "name": "Grid Two Column Text",
+
+        "blocks": [
+          {
+            "type": "left_text"
+          }, {
+            "type": "right_text"
+          }
+        ]
+      }
+
+    ]
+
+  }
+{% endschema %}
