@@ -1,26 +1,32 @@
 {%- style -%}
-  .tow-col-section {
+  .tow-col-section-{{ section.id }}{
     width: {{ section.settings.full-text-section-width }}px
   }
-  .wax-grid-container-2-col {
+  .wax-grid-container-2-col-{{ section.id }}{
     column-gap: {{ section.settings.column-gap }}px
   }
 
+
   {% for block in section.blocks %}
-    #wrapper-{{ block.id }}{}
+    #wrapper-left {
+      width: {{ block.settings.left_image_width }}px
+    }
+    #wrapper-right {
+      width: {{ block.settings.right_image_width }}px
+    }
+
   {% endfor %}
 {%- endstyle -%}
 
-<div class="tow-col-section">
-  <div class="wax-grid-container-2-col">
+<div class="tow-col-section-{{ section.id }} tow-col-section">
+  <div class="wax-grid-container-2-col-{{ section.id }} wax-grid-container-2-col">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when "left_img" %}
-            <img src=" {{ block.settings.left_image | img_url: 'grande' }} " alt="" width="" height="" loading="lazy">
+          <img id="wrapper-left" src=" {{ block.settings.left_image | img_url: 'grande' }} " alt="" height="" loading="lazy">
 
         {% when "right_img" %}
-            <img src=" {{ block.settings.right_image | img_url: 'grande' }} " alt="" width="" height="" loading="lazy">
-
+          <img id="wrapper-right" src=" {{ block.settings.right_image | img_url: 'grande' }} " alt="" height="" loading="lazy">
 
 
 
@@ -68,6 +74,16 @@
             "type": "image_picker",
             "id": "left_image",
             "label": "Choose left image"
+          }, {
+            "type": "range",
+            "id": "left_image_width",
+            "min": 50,
+            "max": 800,
+            "step": 25,
+            "unit": "px",
+            "label": "Image Width",
+            "default": 475
+
           }
         ]
       }, {
@@ -79,25 +95,35 @@
             "type": "image_picker",
             "id": "right_image",
             "label": "Choose Right image"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "category": "content",
-        "name": "Grid Two Column image",
-
-        "blocks": [
-          {
-            "type": "left_img"
           }, {
-            "type": "right_img"
+            "type": "range",
+            "id": "right_image_width",
+            "min": 50,
+            "max": 800,
+            "step": 25,
+            "unit": "px",
+            "label": "Image Width",
+            "default": 475
           }
-        ]
-      }
 
-    ]
+          ]
+        }
+      ],
+      "presets" : [
+        {
+          "category": "content",
+          "name": "Grid Two Column image",
 
-  }
+          "blocks": [
+            {
+              "type": "left_img"
+            }, {
+              "type": "right_img"
+            }
+          ]
+        }
+
+      ]
+
+    }
 {% endschema %}

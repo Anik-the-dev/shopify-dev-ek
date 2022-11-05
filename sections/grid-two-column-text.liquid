@@ -1,8 +1,8 @@
 {%- style -%}
-  .tow-col-section {
+  .tow-col-section-{{ section.id }} {
     width: {{ section.settings.full-text-section-width }}px
   }
-  .wax-grid-container-2-col {
+  .wax-grid-container-2-col-{{ section.id }} {
     column-gap: {{ section.settings.column-gap }}px
   }
 
@@ -11,8 +11,8 @@
   {% endfor %}
 {%- endstyle -%}
 
-<div class="tow-col-section">
-  <div class="wax-grid-container-2-col">
+<div class="tow-col-section-{{ section.id }} tow-col-section">
+  <div class="wax-grid-container-2-col-{{ section.id }} wax-grid-container-2-col">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when "left_text" %}
