@@ -3,19 +3,29 @@
     width: {{ section.settings.full-text-section-width }}px
   }
   .wax-grid-container-2-col-{{ section.id }}{
-    column-gap: {{ section.settings.column-gap }}px
-  }
+    column-gap: {{ section.settings.column-gap }}px;
+    background-color: {{ section.settings.background_color_an }}}
 
 
   {% for block in section.blocks %}
-    #wrapper-left {
-      width: {{ block.settings.left_image_width }}px
+    #wrapper-left-{{ section.id }}{
+      width: {{ block.settings.left_image_width }}px;
+      margin: auto;
+
     }
-    #wrapper-right {
-      width: {{ block.settings.right_image_width }}px
+    #wrapper-right-{{ section.id }}{
+      width: {{ block.settings.right_image_width }}px;
+      margin: auto;
+
     }
 
   {% endfor %}
+  .wrapper-image_an img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
+  }
 {%- endstyle -%}
 
 <div class="tow-col-section-{{ section.id }} tow-col-section">
@@ -23,10 +33,15 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when "left_img" %}
-          <img id="wrapper-left" src=" {{ block.settings.left_image | img_url: 'grande' }} " alt="" height="" loading="lazy">
+          <div class="wrapper-image_an" id="wrapper-left-{{ section.id }}">
+            <img src=" {{ block.settings.left_image | img_url: 'grande' }} " alt="" height="" width="" loading="lazy">
+          </div>
 
         {% when "right_img" %}
-          <img id="wrapper-right" src=" {{ block.settings.right_image | img_url: 'grande' }} " alt="" height="" loading="lazy">
+          <div class="wrapper-image_an" id="wrapper-right-{{ section.id }}">
+            <img src=" {{ block.settings.right_image | img_url: 'grande' }} " alt="" height="" width="" loading="lazy">
+
+          </div>
 
 
 
@@ -40,7 +55,7 @@
 
 {% schema %}
   {
-    "name": "Grid Two Column Text",
+    "name": "Grid Two Column Image",
     "settings": [
       {
         "type": "range",
@@ -62,6 +77,11 @@
         "label": "Column Gap",
         "default": 50
 
+      }, {
+        "type": "color",
+        "id": "background_color_an",
+        "label": "Set Background color",
+        "default": "#eee"
       }
     ],
     "max_blocks": 2,
@@ -106,24 +126,24 @@
             "default": 475
           }
 
-          ]
-        }
-      ],
-      "presets" : [
-        {
-          "category": "content",
-          "name": "Grid Two Column image",
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "content",
+        "name": "Grid Two Column image",
 
-          "blocks": [
-            {
-              "type": "left_img"
-            }, {
-              "type": "right_img"
-            }
-          ]
-        }
+        "blocks": [
+          {
+            "type": "left_img"
+          }, {
+            "type": "right_img"
+          }
+        ]
+      }
 
-      ]
+    ]
 
-    }
+  }
 {% endschema %}

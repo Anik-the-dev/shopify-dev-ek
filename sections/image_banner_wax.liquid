@@ -1,0 +1,123 @@
+{%- style -%}
+  .single-image-container-{{ section.id }}{
+    width: {{ section.settings.Single_Image_Width }}px;
+    margin: 0 auto;
+  }
+  .single-image-container-{{ section.id }} img {
+    width: 100%
+  }
+
+  .auto-{{ section.id }}{
+    height: auto overflow: hidden
+  }
+  .small-{{ section.id }}{
+    height: 400px;
+    overflow: hidden
+  }
+  .medium-{{ section.id }}{
+    height: 600px;
+  }
+  .large-{{ section.id }}{
+    height: 800px;
+    overflow: hidden
+  }
+
+  {% for block in section.blocks %}{% endfor %}
+{%- endstyle -%}
+
+<div class="single-image-container-{{ section.id }} {{ section.settings.image_height }}-{{ section.id }}">
+  <img src=" {{ section.settings.image | img_url: "grande" }} " alt="" height="" width="" loading="lazy">
+</div>
+
+{% schema %}
+  {
+    "name": "Single Wax Image",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image-banner.settings.image.label"
+      }, {
+        "type": "range",
+        "id": "Single_Image_Width",
+        "min": 200,
+        "max": 1600,
+        "step": 50,
+        "unit": "px",
+        "label": "Image Width",
+        "default": 600
+
+      }, {
+        "type": "range",
+        "id": "image_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
+        "default": 0
+      }, {
+        "type": "select",
+        "id": "image_height",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Auto"
+          }, {
+            "value": "small",
+            "label": "t:sections.image-banner.settings.image_height.options__1.label"
+          }, {
+            "value": "medium",
+            "label": "t:sections.image-banner.settings.image_height.options__2.label"
+          }, {
+            "value": "large",
+            "label": "t:sections.image-banner.settings.image_height.options__3.label"
+          }
+        ],
+        "default": "auto",
+        "label": "Image Height",
+        "info": "t:sections.image-banner.settings.image_height.info"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "t:sections.image-banner.blocks.text.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Give customers details about the banner image(s) or content on the template.",
+            "label": "t:sections.image-banner.blocks.text.settings.text.label"
+          }, {
+            "type": "select",
+            "id": "text_style",
+            "options": [
+              {
+                "value": "body",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+              }, {
+                "value": "subtitle",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+              }, {
+                "value": "caption-with-letter-spacing",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+              }
+            ],
+            "default": "body",
+            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+          }
+        ]
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "Single Wax Image"
+      }
+    ]
+  }
+{% endschema %}
