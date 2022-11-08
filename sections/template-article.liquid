@@ -22,12 +22,19 @@
 {%- style -%}
 
   {% for block in section.blocks %}
-    .section-container-{{ section.id }}{
-      height: {{ section.settings.spacer-height }}px;
+    .space-container-{{ block.id }}{
+      height: {{ block.settings.spacer-height }}px;
     }
-    .text-{{ block.id }}-font-size{
+
+    .text-{{ block.id }}-utilities {
       font-size: {{ block.settings.text_font_size }}px;
+      width: {{ block.settings.text-block-width }}px;
+      line-height: {{ block.settings.text-block-line-height }};
+      margin: 0 auto;
+      
+
     }
+  
 
   {% endfor %}
 
@@ -52,6 +59,10 @@
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {%- when 'spacer' -%}
+              <div class="space-container-{{ block.id }}">
+                <p></p>
+              </div>
 
             {%- when 'heading' -%}
               <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
@@ -62,7 +73,7 @@
                 {{ block.settings.caption | replace: 'p>', 'span>' }}
               </p>
             {%- when 'text' -%}
-              <div class="rich-text__text rte {{ block.settings.content_alignment_text }} text-{{ block.id }}-font-size" {{ block.shopify_attributes }} >
+              <div class="rich-text__text rte {{ block.settings.content_alignment_text }} text-{{ block.id }}-utilities" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
               </div>
             {%- when 'button' -%}
@@ -81,10 +92,6 @@
       </div>
     </div>
   </div>
-</div>
-
-<div class="section-container-{{ section.id }}">
-  <p></p>
 </div>
 
 
@@ -187,8 +194,8 @@
     ],
     "blocks": [
       {
-        "name": "Spacer",
-        "type": "Spacer",
+        "name": "spacer",
+        "type": "spacer",
         "settings": [
           {
             "type": "range",
@@ -303,23 +310,43 @@
 
           },
           {
-        "type": "select",
-        "id": "content_alignment_text",
-        "options": [
+            "type": "range",
+            "id": "text-block-width",
+            "min": 300,
+            "max": 1200,
+            "step": 25,
+            "unit": "px",
+            "label": "Text Section Width",
+            "default": 800
+
+          },
           {
-            "value": "left",
-            "label": "t:sections.rich-text.settings.content_alignment.options__1.label"
+            "type": "range",
+            "id": "text-block-line-height",
+            "min": 0,
+            "max": 5,
+            "step": 0.1,
+            "label": "Change Line Height",
+            "default": 1.2
+
           }, {
-            "value": "center",
-            "label": "t:sections.rich-text.settings.content_alignment.options__2.label"
-          }, {
-            "value": "right",
-            "label": "t:sections.rich-text.settings.content_alignment.options__3.label"
+            "type": "select",
+            "id": "content_alignment_text",
+            "options": [
+              {
+                "value": "left",
+                "label": "t:sections.rich-text.settings.content_alignment.options__1.label"
+              }, {
+                "value": "center",
+                "label": "t:sections.rich-text.settings.content_alignment.options__2.label"
+              }, {
+                "value": "right",
+                "label": "t:sections.rich-text.settings.content_alignment.options__3.label"
+              }
+            ],
+            "default": "left",
+            "label": "t:sections.rich-text.settings.content_alignment.label"
           }
-        ],
-        "default": "left",
-        "label": "t:sections.rich-text.settings.content_alignment.label"
-      }
         ]
       }, {
         "type": "button",
