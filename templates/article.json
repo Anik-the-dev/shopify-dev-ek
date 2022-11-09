@@ -67,9 +67,59 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "9d414a66-0efe-4c53-8751-8a2630b8c370": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "f373b8e0-5943-4b6d-8125-1fcebd1d6846": {
+      "type": "grid-two-column-text",
+      "blocks": {
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-0": {
+          "type": "left_text",
+          "settings": {
+            "left_text_section": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>"
+          }
+        },
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-1": {
+          "type": "right_text",
+          "settings": {
+            "right_text_section": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-0",
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-1"
+      ],
+      "settings": {
+        "full-text-section-width": 1000,
+        "column-gap": 50
+      }
+    },
+    "a73cee83-93eb-443e-9792-dcd72f1cdc18": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 70
+      }
+    },
+    "72100de9-1590-4e5c-a3dc-e547bdffc529": {
+      "type": "image_banner_wax",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+        "Single_Image_Width": 850,
+        "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+        "image_height": "auto"
+      }
     }
   },
   "order": [
-    "template"
+    "template",
+    "9d414a66-0efe-4c53-8751-8a2630b8c370",
+    "f373b8e0-5943-4b6d-8125-1fcebd1d6846",
+    "a73cee83-93eb-443e-9792-dcd72f1cdc18",
+    "72100de9-1590-4e5c-a3dc-e547bdffc529"
   ]
 }
