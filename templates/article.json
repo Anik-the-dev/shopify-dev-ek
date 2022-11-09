@@ -143,6 +143,74 @@
         "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
         "image_height": "large"
       }
+    },
+    "ddb3fc9e-465a-4a2a-9a98-426c523678d9": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "8a38f1f2-ddb7-4022-b5e9-313e939289d9": {
+      "type": "grid-two-col-image",
+      "blocks": {
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-0": {
+          "type": "left_img",
+          "settings": {
+            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left_image_width": 300
+          }
+        },
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-1": {
+          "type": "right_img",
+          "settings": {
+            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "right_image_width": 300
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-0",
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-1"
+      ],
+      "settings": {
+        "full-text-section-width": 600,
+        "column-gap": 0,
+        "background_color_an": "#eee"
+      }
+    },
+    "ce93b629-4a9e-405b-9a74-5d6fbbf8121e": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "e04e0a19-47be-4ec2-ba81-0f2ac5aec81f": {
+      "type": "grid-two-col-image",
+      "blocks": {
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-0": {
+          "type": "left_img",
+          "settings": {
+            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left_image_width": 300
+          }
+        },
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-1": {
+          "type": "right_img",
+          "settings": {
+            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "right_image_width": 225
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-0",
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-1"
+      ],
+      "settings": {
+        "full-text-section-width": 600,
+        "column-gap": 0,
+        "background_color_an": "#eee"
+      }
     }
   },
   "order": [
@@ -154,6 +222,10 @@
     "fca507c6-c078-471f-a751-cd0e6c357c98",
     "19e2a615-c150-466b-886d-0a540865a625",
     "69fabc24-30cd-4594-b64a-1454824750fe",
-    "5cf01638-e975-42f4-97d4-c7d05e24ce74"
+    "5cf01638-e975-42f4-97d4-c7d05e24ce74",
+    "ddb3fc9e-465a-4a2a-9a98-426c523678d9",
+    "8a38f1f2-ddb7-4022-b5e9-313e939289d9",
+    "ce93b629-4a9e-405b-9a74-5d6fbbf8121e",
+    "e04e0a19-47be-4ec2-ba81-0f2ac5aec81f"
   ]
 }
