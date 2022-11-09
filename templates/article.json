@@ -2,10 +2,72 @@
   "sections": {
     "template": {
       "type": "template-article",
+      "blocks": {
+        "9fe588a6-f66e-4505-b018-c37090299d28": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Journal Title, It’s A Pretty Long One Too.<\/strong><\/p>",
+            "heading_size": "hxl"
+          }
+        },
+        "4a02e598-c9be-4824-96a2-f95a79fa7a09": {
+          "type": "caption",
+          "settings": {
+            "caption": "<p>Posted on: 13\/10\/2022 – Words by Lizzie <br\/>Posted in Integrity at Wax, Fabrics, Cool Stuff<\/p>",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "2e18ed02-ca48-48b6-be7c-9f567c4942f5": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 70
+          }
+        },
+        "2b794fcf-6ec6-4a47-af35-a5c4bf3b6ed2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
+            "text_font_size": 32,
+            "text-block-width": 800,
+            "text-block-line-height": 1.2,
+            "content_alignment_text": "left"
+          }
+        },
+        "3fa073f5-1445-43ea-9bf1-f6e86d5ade0b": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 15
+          }
+        },
+        "c85dc41c-5c74-48b3-94ad-3687b0a9ee15": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. <br\/><br\/>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
+            "text_font_size": 20,
+            "text-block-width": 800,
+            "text-block-line-height": 1.2,
+            "content_alignment_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "9fe588a6-f66e-4505-b018-c37090299d28",
+        "4a02e598-c9be-4824-96a2-f95a79fa7a09",
+        "2e18ed02-ca48-48b6-be7c-9f567c4942f5",
+        "2b794fcf-6ec6-4a47-af35-a5c4bf3b6ed2",
+        "3fa073f5-1445-43ea-9bf1-f6e86d5ade0b",
+        "c85dc41c-5c74-48b3-94ad-3687b0a9ee15"
+      ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
-
   },
   "order": [
     "template"
