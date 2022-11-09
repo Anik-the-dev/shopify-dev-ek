@@ -61,7 +61,7 @@
         "type": "range",
         "id": "full-text-section-width",
         "min": 300,
-        "max": 1400,
+        "max": 1800,
         "step": 50,
         "unit": "px",
         "label": "Section Width",
@@ -95,14 +95,19 @@
             "id": "left_image",
             "label": "Choose left image"
           }, {
+            "type": "richtext",
+            "id": "caption-image-left",
+            "default": "<p>Add Caption in Image</p>",
+            "label": "Add a caption"
+          }, {
             "type": "range",
             "id": "left_image_width",
             "min": 50,
-            "max": 800,
+            "max": 1200,
             "step": 25,
             "unit": "px",
             "label": "Image Width",
-            "default": 475
+            "default": 275
 
           }
         ]
@@ -116,14 +121,19 @@
             "id": "right_image",
             "label": "Choose Right image"
           }, {
+            "type": "richtext",
+            "id": "caption-image-right",
+            "default": "<p>Add Caption in Image</p>",
+            "label": "Add a caption"
+          }, {
             "type": "range",
             "id": "right_image_width",
             "min": 50,
-            "max": 800,
+            "max": 1200,
             "step": 25,
             "unit": "px",
             "label": "Image Width",
-            "default": 475
+            "default": 275
           }
 
         ]

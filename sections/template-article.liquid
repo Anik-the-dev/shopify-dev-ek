@@ -20,6 +20,27 @@
 {%- endcomment -%}
 
 {%- style -%}
+  .border-none {
+    border: none;
+  }
+  .border-left {
+    border-left: 4px solid red;
+    padding-left: 15px;
+
+  }
+  .border-top {
+    border-top: 4px solid red;
+    padding-top: 15px;
+  }
+  .border-right {
+    border-right: 4px solid red;
+    padding-right: 15px;
+  }
+  .border-bottom {
+    border-bottom: 4px solid red;
+    padding-bottom: 15px;
+  }
+
 
   {% for block in section.blocks %}
     .space-container-{{ block.id }}{
@@ -31,10 +52,8 @@
       width: {{ block.settings.text-block-width }}px;
       line-height: {{ block.settings.text-block-line-height }};
       margin: 0 auto;
-      
-
     }
-  
+
 
   {% endfor %}
 
@@ -73,7 +92,7 @@
                 {{ block.settings.caption | replace: 'p>', 'span>' }}
               </p>
             {%- when 'text' -%}
-              <div class="rich-text__text rte {{ block.settings.content_alignment_text }} text-{{ block.id }}-utilities" {{ block.shopify_attributes }}>
+              <div class="rich-text__text rte {{ block.settings.text_border }}  {{ block.settings.content_alignment_text }} text-{{ block.id }}-utilities" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
               </div>
             {%- when 'button' -%}
@@ -329,6 +348,32 @@
             "label": "Change Line Height",
             "default": 1.2
 
+          }, {
+            "type": "select",
+            "id": "text_border",
+            "options": [
+              {
+                "value": "border-none",
+                "label": "None"
+              },
+              {
+                "value": "border-left",
+                "label": "t:sections.rich-text.settings.content_alignment.options__1.label"
+              },
+              {
+                "value": "border-top",
+                "label": "Top"
+              },
+              {
+                "value": "border-right",
+                "label": "Right"
+              }, {
+                "value": "border-bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "border-none",
+            "label": "Border with text"
           }, {
             "type": "select",
             "id": "content_alignment_text",
