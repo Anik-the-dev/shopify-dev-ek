@@ -428,6 +428,33 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1425f246-50cd-4b7d-95f0-fda55e3ba305": {
+      "type": "template-article",
+      "blocks": {
+        "53ee1975-4aaa-40e8-a322-0c5e75fd0ab1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a  customers to your store.Share informatio<br\/><br\/>n about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make<br\/> <br\/>announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.<\/p>",
+            "text_font_size": 16,
+            "text-block-width": 800,
+            "text-block-line-height": 1.2,
+            "text_border": "border-left",
+            "content_alignment_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "53ee1975-4aaa-40e8-a322-0c5e75fd0ab1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -454,6 +481,7 @@
     "2693c5e5-43ba-4f5f-b51c-d2ba0fd58f38",
     "dc1d8de8-67c3-46aa-9703-c2c142d33708",
     "5cb91ee9-4f37-4276-bb46-4afd24612bf8",
-    "da7e0598-e63c-4833-a5a3-893c4ee9eaa9"
+    "da7e0598-e63c-4833-a5a3-893c4ee9eaa9",
+    "1425f246-50cd-4b7d-95f0-fda55e3ba305"
   ]
 }
