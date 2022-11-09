@@ -358,6 +358,48 @@
         "padding_top": 20,
         "padding_bottom": 24
       }
+    },
+    "dc1d8de8-67c3-46aa-9703-c2c142d33708": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "5cb91ee9-4f37-4276-bb46-4afd24612bf8": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Whiting Overshirt",
+            "heading_size": "h1"
+          }
+        },
+        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whiting Overshirt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-0",
+        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -381,6 +423,8 @@
     "7c7031df-f624-4638-ad7e-4603a335d693",
     "a06e4f51-01c6-4550-b526-b013e4598066",
     "d9f2f4c2-26d0-4202-ba96-4e8fda5913d6",
-    "2693c5e5-43ba-4f5f-b51c-d2ba0fd58f38"
+    "2693c5e5-43ba-4f5f-b51c-d2ba0fd58f38",
+    "dc1d8de8-67c3-46aa-9703-c2c142d33708",
+    "5cb91ee9-4f37-4276-bb46-4afd24612bf8"
   ]
 }
