@@ -2,12 +2,230 @@
   "sections": {
     "template": {
       "type": "template-article",
+      "blocks": {
+        "9fe588a6-f66e-4505-b018-c37090299d28": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Journal Title, It’s A Pretty Long One Too.<\/strong><\/p>",
+            "heading_size": "hxl"
+          }
+        },
+        "4a02e598-c9be-4824-96a2-f95a79fa7a09": {
+          "type": "caption",
+          "settings": {
+            "caption": "<p>Posted on: 13\/10\/2022 – Words by Lizzie <br\/>Posted in Integrity at Wax, Fabrics, Cool Stuff<\/p>",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "2e18ed02-ca48-48b6-be7c-9f567c4942f5": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 70
+          }
+        },
+        "2b794fcf-6ec6-4a47-af35-a5c4bf3b6ed2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
+            "text_font_size": 32,
+            "text-block-width": 800,
+            "text-block-line-height": 1.2,
+            "content_alignment_text": "left"
+          }
+        },
+        "3fa073f5-1445-43ea-9bf1-f6e86d5ade0b": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 15
+          }
+        },
+        "c85dc41c-5c74-48b3-94ad-3687b0a9ee15": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. <br\/><br\/>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
+            "text_font_size": 20,
+            "text-block-width": 800,
+            "text-block-line-height": 1.2,
+            "content_alignment_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "9fe588a6-f66e-4505-b018-c37090299d28",
+        "4a02e598-c9be-4824-96a2-f95a79fa7a09",
+        "2e18ed02-ca48-48b6-be7c-9f567c4942f5",
+        "2b794fcf-6ec6-4a47-af35-a5c4bf3b6ed2",
+        "3fa073f5-1445-43ea-9bf1-f6e86d5ade0b",
+        "c85dc41c-5c74-48b3-94ad-3687b0a9ee15"
+      ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "9d414a66-0efe-4c53-8751-8a2630b8c370": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "f373b8e0-5943-4b6d-8125-1fcebd1d6846": {
+      "type": "grid-two-column-text",
+      "blocks": {
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-0": {
+          "type": "left_text",
+          "settings": {
+            "left_text_section": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>"
+          }
+        },
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-1": {
+          "type": "right_text",
+          "settings": {
+            "right_text_section": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-0",
+        "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-1"
+      ],
+      "settings": {
+        "full-text-section-width": 1000,
+        "column-gap": 50
+      }
+    },
+    "a73cee83-93eb-443e-9792-dcd72f1cdc18": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 70
+      }
+    },
+    "72100de9-1590-4e5c-a3dc-e547bdffc529": {
+      "type": "image_banner_wax",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+        "Single_Image_Width": 750,
+        "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+        "image_height": "auto"
+      }
+    },
+    "fca507c6-c078-471f-a751-cd0e6c357c98": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "19e2a615-c150-466b-886d-0a540865a625": {
+      "type": "image_banner_wax",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+        "Single_Image_Width": 1000,
+        "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+        "image_height": "auto"
+      }
+    },
+    "69fabc24-30cd-4594-b64a-1454824750fe": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "5cf01638-e975-42f4-97d4-c7d05e24ce74": {
+      "type": "image_banner_wax",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+        "Single_Image_Width": 1200,
+        "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+        "image_height": "large"
+      }
+    },
+    "ddb3fc9e-465a-4a2a-9a98-426c523678d9": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "8a38f1f2-ddb7-4022-b5e9-313e939289d9": {
+      "type": "grid-two-col-image",
+      "blocks": {
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-0": {
+          "type": "left_img",
+          "settings": {
+            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left_image_width": 300
+          }
+        },
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-1": {
+          "type": "right_img",
+          "settings": {
+            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "right_image_width": 300
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-0",
+        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-1"
+      ],
+      "settings": {
+        "full-text-section-width": 600,
+        "column-gap": 0,
+        "background_color_an": "#eee"
+      }
+    },
+    "ce93b629-4a9e-405b-9a74-5d6fbbf8121e": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "e04e0a19-47be-4ec2-ba81-0f2ac5aec81f": {
+      "type": "grid-two-col-image",
+      "blocks": {
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-0": {
+          "type": "left_img",
+          "settings": {
+            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left_image_width": 300
+          }
+        },
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-1": {
+          "type": "right_img",
+          "settings": {
+            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "right_image_width": 225
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-0",
+        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-1"
+      ],
+      "settings": {
+        "full-text-section-width": 600,
+        "column-gap": 0,
+        "background_color_an": "#eee"
       }
     }
-
   },
   "order": [
-    "template"
+    "template",
+    "9d414a66-0efe-4c53-8751-8a2630b8c370",
+    "f373b8e0-5943-4b6d-8125-1fcebd1d6846",
+    "a73cee83-93eb-443e-9792-dcd72f1cdc18",
+    "72100de9-1590-4e5c-a3dc-e547bdffc529",
+    "fca507c6-c078-471f-a751-cd0e6c357c98",
+    "19e2a615-c150-466b-886d-0a540865a625",
+    "69fabc24-30cd-4594-b64a-1454824750fe",
+    "5cf01638-e975-42f4-97d4-c7d05e24ce74",
+    "ddb3fc9e-465a-4a2a-9a98-426c523678d9",
+    "8a38f1f2-ddb7-4022-b5e9-313e939289d9",
+    "ce93b629-4a9e-405b-9a74-5d6fbbf8121e",
+    "e04e0a19-47be-4ec2-ba81-0f2ac5aec81f"
   ]
 }
