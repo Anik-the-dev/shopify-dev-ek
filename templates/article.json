@@ -340,7 +340,7 @@
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
             "text_font_size": 24,
-            "text-block-width": 1200,
+            "text-block-width": 1100,
             "text-block-line-height": 1.2,
             "text_border": "border-none",
             "content_alignment_text": "left"
@@ -352,7 +352,7 @@
       ],
       "settings": {
         "desktop_content_position": "left",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 20,
