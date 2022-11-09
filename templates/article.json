@@ -323,7 +323,40 @@
       "settings": {
         "full-text-section-width": 1000,
         "column-gap": 50,
-        "background_color_an": "#eee"
+        "background_color_an": "#ffffff"
+      }
+    },
+    "d9f2f4c2-26d0-4202-ba96-4e8fda5913d6": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 80
+      }
+    },
+    "2693c5e5-43ba-4f5f-b51c-d2ba0fd58f38": {
+      "type": "template-article",
+      "blocks": {
+        "3caec6c2-c8bb-4dbb-a9be-478b7fb45b13": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
+            "text_font_size": 24,
+            "text-block-width": 800,
+            "text-block-line-height": 1.2,
+            "text_border": "border-none",
+            "content_alignment_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "3caec6c2-c8bb-4dbb-a9be-478b7fb45b13"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -346,6 +379,8 @@
     "b82122a7-0a62-4e6b-867b-7e5a86741507",
     "78d832bb-7523-4569-8c79-16bb23e881bc",
     "7c7031df-f624-4638-ad7e-4603a335d693",
-    "a06e4f51-01c6-4550-b526-b013e4598066"
+    "a06e4f51-01c6-4550-b526-b013e4598066",
+    "d9f2f4c2-26d0-4202-ba96-4e8fda5913d6",
+    "2693c5e5-43ba-4f5f-b51c-d2ba0fd58f38"
   ]
 }
