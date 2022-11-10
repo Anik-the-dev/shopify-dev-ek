@@ -70,12 +70,6 @@
         "padding_bottom": 52
       }
     },
-    "9d414a66-0efe-4c53-8751-8a2630b8c370": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
     "f373b8e0-5943-4b6d-8125-1fcebd1d6846": {
       "type": "grid-two-column-text",
       "blocks": {
@@ -97,391 +91,53 @@
         "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-1"
       ],
       "settings": {
-        "full-text-section-width": 1000,
+        "full-text-section-width": 1200,
         "column-gap": 50
       }
     },
-    "a73cee83-93eb-443e-9792-dcd72f1cdc18": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 70
-      }
-    },
-    "72100de9-1590-4e5c-a3dc-e547bdffc529": {
+    "a115ff63-b0a7-4fc6-841b-6d2b2915f0f2": {
       "type": "image_banner_wax",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
-        "Single_Image_Width": 750,
-        "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-        "image_height": "auto"
-      }
-    },
-    "fca507c6-c078-471f-a751-cd0e6c357c98": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "19e2a615-c150-466b-886d-0a540865a625": {
-      "type": "image_banner_wax",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
-        "Single_Image_Width": 1000,
-        "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-        "image_height": "auto"
-      }
-    },
-    "69fabc24-30cd-4594-b64a-1454824750fe": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "5cf01638-e975-42f4-97d4-c7d05e24ce74": {
-      "type": "image_banner_wax",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
-        "Single_Image_Width": 1200,
-        "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-        "image_height": "large"
-      }
-    },
-    "ddb3fc9e-465a-4a2a-9a98-426c523678d9": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "8a38f1f2-ddb7-4022-b5e9-313e939289d9": {
-      "type": "grid-two-col-image",
       "blocks": {
-        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-0": {
-          "type": "left_img",
+        "16fc111b-1b6d-4c50-9a5a-b9c4d944ec56": {
+          "type": "image",
           "settings": {
-            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "caption-image-left": "<p>Add Caption in Image<\/p>",
-            "left_image_width": 300
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+            "Single_Image_Width": 800,
+            "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "image_height": "auto"
           }
         },
-        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-1": {
-          "type": "right_img",
+        "add311f4-f4e9-408b-90e0-1b8c3f10ef94": {
+          "type": "image",
           "settings": {
-            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "caption-image-right": "<p>Add Caption in Image<\/p>",
-            "right_image_width": 300
-          }
-        }
-      },
-      "block_order": [
-        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-0",
-        "template--15909486461122__8a38f1f2-ddb7-4022-b5e9-313e939289d9-16679894352a8c9300-1"
-      ],
-      "settings": {
-        "full-text-section-width": 600,
-        "column-gap": 0,
-        "background_color_an": "#eeeeee"
-      }
-    },
-    "ce93b629-4a9e-405b-9a74-5d6fbbf8121e": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "e04e0a19-47be-4ec2-ba81-0f2ac5aec81f": {
-      "type": "grid-two-col-image",
-      "blocks": {
-        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-0": {
-          "type": "left_img",
-          "settings": {
-            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "caption-image-left": "<p>Add Caption in Image<\/p>",
-            "left_image_width": 300
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+            "Single_Image_Width": 950,
+            "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "image_height": "auto"
           }
         },
-        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-1": {
-          "type": "right_img",
+        "782ac47d-d498-4d83-b4b2-57fa98f0d398": {
+          "type": "image",
           "settings": {
-            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "caption-image-right": "<p>Add Caption in Image<\/p>",
-            "right_image_width": 225
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+            "Single_Image_Width": 1200,
+            "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "image_height": "large"
           }
         }
       },
       "block_order": [
-        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-0",
-        "template--15909486461122__e04e0a19-47be-4ec2-ba81-0f2ac5aec81f-16679894352a8c9300-1"
+        "16fc111b-1b6d-4c50-9a5a-b9c4d944ec56",
+        "add311f4-f4e9-408b-90e0-1b8c3f10ef94",
+        "782ac47d-d498-4d83-b4b2-57fa98f0d398"
       ],
       "settings": {
-        "full-text-section-width": 600,
-        "column-gap": 0,
-        "background_color_an": "#eeeeee"
-      }
-    },
-    "23f60e67-ab8f-4b45-8715-74af9de38e53": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "465a7b54-fae5-471c-88b1-97b0e329f429": {
-      "type": "grid-two-col-image",
-      "blocks": {
-        "template--15909486461122__465a7b54-fae5-471c-88b1-97b0e329f429-166799007326a83fd2-0": {
-          "type": "left_img",
-          "settings": {
-            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "caption-image-left": "<p>Add Caption in Image<\/p>",
-            "left_image_width": 225
-          }
-        },
-        "template--15909486461122__465a7b54-fae5-471c-88b1-97b0e329f429-166799007326a83fd2-1": {
-          "type": "right_img",
-          "settings": {
-            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "caption-image-right": "<p>Add Caption in Image<\/p>",
-            "right_image_width": 300
-          }
-        }
-      },
-      "block_order": [
-        "template--15909486461122__465a7b54-fae5-471c-88b1-97b0e329f429-166799007326a83fd2-0",
-        "template--15909486461122__465a7b54-fae5-471c-88b1-97b0e329f429-166799007326a83fd2-1"
-      ],
-      "settings": {
-        "full-text-section-width": 600,
-        "column-gap": 0,
-        "background_color_an": "#eee"
-      }
-    },
-    "b82122a7-0a62-4e6b-867b-7e5a86741507": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "78d832bb-7523-4569-8c79-16bb23e881bc": {
-      "type": "grid-two-col-image",
-      "blocks": {
-        "template--15909486461122__78d832bb-7523-4569-8c79-16bb23e881bc-166799007326a83fd2-0": {
-          "type": "left_img",
-          "settings": {
-            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "caption-image-left": "<p>Add Caption in Image<\/p>",
-            "left_image_width": 500
-          }
-        },
-        "template--15909486461122__78d832bb-7523-4569-8c79-16bb23e881bc-166799007326a83fd2-1": {
-          "type": "right_img",
-          "settings": {
-            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "caption-image-right": "<p>Add Caption in Image<\/p>",
-            "right_image_width": 500
-          }
-        }
-      },
-      "block_order": [
-        "template--15909486461122__78d832bb-7523-4569-8c79-16bb23e881bc-166799007326a83fd2-0",
-        "template--15909486461122__78d832bb-7523-4569-8c79-16bb23e881bc-166799007326a83fd2-1"
-      ],
-      "settings": {
-        "full-text-section-width": 1000,
-        "column-gap": 0,
-        "background_color_an": "#eee"
-      }
-    },
-    "7c7031df-f624-4638-ad7e-4603a335d693": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "a06e4f51-01c6-4550-b526-b013e4598066": {
-      "type": "grid-two-col-image",
-      "blocks": {
-        "template--15909486461122__a06e4f51-01c6-4550-b526-b013e4598066-166799007326a83fd2-0": {
-          "type": "left_img",
-          "settings": {
-            "left_image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "caption-image-left": "<p>Add Caption in Image<\/p>",
-            "left_image_width": 475
-          }
-        },
-        "template--15909486461122__a06e4f51-01c6-4550-b526-b013e4598066-166799007326a83fd2-1": {
-          "type": "right_img",
-          "settings": {
-            "right_image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "caption-image-right": "<p>Add Caption in Image<\/p>",
-            "right_image_width": 475
-          }
-        }
-      },
-      "block_order": [
-        "template--15909486461122__a06e4f51-01c6-4550-b526-b013e4598066-166799007326a83fd2-0",
-        "template--15909486461122__a06e4f51-01c6-4550-b526-b013e4598066-166799007326a83fd2-1"
-      ],
-      "settings": {
-        "full-text-section-width": 1000,
-        "column-gap": 50,
-        "background_color_an": "#ffffff"
-      }
-    },
-    "d9f2f4c2-26d0-4202-ba96-4e8fda5913d6": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 80
-      }
-    },
-    "2693c5e5-43ba-4f5f-b51c-d2ba0fd58f38": {
-      "type": "template-article",
-      "blocks": {
-        "3caec6c2-c8bb-4dbb-a9be-478b7fb45b13": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
-            "text_font_size": 24,
-            "text-block-width": 1100,
-            "text-block-line-height": 1.2,
-            "text_border": "border-none",
-            "content_alignment_text": "left"
-          }
-        }
-      },
-      "block_order": [
-        "3caec6c2-c8bb-4dbb-a9be-478b7fb45b13"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 24
-      }
-    },
-    "dc1d8de8-67c3-46aa-9703-c2c142d33708": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 50
-      }
-    },
-    "5cb91ee9-4f37-4276-bb46-4afd24612bf8": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Whiting Overshirt",
-            "heading_size": "h1"
-          }
-        },
-        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Whiting Overshirt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-0",
-        "template--15909486461122__5cb91ee9-4f37-4276-bb46-4afd24612bf8-16679907676ad0a145-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 12,
-        "padding_bottom": 36
-      }
-    },
-    "da7e0598-e63c-4833-a5a3-893c4ee9eaa9": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--15909486461122__da7e0598-e63c-4833-a5a3-893c4ee9eaa9-16679909081d96cba0-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Su sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sedc risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "template--15909486461122__da7e0598-e63c-4833-a5a3-893c4ee9eaa9-16679909081d96cba0-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "inverse",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1425f246-50cd-4b7d-95f0-fda55e3ba305": {
-      "type": "template-article",
-      "blocks": {
-        "53ee1975-4aaa-40e8-a322-0c5e75fd0ab1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a  customers to your store.Share informatio<br\/><br\/>n about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make<br\/> <br\/>announcements, or welcome customers to your store.Share information about your brand with your customers. Write a blog, make announcements, or welcome customers to your store.<\/p>",
-            "text_font_size": 16,
-            "text-block-width": 800,
-            "text-block-line-height": 1.2,
-            "text_border": "border-left",
-            "content_alignment_text": "left"
-          }
-        }
-      },
-      "block_order": [
-        "53ee1975-4aaa-40e8-a322-0c5e75fd0ab1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
   "order": [
     "template",
-    "9d414a66-0efe-4c53-8751-8a2630b8c370",
     "f373b8e0-5943-4b6d-8125-1fcebd1d6846",
-    "a73cee83-93eb-443e-9792-dcd72f1cdc18",
-    "72100de9-1590-4e5c-a3dc-e547bdffc529",
-    "fca507c6-c078-471f-a751-cd0e6c357c98",
-    "19e2a615-c150-466b-886d-0a540865a625",
-    "69fabc24-30cd-4594-b64a-1454824750fe",
-    "5cf01638-e975-42f4-97d4-c7d05e24ce74",
-    "ddb3fc9e-465a-4a2a-9a98-426c523678d9",
-    "8a38f1f2-ddb7-4022-b5e9-313e939289d9",
-    "ce93b629-4a9e-405b-9a74-5d6fbbf8121e",
-    "e04e0a19-47be-4ec2-ba81-0f2ac5aec81f",
-    "23f60e67-ab8f-4b45-8715-74af9de38e53",
-    "465a7b54-fae5-471c-88b1-97b0e329f429",
-    "b82122a7-0a62-4e6b-867b-7e5a86741507",
-    "78d832bb-7523-4569-8c79-16bb23e881bc",
-    "7c7031df-f624-4638-ad7e-4603a335d693",
-    "a06e4f51-01c6-4550-b526-b013e4598066",
-    "d9f2f4c2-26d0-4202-ba96-4e8fda5913d6",
-    "2693c5e5-43ba-4f5f-b51c-d2ba0fd58f38",
-    "dc1d8de8-67c3-46aa-9703-c2c142d33708",
-    "5cb91ee9-4f37-4276-bb46-4afd24612bf8",
-    "da7e0598-e63c-4833-a5a3-893c4ee9eaa9",
-    "1425f246-50cd-4b7d-95f0-fda55e3ba305"
+    "a115ff63-b0a7-4fc6-841b-6d2b2915f0f2"
   ]
 }
