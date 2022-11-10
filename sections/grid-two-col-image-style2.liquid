@@ -2,44 +2,66 @@
 
   #section-{{ section.id }}{
     width: {{ section.settings.parent-image-section-width | append: "px" }};
-    margin: 0 auto
+    margin: 0 auto;
   }
+  .image_container_wax img{
+          width: 100%;
+          object-fit: cover;
+          display: block;
+  }
+
+  .image_container_wax_small img{
+      width: 66%;
+      display: block;
+      padding: 21% 0;
+      object-fit: cover;
+      margin: auto auto
+  }
+
+
+
   {% for block in section.blocks %}
     .block-container-wrapper-{{ block.id }} {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: auto;
     }
-    .block-container-wrapper-{{ block.id }}.space-2-col{
-         column-gap: 20px
+    .display-block-caption-{{ block.id }} {
+      display: none;
     }
-    .block-container-wrapper-{{ block.id }} .wrapper-left-section-{{ block.id }} {
-        height: 100%;
-        background-color: "red";
-        position: relative;
-    }
-    .block-container-wrapper-{{ block.id }} .wrapper-left-section-{{ block.id }} .bottom-caption{
-        position: absolute;
-        bottom: 0
+    .block-container-wrapper-{{ block.id }}.space-2-col-{{ block.id }}{
+         column-gap: 20px;}
 
+    {% if block.settings.show_col_gap %}
+          #section-{{ section.id }} #left-section-{{ block.id }}{
+                  width: calc({{ block.settings.image-one-width | append: "px" }} - 10px)
+        }
+          #section-{{ section.id }} #right-section-{{ block.id }}{
+                  width: calc( {{ section.settings.parent-image-section-width | append: "px" }} - {{ block.settings.image-one-width | append: "px" }} - 10px )
+        }
+    {% else %}
+          #section-{{ section.id }} #left-section-{{ block.id }}{
+            width: {{ block.settings.image-one-width | append: "px" }}
+          }
+
+          #section-{{ section.id }} #right-section-{{ block.id }}{
+            width: calc( {{ section.settings.parent-image-section-width | append: "px" }} - {{ block.settings.image-one-width | append: "px" }} )
+          }
+            
+         
+    {% endif %}
+
+    .full-left-section-{{ block.id }}, .full-right-section-{{ block.id }} {
+      margin-top: 28.5px;
+    }
+    .wrapper-left-section-{{ block.id }} {
+      background-color: {{ block.settings.background_color_image_one }}
     }
     
-    .block-container-wrapper-{{ block.id }} .wrapper-right-section-{{ block.id }} {
-        height: 100%;
-        background-color: "black"
-    }
-    
-    #section-{{ section.id }} #left-section-{{ block.id }}{
-      width: {{ block.settings.image-one-width | append: "px" }}
+    .wrapper-right-section-{{ block.id }}{
+       background-color: {{ block.settings.background_color_image_two }}
     }
 
-    #section-{{ section.id }} #right-section-{{ block.id }}{
-      width: calc( {{ section.settings.parent-image-section-width | append: "px" }} - {{ block.settings.image-one-width | append: "px" }} )
-    }
-    #section-{{ section.id }} .image-container-{{ block.id }} img{
-      width: 100%
-    }
 
 
   {% endfor %}
@@ -49,24 +71,29 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when "images" %}
-        <div class="block-container-wrapper-{{ block.id }} {% if block.settings.show_col_gap %}space-2-col {% endif %}">
-            <div class="wrapper-left-section-{{ block.id }}">
-                <div  id="left-section-{{ block.id }}" class="image-container-{{ block.id }}">
-                  <img src=" {{ block.settings.image_picker_1 | img_url: 'grande' }} " alt="" height="" width="" loading="lazy">
-                  <p>Anik Acharjee is a good boy</p>
+        <div class="block-container-wrapper-{{ block.id }} {% if block.settings.show_col_gap %}space-2-col-{{ block.id }} {% endif %}">
+            <div class="{% if block.settings.show_left_caption %} full-left-section-{{ block.id }}{% endif %}">
+              <div class="wrapper-left-section-{{ block.id }}">
+                <div id="left-section-{{ block.id }}"  class="image_container_wax {% if block.settings.left_image_small %}image_container_wax_small{% endif %}">
+                  <img class="img" src=" {{ block.settings.image_picker_1 | img_url: 'master' }} " alt="" height="" width="" loading="lazy">
                 </div>
               </div>
+                 <span class="{% if block.settings.show_left_caption == false %} display-block-caption-{{ block.id }}{% endif %}">{{ block.settings.caption-image-one }}</span>
+            </div>
+            <div class="{% if block.settings.show_right_caption %} full-right-section-{{ block.id }}{% endif %}">
               <div class="wrapper-right-section-{{ block.id }}">
-                <div  id="right-section-{{ block.id }}" class="image-container-{{ block.id }}">
-                  <img src=" {{ block.settings.image_picker_2 | img_url: 'grande' }} " alt="" height="" width="" loading="lazy">
-                  <p>Anik Acharjee is a good boy</p>
+                <div  id="right-section-{{ block.id }}" class="image_container_wax  {% if block.settings.right_image_small %}image_container_wax_small{% endif %}">
+                  <img  class="img" src=" {{ block.settings.image_picker_2 | img_url: 'master' }}  " alt="" height="" width="" loading="lazy">
                 </div>
+                <span class="{% if block.settings.show_right_caption == false %} display-block-caption-{{ block.id }}{% endif %}"> {{ block.settings.caption-image-two }} </span>
+
               </div>
+
+            </div>
+
+
       
         </div>
-
-
-
 
     {% endcase %}
   {% endfor %}
@@ -115,11 +142,22 @@
             "default": "#eee"
           },
           {
-            "type": "richtext",
+            "type": "text",
             "id": "caption-image-one",
-            "default": "<p>Add Caption</p>",
             "label": "Image One Caption"
           }, 
+          {
+            "type": "checkbox",
+            "id": "show_left_caption",
+            "default": false,
+            "label": "Show Left Image Caption"
+          },
+          {
+            "type": "checkbox",
+            "id": "left_image_small",
+            "default": false,
+            "label": "Small Left Image"
+          },
           {
             "type": "checkbox",
             "id": "show_col_gap",
@@ -137,10 +175,21 @@
             "label": "Image Two Background Color",
             "default": "#eee"
           }, {
-            "type": "richtext",
+            "type": "text",
             "id": "caption-image-two",
-            "default": "<p>Add Caption</p>",
             "label": "Image Two Caption"
+          },
+          {
+            "type": "checkbox",
+            "id": "right_image_small",
+            "default": false,
+            "label": "Small Right Image"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_right_caption",
+            "default": false,
+            "label": "Show Right Image Caption"
           }
 
 
