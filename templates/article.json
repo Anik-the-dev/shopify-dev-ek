@@ -91,8 +91,8 @@
         "template--15909486461122__f373b8e0-5943-4b6d-8125-1fcebd1d6846-166798820563381786-1"
       ],
       "settings": {
-        "full-text-section-width": 1200,
-        "column-gap": 50
+        "full-text-section-width": 1000,
+        "column-gap": 20
       }
     },
     "a115ff63-b0a7-4fc6-841b-6d2b2915f0f2": {
@@ -199,7 +199,7 @@
             "left_image_small": false,
             "show_col_gap": true,
             "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "background_color_image_two": "#eee",
+            "background_color_image_two": "#e22120",
             "caption-image-two": "",
             "right_image_small": false,
             "show_right_caption": false
@@ -215,12 +215,180 @@
       "settings": {
         "parent-image-section-width": 800
       }
+    },
+    "8df27c90-3339-48c4-8b01-7953658bbd42": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
+    "3d79730f-9413-437f-b8e5-15753a7321ab": {
+      "type": "grid-two-col-image-style2",
+      "blocks": {
+        "7c20174e-8b99-4b50-a807-37c0718eab8e": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 500,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "",
+            "show_left_caption": false,
+            "left_image_small": false,
+            "show_col_gap": false,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#eee",
+            "caption-image-two": "",
+            "right_image_small": false,
+            "show_right_caption": false
+          }
+        },
+        "a7376ae6-d5bc-4c0e-a8ac-4b6d1c19544f": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 500,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "",
+            "show_left_caption": false,
+            "left_image_small": false,
+            "show_col_gap": true,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#eee",
+            "caption-image-two": "",
+            "right_image_small": false,
+            "show_right_caption": false
+          }
+        }
+      },
+      "block_order": [
+        "7c20174e-8b99-4b50-a807-37c0718eab8e",
+        "a7376ae6-d5bc-4c0e-a8ac-4b6d1c19544f"
+      ],
+      "settings": {
+        "parent-image-section-width": 1000
+      }
+    },
+    "9464390a-09a2-4df3-a922-add894cd0caa": {
+      "type": "template-article",
+      "blocks": {
+        "54db3a35-145a-4129-b8d8-577347877a33": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
+            "text_font_size": 24,
+            "text-block-width": 1150,
+            "text-block-line-height": 1.2,
+            "text_border": "border-none",
+            "content_alignment_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "54db3a35-145a-4129-b8d8-577347877a33"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 28
+      }
+    },
+    "45590a7c-ba06-41d4-9fa5-f3e45d9843bc": {
+      "type": "grid-two-col-image-style2",
+      "blocks": {
+        "357cbae2-0981-4445-a3ba-b79b57852cb6": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 500,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "",
+            "show_left_caption": false,
+            "left_image_small": false,
+            "show_col_gap": false,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#eee",
+            "caption-image-two": "",
+            "right_image_small": true,
+            "show_right_caption": false
+          }
+        }
+      },
+      "block_order": [
+        "357cbae2-0981-4445-a3ba-b79b57852cb6"
+      ],
+      "settings": {
+        "parent-image-section-width": 1000
+      }
+    },
+    "b680e436-b381-40db-8688-6e4c41f76bcc": {
+      "type": "template-article",
+      "blocks": {
+        "a7fc9cb4-fe58-44ab-9133-09ccb55bcce9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Sed maximus malesuada nibh sed ultrices.”<\/p>",
+            "text_font_size": 24,
+            "text-block-width": 600,
+            "text-block-line-height": 1.2,
+            "text_border": "border-none",
+            "content_alignment_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "a7fc9cb4-fe58-44ab-9133-09ccb55bcce9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "c2075d96-1448-4088-addf-bdb9e0a8c76b": {
+      "type": "grid-two-col-image-style2",
+      "blocks": {
+        "f93e7d1c-b744-4281-931a-093a7f9a50bf": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 500,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black",
+            "show_left_caption": true,
+            "left_image_small": true,
+            "show_col_gap": false,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#ffffff",
+            "caption-image-two": "Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black",
+            "right_image_small": false,
+            "show_right_caption": true
+          }
+        }
+      },
+      "block_order": [
+        "f93e7d1c-b744-4281-931a-093a7f9a50bf"
+      ],
+      "settings": {
+        "parent-image-section-width": 1000
+      }
     }
   },
   "order": [
     "template",
     "f373b8e0-5943-4b6d-8125-1fcebd1d6846",
     "a115ff63-b0a7-4fc6-841b-6d2b2915f0f2",
-    "f12d7c6a-1c71-40e9-a6ff-e098e358ee30"
+    "f12d7c6a-1c71-40e9-a6ff-e098e358ee30",
+    "8df27c90-3339-48c4-8b01-7953658bbd42",
+    "3d79730f-9413-437f-b8e5-15753a7321ab",
+    "9464390a-09a2-4df3-a922-add894cd0caa",
+    "45590a7c-ba06-41d4-9fa5-f3e45d9843bc",
+    "b680e436-b381-40db-8688-6e4c41f76bcc",
+    "c2075d96-1448-4088-addf-bdb9e0a8c76b"
   ]
 }
