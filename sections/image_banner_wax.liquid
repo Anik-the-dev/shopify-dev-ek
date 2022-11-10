@@ -1,115 +1,106 @@
 {%- style -%}
-  .single-image-container-{{ section.id }}{
-    width: {{ section.settings.Single_Image_Width }}px;
-    margin: 0 auto;
-  }
-  .single-image-container-{{ section.id }} p{
-    text-align:center;
-  }
 
-  .single-image-container-{{ section.id }} img {
-    width: 100%
-  }
 
-  .auto-{{ section.id }}{
-    height: auto overflow: hidden
-  }
-  .small-{{ section.id }}{
-    height: 400px;
-    overflow: hidden
-  }
-  .medium-{{ section.id }}{
-    height: 600px;
-  }
-  .large-{{ section.id }}{
-    height: 800px;
-    overflow: hidden
-  }
+  {% for block in section.blocks %}
+    .single-image-container-{{ block.id }}{
+      width: {{ block.settings.Single_Image_Width }}px;
+      margin: 0 auto;
+    }
+    .single-image-container-{{ block.id }} p{
+      text-align:center;
+    }
 
-  {% for block in section.blocks %}{% endfor %}
+    .single-image-container-{{ block.id }} img {
+      width: 100%
+    }
+
+    .auto-{{ block.id }}{
+      height: auto 
+    }
+    .small-{{ block.id }}{
+      height: 400px;
+      overflow: hidden
+    }
+    .medium-{{ block.id }}{
+      height: 700px;
+      overflow: hidden
+    }
+    .large-{{ block.id }}{
+      height: 900px;
+      overflow: hidden
+    }
+  
+  {% endfor %}
 {%- endstyle -%}
 
-<div class="single-image-container-{{ section.id }} {{ section.settings.image_height }}-{{ section.id }}">
-  <img src=" {{ section.settings.image | img_url: "grande" }} " alt="" height="" width="" loading="lazy">
-  <p>{{ section.settings.caption-image }}</p>
-</div>
+<section id="section-{{ section.id }}">
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when "image" %}
+      <div class="single-image-container-{{ block.id }} {{ block.settings.image_height }}-{{ block.id }}">
+        <img src=" {{ block.settings.image | img_url: "grande" }} " alt="" height="" width="" loading="lazy">
+        {% if block.settings.caption-image %}
+          {{ block.settings.caption-image }}
+        {% endif %}
+      </div>
+  {% endcase %}  
+{% endfor %}
+</section>
 
 {% schema %}
   {
     "name": "Single Wax Image",
     "tag": "section",
     "class": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "t:sections.image-banner.settings.image.label"
-      }, {
-        "type": "range",
-        "id": "Single_Image_Width",
-        "min": 200,
-        "max": 1600,
-        "step": 50,
-        "unit": "px",
-        "label": "Image Width",
-        "default": 600
-
-      }, {
-        "type": "richtext",
-        "id": "caption-image",
-        "default": "<p>Add Caption in Image</p>",
-        "label": "Add a caption"
-      }, {
-        "type": "select",
-        "id": "image_height",
-        "options": [
-          {
-            "value": "auto",
-            "label": "Auto"
-          }, {
-            "value": "small",
-            "label": "t:sections.image-banner.settings.image_height.options__1.label"
-          }, {
-            "value": "medium",
-            "label": "t:sections.image-banner.settings.image_height.options__2.label"
-          }, {
-            "value": "large",
-            "label": "t:sections.image-banner.settings.image_height.options__3.label"
-          }
-        ],
-        "default": "auto",
-        "label": "Image Height",
-        "info": "t:sections.image-banner.settings.image_height.info"
-      }
-    ],
+    "settings": [],
     "blocks": [
       {
-        "type": "text",
-        "name": "t:sections.image-banner.blocks.text.name",
-        "limit": 1,
+        "name": "Image",
+        "type": "image",
         "settings": [
           {
-            "type": "text",
-            "id": "text",
-            "default": "Give customers details about the banner image(s) or content on the template.",
-            "label": "t:sections.image-banner.blocks.text.settings.text.label"
-          }, {
-            "type": "select",
-            "id": "text_style",
-            "options": [
-              {
-                "value": "body",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
-              }, {
-                "value": "subtitle",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
-              }, {
-                "value": "caption-with-letter-spacing",
-                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
-              }
-            ],
-            "default": "body",
-            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.image-banner.settings.image.label"
+          },
+          {
+          "type": "range",
+          "id": "Single_Image_Width",
+          "min": 200,
+          "max": 1600,
+          "step": 50,
+          "unit": "px",
+          "label": "Image Width",
+          "default": 600
+
+          }, 
+          {
+          "type": "richtext",
+          "id": "caption-image",
+          "default": "<p>Add Caption in Image</p>",
+          "label": "Add a caption"
+          }, 
+          {
+          "type": "select",
+          "id": "image_height",
+          "options": [
+            {
+              "value": "auto",
+              "label": "Auto"
+            }, {
+              "value": "small",
+              "label": "t:sections.image-banner.settings.image_height.options__1.label"
+            }, {
+              "value": "medium",
+              "label": "t:sections.image-banner.settings.image_height.options__2.label"
+            }, {
+              "value": "large",
+              "label": "t:sections.image-banner.settings.image_height.options__3.label"
+            }
+          ],
+          "default": "auto",
+          "label": "Image Height",
+          "info": "t:sections.image-banner.settings.image_height.info"
           }
         ]
       }

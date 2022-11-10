@@ -1,0 +1,159 @@
+{%- style -%}
+
+  #section-{{ section.id }}{
+    width: {{ section.settings.parent-image-section-width | append: "px" }};
+    margin: 0 auto
+  }
+  {% for block in section.blocks %}
+    .block-container-wrapper-{{ block.id }} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .block-container-wrapper-{{ block.id }}.space-2-col{
+         column-gap: 20px
+    }
+    .block-container-wrapper-{{ block.id }} .wrapper-left-section-{{ block.id }} {
+        height: 100%;
+        background-color: "red";
+        position: relative;
+    }
+    .block-container-wrapper-{{ block.id }} .wrapper-left-section-{{ block.id }} .bottom-caption{
+        position: absolute;
+        bottom: 0
+
+    }
+    
+    .block-container-wrapper-{{ block.id }} .wrapper-right-section-{{ block.id }} {
+        height: 100%;
+        background-color: "black"
+    }
+    
+    #section-{{ section.id }} #left-section-{{ block.id }}{
+      width: {{ block.settings.image-one-width | append: "px" }}
+    }
+
+    #section-{{ section.id }} #right-section-{{ block.id }}{
+      width: calc( {{ section.settings.parent-image-section-width | append: "px" }} - {{ block.settings.image-one-width | append: "px" }} )
+    }
+    #section-{{ section.id }} .image-container-{{ block.id }} img{
+      width: 100%
+    }
+
+
+  {% endfor %}
+{%- endstyle -%}
+
+<section id="section-{{ section.id }}" class="section ">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when "images" %}
+        <div class="block-container-wrapper-{{ block.id }} {% if block.settings.show_col_gap %}space-2-col {% endif %}">
+            <div class="wrapper-left-section-{{ block.id }}">
+                <div  id="left-section-{{ block.id }}" class="image-container-{{ block.id }}">
+                  <img src=" {{ block.settings.image_picker_1 | img_url: 'grande' }} " alt="" height="" width="" loading="lazy">
+                  <p>Anik Acharjee is a good boy</p>
+                </div>
+              </div>
+              <div class="wrapper-right-section-{{ block.id }}">
+                <div  id="right-section-{{ block.id }}" class="image-container-{{ block.id }}">
+                  <img src=" {{ block.settings.image_picker_2 | img_url: 'grande' }} " alt="" height="" width="" loading="lazy">
+                  <p>Anik Acharjee is a good boy</p>
+                </div>
+              </div>
+      
+        </div>
+
+
+
+
+    {% endcase %}
+  {% endfor %}
+</section>
+
+{% schema %}
+  {
+    "name": "Two Column Image Style 2",
+    "settings": [
+      {
+        "type": "range",
+        "id": "parent-image-section-width",
+        "min": 200,
+        "max": 1600,
+        "step": 50,
+        "unit": "px",
+        "label": "Custom Section Width",
+        "default": 1000
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "Double Column Image",
+        "type": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_picker_1",
+            "label": "Image One"
+          },
+          {
+            "type": "range",
+            "id": "image-one-width",
+            "min": 200,
+            "max": 1400,
+            "step": 25,
+            "unit": "px",
+            "label": "Image One Width",
+            "default": 500
+          },
+          {
+            "type": "color",
+            "id": "background_color_image_one",
+            "label": "Image One Background Color",
+            "default": "#eee"
+          },
+          {
+            "type": "richtext",
+            "id": "caption-image-one",
+            "default": "<p>Add Caption</p>",
+            "label": "Image One Caption"
+          }, 
+          {
+            "type": "checkbox",
+            "id": "show_col_gap",
+            "default": false,
+            "label": "Show Column Gap"
+          },
+
+          {
+            "type": "image_picker",
+            "id": "image_picker_2",
+            "label": "Image Two"
+          }, {
+            "type": "color",
+            "id": "background_color_image_two",
+            "label": "Image Two Background Color",
+            "default": "#eee"
+          }, {
+            "type": "richtext",
+            "id": "caption-image-two",
+            "default": "<p>Add Caption</p>",
+            "label": "Image Two Caption"
+          }
+
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "content",
+        "name": "Two Column Image Style 2"
+      }
+
+
+    ]
+  }
+{% endschema %}
