@@ -133,11 +133,94 @@
       ],
       "settings": {
       }
+    },
+    "f12d7c6a-1c71-40e9-a6ff-e098e358ee30": {
+      "type": "grid-two-col-image-style2",
+      "blocks": {
+        "b078d45b-901a-461e-b671-586a78a046c0": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 400,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "",
+            "show_left_caption": false,
+            "left_image_small": false,
+            "show_col_gap": false,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#eee",
+            "caption-image-two": "",
+            "right_image_small": false,
+            "show_right_caption": false
+          }
+        },
+        "dd8e62dc-015a-42b2-ac18-15fa2214ff4b": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 400,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "",
+            "show_left_caption": false,
+            "left_image_small": false,
+            "show_col_gap": false,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#eee",
+            "caption-image-two": "",
+            "right_image_small": true,
+            "show_right_caption": false
+          }
+        },
+        "ce0bda6d-7c98-4395-ae89-232cb92ef1c8": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 400,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black",
+            "show_left_caption": true,
+            "left_image_small": true,
+            "show_col_gap": false,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#ffffff",
+            "caption-image-two": "Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black",
+            "right_image_small": false,
+            "show_right_caption": true
+          }
+        },
+        "482128c8-6456-4c9f-9c2f-43267be6ae5b": {
+          "type": "images",
+          "settings": {
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-one-width": 400,
+            "background_color_image_one": "#eee",
+            "caption-image-one": "",
+            "show_left_caption": false,
+            "left_image_small": false,
+            "show_col_gap": true,
+            "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "background_color_image_two": "#eee",
+            "caption-image-two": "",
+            "right_image_small": false,
+            "show_right_caption": false
+          }
+        }
+      },
+      "block_order": [
+        "b078d45b-901a-461e-b671-586a78a046c0",
+        "dd8e62dc-015a-42b2-ac18-15fa2214ff4b",
+        "ce0bda6d-7c98-4395-ae89-232cb92ef1c8",
+        "482128c8-6456-4c9f-9c2f-43267be6ae5b"
+      ],
+      "settings": {
+        "parent-image-section-width": 800
+      }
     }
   },
   "order": [
     "template",
     "f373b8e0-5943-4b6d-8125-1fcebd1d6846",
-    "a115ff63-b0a7-4fc6-841b-6d2b2915f0f2"
+    "a115ff63-b0a7-4fc6-841b-6d2b2915f0f2",
+    "f12d7c6a-1c71-40e9-a6ff-e098e358ee30"
   ]
 }
