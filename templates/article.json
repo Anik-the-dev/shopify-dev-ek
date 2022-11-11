@@ -630,7 +630,7 @@
             "heading_size": "h1",
             "heading-custom-size": 32,
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsa<br\/><br\/>n eu est in dignissim. Aenean ligula felis, rutrum in augue quius elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis <br\/>consequat nunc tincidunt et. Sed eleifend arcu vel porta curum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
-            "text-custom-size": 18,
+            "text-custom-size": 16,
             "button_label": "Button label",
             "button_link": "",
             "show_btn": false,
@@ -669,7 +669,7 @@
           "settings": {
             "text": "<p><strong>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<br\/><br\/><\/strong><\/p>",
             "text_font_size": 16,
-            "text-block-width": 800,
+            "text-block-width": 600,
             "text-block-line-height": 1.2,
             "text_border": "border-none",
             "content_alignment_text": "left"
@@ -680,7 +680,7 @@
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<br\/><br\/> Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
             "text_font_size": 16,
-            "text-block-width": 800,
+            "text-block-width": 600,
             "text-block-line-height": 1.2,
             "text_border": "border-left",
             "content_alignment_text": "left"
@@ -691,7 +691,7 @@
           "settings": {
             "text": "<p><strong><br\/><br\/>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/strong><\/p>",
             "text_font_size": 16,
-            "text-block-width": 800,
+            "text-block-width": 600,
             "text-block-line-height": 1.2,
             "text_border": "border-none",
             "content_alignment_text": "left"
