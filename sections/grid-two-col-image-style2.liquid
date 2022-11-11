@@ -21,6 +21,10 @@
 
 
   {% for block in section.blocks %}
+    .space-container-{{ block.id }}{
+            height: {{ block.settings.spacer-height }}px; 
+    }
+
     .block-container-wrapper-{{ block.id }} {
         display: flex;
         align-items: center;
@@ -70,6 +74,10 @@
 <section id="section-{{ section.id }}" class="section ">
   {% for block in section.blocks %}
     {% case block.type %}
+      {%- when 'spacer' -%}
+        <div class="space-container-{{ block.id }}">
+              <p></p>
+         </div>
       {% when "images" %}
         <div class="block-container-wrapper-{{ block.id }} {% if block.settings.show_col_gap %}space-2-col-{{ block.id }} {% endif %}">
             <div class="{% if block.settings.show_left_caption %} full-left-section-{{ block.id }}{% endif %}">
@@ -116,6 +124,23 @@
 
     ],
     "blocks": [
+      {
+        "name": "spacer",
+        "type": "spacer",
+        "settings": [
+            {
+                "type": "range",
+                "id": "spacer-height",
+                "min": 10,
+                "max": 200,
+                "step": 5,
+                "unit": "px",
+                "label": "Space height",
+                "default": 50
+
+            }
+        ]
+      },
       {
         "name": "Double Column Image",
         "type": "images",
