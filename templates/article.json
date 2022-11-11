@@ -561,6 +561,29 @@
             "text_color": "#ffffff",
             "button_label_color": "#ffffff"
           }
+        },
+        "6de2153f-fb30-4b18-a613-f2f2654c6b8d": {
+          "type": "images_with_text_2",
+          "settings": {
+            "full-block-width": 1000,
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left-section-width": 500,
+            "heading": "Whitening Shirt",
+            "heading_size": "h1",
+            "heading-custom-size": 26,
+            "text": "<p>Whiting Overshirt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut um varius vel ut ligula. Sed id felis ex. Aenean tristra, dui ornare iaculis <br\/><br\/>consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumconsectetur porta libero.<\/p>",
+            "text-custom-size": 16,
+            "button_label": "Button label",
+            "button_link": "",
+            "show_btn": false,
+            "show_content_center": true,
+            "row_reverse": false,
+            "text_section_background_color": "#a09e9e",
+            "button_background_color": "#ffffff",
+            "head_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_label_color": "#000000"
+          }
         }
       },
       "block_order": [
@@ -570,7 +593,8 @@
         "6365d055-8f4b-41da-b6c5-2b780ec84889",
         "9bceec6c-e149-47e0-a5be-bef250d01d27",
         "16f43c53-3755-4464-a09e-91802b0ea874",
-        "05dc722c-cf18-473b-8c27-ec4ee8c3c88c"
+        "05dc722c-cf18-473b-8c27-ec4ee8c3c88c",
+        "6de2153f-fb30-4b18-a613-f2f2654c6b8d"
       ],
       "settings": {
       }
