@@ -584,6 +584,64 @@
             "text_color": "#ffffff",
             "button_label_color": "#000000"
           }
+        },
+        "d0ea7250-fe4e-4a9e-8b2a-3ed827592c07": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 75
+          }
+        },
+        "50848553-1253-4ba5-ae8b-f0f62d8a71cd": {
+          "type": "images_with_text_2",
+          "settings": {
+            "full-block-width": 1200,
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+            "left-section-width": 675,
+            "heading": "",
+            "heading_size": "h1",
+            "heading-custom-size": 32,
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consdiam a, tempus risus. Morbi at lectus <br\/><br\/>elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-custom-size": 16,
+            "button_label": "Button label",
+            "button_link": "",
+            "show_btn": false,
+            "show_content_center": false,
+            "row_reverse": false,
+            "text_section_background_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "head_color": "#ffffff",
+            "text_color": "#121212",
+            "button_label_color": "#000000"
+          }
+        },
+        "8a9caa54-f7d9-4fcc-afc8-c5e56f12e547": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "35d6d147-9171-45d6-8760-c0f23eb96a29": {
+          "type": "images_with_text_2",
+          "settings": {
+            "full-block-width": 1200,
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+            "left-section-width": 800,
+            "heading": "",
+            "heading_size": "h1",
+            "heading-custom-size": 32,
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsa<br\/><br\/>n eu est in dignissim. Aenean ligula felis, rutrum in augue quius elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis <br\/>consequat nunc tincidunt et. Sed eleifend arcu vel porta curum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-custom-size": 18,
+            "button_label": "Button label",
+            "button_link": "",
+            "show_btn": false,
+            "show_content_center": false,
+            "row_reverse": true,
+            "text_section_background_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "head_color": "#ffffff",
+            "text_color": "#121212",
+            "button_label_color": "#000000"
+          }
         }
       },
       "block_order": [
@@ -594,7 +652,11 @@
         "9bceec6c-e149-47e0-a5be-bef250d01d27",
         "16f43c53-3755-4464-a09e-91802b0ea874",
         "05dc722c-cf18-473b-8c27-ec4ee8c3c88c",
-        "6de2153f-fb30-4b18-a613-f2f2654c6b8d"
+        "6de2153f-fb30-4b18-a613-f2f2654c6b8d",
+        "d0ea7250-fe4e-4a9e-8b2a-3ed827592c07",
+        "50848553-1253-4ba5-ae8b-f0f62d8a71cd",
+        "8a9caa54-f7d9-4fcc-afc8-c5e56f12e547",
+        "35d6d147-9171-45d6-8760-c0f23eb96a29"
       ],
       "settings": {
       }
