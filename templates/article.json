@@ -724,7 +724,7 @@
         "73bb1f55-e1f6-4a9a-b433-a075f23e4b68": {
           "type": "youtube-spotify-block",
           "settings": {
-            "embedded-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/LOxuL4TOPFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "embedded-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/1yBwWLunlOM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
             "block-width": "custom",
             "custom-block-width": 1600
           }
