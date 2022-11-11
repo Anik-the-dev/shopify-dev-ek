@@ -49,7 +49,8 @@
           "type": "heading",
           "settings": {
             "heading": "<p><strong>Journal Title, It’s A Pretty Long One Too.<\/strong><\/p>",
-            "heading_size": "hxl"
+            "heading_size": "h0",
+            "heading-block-width": 600
           }
         },
         "4a02e598-c9be-4824-96a2-f95a79fa7a09": {
@@ -70,8 +71,8 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
-            "text_font_size": 32,
-            "text-block-width": 800,
+            "text_font_size": 24,
+            "text-block-width": 600,
             "text-block-line-height": 1.2,
             "text_border": "border-none",
             "content_alignment_text": "left"
@@ -87,8 +88,8 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. <br\/><br\/>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
-            "text_font_size": 20,
-            "text-block-width": 800,
+            "text_font_size": 16,
+            "text-block-width": 600,
             "text-block-line-height": 1.2,
             "text_border": "border-none",
             "content_alignment_text": "left"
@@ -144,7 +145,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
-            "Single_Image_Width": 800,
+            "Single_Image_Width": 600,
             "caption-image": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
             "image_height": "auto"
           }
@@ -179,6 +180,12 @@
     "f12d7c6a-1c71-40e9-a6ff-e098e358ee30": {
       "type": "grid-two-col-image-style2",
       "blocks": {
+        "d1942b89-115f-424f-b43f-1ce2f2221ea1": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
         "b078d45b-901a-461e-b671-586a78a046c0": {
           "type": "images",
           "settings": {
@@ -194,6 +201,12 @@
             "caption-image-two": "",
             "right_image_small": false,
             "show_right_caption": false
+          }
+        },
+        "906c1d48-b970-4c4d-ba48-0f07972fbd86": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
           }
         },
         "dd8e62dc-015a-42b2-ac18-15fa2214ff4b": {
@@ -213,6 +226,12 @@
             "show_right_caption": false
           }
         },
+        "eb372835-97a7-49df-b87a-0ee36128a578": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
         "ce0bda6d-7c98-4395-ae89-232cb92ef1c8": {
           "type": "images",
           "settings": {
@@ -228,6 +247,12 @@
             "caption-image-two": "Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black",
             "right_image_small": false,
             "show_right_caption": true
+          }
+        },
+        "23c4fdc3-3176-4c50-a7bc-5c6f304cee40": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
           }
         },
         "482128c8-6456-4c9f-9c2f-43267be6ae5b": {
@@ -249,9 +274,13 @@
         }
       },
       "block_order": [
+        "d1942b89-115f-424f-b43f-1ce2f2221ea1",
         "b078d45b-901a-461e-b671-586a78a046c0",
+        "906c1d48-b970-4c4d-ba48-0f07972fbd86",
         "dd8e62dc-015a-42b2-ac18-15fa2214ff4b",
+        "eb372835-97a7-49df-b87a-0ee36128a578",
         "ce0bda6d-7c98-4395-ae89-232cb92ef1c8",
+        "23c4fdc3-3176-4c50-a7bc-5c6f304cee40",
         "482128c8-6456-4c9f-9c2f-43267be6ae5b"
       ],
       "settings": {
@@ -318,7 +347,7 @@
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
             "text_font_size": 24,
-            "text-block-width": 1150,
+            "text-block-width": 1100,
             "text-block-line-height": 1.2,
             "text_border": "border-none",
             "content_alignment_text": "left"
