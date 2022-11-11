@@ -449,60 +449,130 @@
         "parent-image-section-width": 1000
       }
     },
-    "6853a802-1dd4-49cf-b87d-ca0619646225": {
-      "type": "image-with-text",
+    "550e7be8-893c-44ea-90ce-f8fa1f6817b0": {
+      "type": "image-with-text-style2",
       "blocks": {
-        "template--15909486461122__6853a802-1dd4-49cf-b87d-ca0619646225-1668094987e51f5d88-1": {
-          "type": "text",
+        "d8f6ef55-118b-4c1e-b238-51932a4f6ac1": {
+          "type": "spacer",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
-            "text_style": "body"
+            "spacer-height": 50
+          }
+        },
+        "06751d13-8b39-429c-ab50-db78d2fdd8fa": {
+          "type": "images_with_text_2",
+          "settings": {
+            "full-block-width": 1000,
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left-section-width": 500,
+            "heading": "",
+            "heading_size": "h1",
+            "heading-custom-size": 32,
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenealibero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-custom-size": 16,
+            "button_label": "Button label",
+            "button_link": "",
+            "show_btn": false,
+            "show_content_center": false,
+            "row_reverse": false,
+            "text_section_background_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "head_color": "#121212",
+            "text_color": "#121212",
+            "button_label_color": "#ffffff"
+          }
+        },
+        "3defc901-12a3-47d4-84d2-5f8c80208de1": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "6365d055-8f4b-41da-b6c5-2b780ec84889": {
+          "type": "images_with_text_2",
+          "settings": {
+            "full-block-width": 1000,
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left-section-width": 500,
+            "heading": "",
+            "heading_size": "h1",
+            "heading-custom-size": 32,
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis conseq ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-custom-size": 16,
+            "button_label": "Button label",
+            "button_link": "",
+            "show_btn": false,
+            "show_content_center": false,
+            "row_reverse": true,
+            "text_section_background_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "head_color": "#ffffff",
+            "text_color": "#121212",
+            "button_label_color": "#000000"
+          }
+        },
+        "9bceec6c-e149-47e0-a5be-bef250d01d27": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "16f43c53-3755-4464-a09e-91802b0ea874": {
+          "type": "images_with_text_2",
+          "settings": {
+            "full-block-width": 1000,
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left-section-width": 500,
+            "heading": "Whiting Overshirt",
+            "heading_size": "h1",
+            "heading-custom-size": 26,
+            "text": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor <br\/><br\/>non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "text-custom-size": 16,
+            "button_label": "Button label",
+            "button_link": "",
+            "show_btn": false,
+            "show_content_center": true,
+            "row_reverse": false,
+            "text_section_background_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "head_color": "#121212",
+            "text_color": "#121212",
+            "button_label_color": "#000000"
+          }
+        },
+        "05dc722c-cf18-473b-8c27-ec4ee8c3c88c": {
+          "type": "images_with_text_2",
+          "settings": {
+            "full-block-width": 1000,
+            "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "left-section-width": 500,
+            "heading": "Whiting Overshirt",
+            "heading_size": "h1",
+            "heading-custom-size": 26,
+            "text": "<p>Whiting Overshirt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae <br\/><br\/>ca, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "text-custom-size": 16,
+            "button_label": "Shop The Look",
+            "button_link": "",
+            "show_btn": true,
+            "show_content_center": true,
+            "row_reverse": true,
+            "text_section_background_color": "#6f6a6a",
+            "button_background_color": "#474545",
+            "head_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_label_color": "#ffffff"
           }
         }
       },
       "block_order": [
-        "template--15909486461122__6853a802-1dd4-49cf-b87d-ca0619646225-1668094987e51f5d88-1"
+        "d8f6ef55-118b-4c1e-b238-51932a4f6ac1",
+        "06751d13-8b39-429c-ab50-db78d2fdd8fa",
+        "3defc901-12a3-47d4-84d2-5f8c80208de1",
+        "6365d055-8f4b-41da-b6c5-2b780ec84889",
+        "9bceec6c-e149-47e0-a5be-bef250d01d27",
+        "16f43c53-3755-4464-a09e-91802b0ea874",
+        "05dc722c-cf18-473b-8c27-ec4ee8c3c88c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "fe79c004-4c8e-43ec-8e9c-3e7f9f562112": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--15909486461122__fe79c004-4c8e-43ec-8e9c-3e7f9f562112-1668094987e51f5d88-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--15909486461122__fe79c004-4c8e-43ec-8e9c-3e7f9f562112-1668094987e51f5d88-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "806ed383-bb59-4980-ae42-d562060f3692": {
@@ -569,8 +639,7 @@
     "45590a7c-ba06-41d4-9fa5-f3e45d9843bc",
     "b680e436-b381-40db-8688-6e4c41f76bcc",
     "c2075d96-1448-4088-addf-bdb9e0a8c76b",
-    "6853a802-1dd4-49cf-b87d-ca0619646225",
-    "fe79c004-4c8e-43ec-8e9c-3e7f9f562112",
+    "550e7be8-893c-44ea-90ce-f8fa1f6817b0",
     "806ed383-bb59-4980-ae42-d562060f3692"
   ]
 }
