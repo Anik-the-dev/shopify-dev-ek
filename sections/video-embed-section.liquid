@@ -1,0 +1,126 @@
+<section class="video-embed-{{ section.id }}">
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when "youtube-spotify-block" %}
+                <div class="block-{{ block.id }} block-width-{{ block.settings.block-width }}">
+                        {{ block.settings.embedded-code }}
+                </div>
+                {% when 'spacer' %}
+                    <div class="space-container-{{ block.id }}">
+                        <p></p>
+                   </div>
+        {% endcase %}
+    {% endfor %}
+</section>
+<style>
+    {% for block in section.blocks %}
+                .block-{{ block.id }}.block-width-small {
+                    max-width: 600px !important;
+                    margin: 0 auto;
+                 }
+                 .block-{{ block.id }}.block-width-medium {
+                    max-width: 900px !important;
+                    margin: 0 auto;
+                 }
+                 .block-{{ block.id }}.block-width-full {
+                    max-width: 100% !important;
+                 }
+                 .block-{{ block.id }}.block-width-custom {
+                    max-width: {{ block.settings.custom-block-width | append: "px" }} !important;
+                    margin: 0 auto;
+                 }
+                 .block-{{ block.id }} {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                 }
+                 .block-{{ block.id }} iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                 }
+
+                 .space-container-{{ block.id }}{
+                    height: {{ block.settings.spacer-height }}px;
+                }                 
+     {% endfor %}
+</style>
+{% schema %}
+{
+    "name": "Video Embed Section",
+    "settings": [
+    ],
+    "blocks": [
+        {
+            "type": "youtube-spotify-block",
+            "name": "Video Section",
+            "settings": [
+                {
+           "type":"text",
+           "id":"embedded-code",
+           "label":"embedded-code"
+        },
+        {
+                "type": "select",
+                "id": "block-width",
+                "label": "Full Block Width",
+                "options": [
+                {
+                "value": "small",
+                "label": "Small"
+                },
+                {
+                "value": "medium",
+                "label": "Medium"
+                },
+                {
+                "value": "full",
+                "label": "Full"
+                },
+                {
+                "value": "custom",
+                "label": "Custom"
+                }
+            ],
+            "default": "medium"
+            },
+            {  
+                "type": "range",
+                "id": "custom-block-width",
+                "label": "Custom block width",
+                "min": 200,
+                "max": 1600,
+                "step": 50,
+                "unit": "px",
+                "default": 800
+            }
+            ]
+        },
+        {
+                "name": "spacer",
+                "type": "spacer",
+                "settings": [
+                    {
+                        "type": "range",
+                        "id": "spacer-height",
+                        "min": 10,
+                        "max": 200,
+                        "step": 5,
+                        "unit": "px",
+                        "label": "Space height",
+                        "default": 50
+
+                    }
+                ]
+            } 
+    ],
+    "presets": [
+        {
+         "category":"content",
+           "name":"Video Embed Section"
+        }
+    ]
+}
+{% endschema %}
