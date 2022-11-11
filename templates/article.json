@@ -1,5 +1,47 @@
 {
   "sections": {
+    "bfc75dc7-f726-4f29-a4a6-7640023b4aa7": {
+      "type": "wax-navigation-bar",
+      "blocks": {
+        "719e758b-64c6-48fd-ad63-6f54f29bd20d": {
+          "type": "links",
+          "settings": {
+            "link-url": "",
+            "link-name": "Latest"
+          }
+        },
+        "e27fbf96-d8e6-4cc2-83ac-6612e511fea6": {
+          "type": "links",
+          "settings": {
+            "link-url": "",
+            "link-name": "Wax Meets"
+          }
+        },
+        "92cca900-f654-4271-8125-994acafc0692": {
+          "type": "links",
+          "settings": {
+            "link-url": "",
+            "link-name": "Integrity At Wax"
+          }
+        },
+        "b9e1a67e-efd4-445a-810f-f72b8fb02b34": {
+          "type": "links",
+          "settings": {
+            "link-url": "",
+            "link-name": "Wax Radio"
+          }
+        }
+      },
+      "block_order": [
+        "719e758b-64c6-48fd-ad63-6f54f29bd20d",
+        "e27fbf96-d8e6-4cc2-83ac-6612e511fea6",
+        "92cca900-f654-4271-8125-994acafc0692",
+        "b9e1a67e-efd4-445a-810f-f72b8fb02b34"
+      ],
+      "settings": {
+        "title": "Journal"
+      }
+    },
     "template": {
       "type": "template-article",
       "blocks": {
@@ -142,13 +184,13 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 400,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "",
             "show_left_caption": false,
             "left_image_small": false,
             "show_col_gap": false,
             "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "background_color_image_two": "#eee",
+            "background_color_image_two": "#eeeeee",
             "caption-image-two": "",
             "right_image_small": false,
             "show_right_caption": false
@@ -159,13 +201,13 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 400,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "",
             "show_left_caption": false,
             "left_image_small": false,
             "show_col_gap": false,
             "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "background_color_image_two": "#eee",
+            "background_color_image_two": "#eeeeee",
             "caption-image-two": "",
             "right_image_small": true,
             "show_right_caption": false
@@ -176,7 +218,7 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 400,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black",
             "show_left_caption": true,
             "left_image_small": true,
@@ -193,7 +235,7 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 400,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "",
             "show_left_caption": false,
             "left_image_small": false,
@@ -230,13 +272,13 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 500,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "",
             "show_left_caption": false,
             "left_image_small": false,
             "show_col_gap": false,
             "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "background_color_image_two": "#eee",
+            "background_color_image_two": "#eeeeee",
             "caption-image-two": "",
             "right_image_small": false,
             "show_right_caption": false
@@ -247,13 +289,13 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 500,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "",
             "show_left_caption": false,
             "left_image_small": false,
             "show_col_gap": true,
             "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "background_color_image_two": "#eee",
+            "background_color_image_two": "#eeeeee",
             "caption-image-two": "",
             "right_image_small": false,
             "show_right_caption": false
@@ -303,13 +345,13 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 500,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "",
             "show_left_caption": false,
             "left_image_small": false,
             "show_col_gap": false,
             "image_picker_2": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "background_color_image_two": "#eee",
+            "background_color_image_two": "#eeeeee",
             "caption-image-two": "",
             "right_image_small": true,
             "show_right_caption": false
@@ -358,7 +400,7 @@
           "settings": {
             "image_picker_1": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "image-one-width": 500,
-            "background_color_image_one": "#eee",
+            "background_color_image_one": "#eeeeee",
             "caption-image-one": "Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black",
             "show_left_caption": true,
             "left_image_small": true,
@@ -487,6 +529,7 @@
     }
   },
   "order": [
+    "bfc75dc7-f726-4f29-a4a6-7640023b4aa7",
     "template",
     "f373b8e0-5943-4b6d-8125-1fcebd1d6846",
     "a115ff63-b0a7-4fc6-841b-6d2b2915f0f2",
