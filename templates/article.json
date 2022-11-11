@@ -725,8 +725,8 @@
           "type": "youtube-spotify-block",
           "settings": {
             "embedded-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/LOxuL4TOPFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
-            "block-width": "full",
-            "custom-block-width": 800
+            "block-width": "custom",
+            "custom-block-width": 1200
           }
         }
       },
