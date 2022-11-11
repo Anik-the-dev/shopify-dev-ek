@@ -711,6 +711,31 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "ef0af472-46a5-4548-8127-3d729f081ee2": {
+      "type": "video-embed-section",
+      "blocks": {
+        "38afda58-eee0-474d-9b81-0aaf50c793c1": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "73bb1f55-e1f6-4a9a-b433-a075f23e4b68": {
+          "type": "youtube-spotify-block",
+          "settings": {
+            "embedded-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/LOxuL4TOPFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "block-width": "full",
+            "custom-block-width": 800
+          }
+        }
+      },
+      "block_order": [
+        "38afda58-eee0-474d-9b81-0aaf50c793c1",
+        "73bb1f55-e1f6-4a9a-b433-a075f23e4b68"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -726,6 +751,7 @@
     "b680e436-b381-40db-8688-6e4c41f76bcc",
     "c2075d96-1448-4088-addf-bdb9e0a8c76b",
     "550e7be8-893c-44ea-90ce-f8fa1f6817b0",
-    "806ed383-bb59-4980-ae42-d562060f3692"
+    "806ed383-bb59-4980-ae42-d562060f3692",
+    "ef0af472-46a5-4548-8127-3d729f081ee2"
   ]
 }
