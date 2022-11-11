@@ -54,6 +54,11 @@
       margin: 0 auto;
     }
 
+    .heading-{{ block.id }}-utilities {
+      width: {{ block.settings.heading-block-width }}px;
+      margin: 0 auto;
+    }
+
 
   {% endfor %}
 
@@ -84,7 +89,7 @@
               </div>
 
             {%- when 'heading' -%}
-              <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              <h2 class="rich-text__heading rte {{ block.settings.heading_size }} heading-{{ block.id }}-utilities" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
               </h2>
             {%- when 'caption' -%}
@@ -259,6 +264,17 @@
             ],
             "default": "h1",
             "label": "t:sections.all.heading_size.label"
+          },
+          {
+            "type": "range",
+            "id": "heading-block-width",
+            "min": 300,
+            "max": 1200,
+            "step": 25,
+            "unit": "px",
+            "label": "Heading Section Width",
+            "default": 600
+
           }
         ]
       },
