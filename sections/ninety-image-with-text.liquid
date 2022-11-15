@@ -33,7 +33,22 @@
         font-size:{{ block.settings.heading-size }}px;
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: 400
+        font-weight: 400;
+        line-height: {{ block.settings.heading-line-height }} 
+    }
+    .custom-text-font-size-{{ block.id }} {
+        font-size:{{ block.settings.text-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        line-height: {{ block.settings.text-line-height }} 
+    }
+    .custom-caption-font-size-{{ block.id }} {
+        font-size:{{ block.settings.caption-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        line-height: {{ block.settings.caption-line-height }} 
     }
 
   {% endfor %}
@@ -54,7 +69,7 @@
                 {% when "heading" %}
                     <h2 class="custom-heading-font-size-{{ block.id }}">{{ block.settings.heading }}</h2>
                 {% when "text" %}
-                    <p class="ps-text"> {{ block.settings.text }}</p>
+                    <p class="ps-text custom-text-font-size-{{ block.id }}"> {{ block.settings.text | replace: 'p>', 'span>' }}</p>
                 {%- when 'spacer' -%}
                     <div class="space-container-{{ block.id }}">                           
                     </div>
@@ -176,19 +191,47 @@
         "unit": "px",
         "label": "Heading Size",
         "default": 100
+        },
+        {
+        "type": "range",
+        "id": "heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Heading Line Height",
+        "default": 1.6
         }
       ]
     },
     {
       "type": "caption",
       "name": "Caption",
-      "limit": 1,
+      "limit": 3,
       "settings": [
         {
           "type": "text",
           "id": "caption",
           "default": "Add a tagline",
           "label": "Text"
+        },
+        {
+        "type": "range",
+        "id": "caption-size",
+        "min": 4,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Caption Size",
+        "default": 14
+        },
+        {
+        "type": "range",
+        "id": "caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Caption Line Height",
+        "default": 1.2
         },
         {
           "type": "select",
@@ -218,6 +261,25 @@
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "Content"
+        },
+        {
+        "type": "range",
+        "id": "text-size",
+        "min": 4,
+        "max": 200,
+        "step": 2,
+        "unit": "px",
+        "label": "Text Size",
+        "default": 26
+        },
+        {
+        "type": "range",
+        "id": "text-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Text Line Height",
+        "default": 1.2
         }
       ]
     },
