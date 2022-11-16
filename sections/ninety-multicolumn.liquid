@@ -23,7 +23,7 @@
     /* dynamic css - block */
     {% for block in section.blocks %}
         .item-{{ block.id }} {
-          position: relative
+          position: relative;
         }
         .image-container-el-{{ block.id }}.image-ver-alignment-top{
         }
@@ -190,7 +190,7 @@
 </section>
 {% schema %}
 {
-  "name": "Ninety Multicolumn",
+  "name": "Ninety Three Column",
   "class": "section",
   "tag": "section",
   "settings": [   
@@ -289,6 +289,43 @@
         "default": 400
         },
         {
+          "type": "text",
+          "id": "caption",
+          "label": "Image caption",
+          "info": "Blank will remove the caption from image"
+        },
+        {
+        "type": "range",
+        "id": "caption-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Caption Font Size",
+        "default": 16
+        },
+        {
+        "type": "range",
+        "id": "caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Caption Line Height",
+        "default": 1.2
+        },
+           
+        {
+        "type": "range",
+        "id": "caption-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Caption Bottom Space",
+        "default": 5
+
+        },
+        {
         "type": "select",
         "id": "image-vertical-alignment",
         "label": " Image Vertical Alignment",
@@ -344,43 +381,7 @@
         "default": 15
 
         },
-        {
-          "type": "text",
-          "id": "caption",
-          "label": "Caption",
-          "info": "Blank will remove the caption from image"
-        },
-        {
-        "type": "range",
-        "id": "caption-size",
-        "min": 4,
-        "max": 300,
-        "step": 4,
-        "unit": "px",
-        "label": "Caption Font Size",
-        "default": 16
-        },
-        {
-        "type": "range",
-        "id": "caption-line-height",
-        "min": 0,
-        "max": 5,
-        "step": 0.2,
-        "label": "Caption Line Height",
-        "default": 1.2
-        },
-           
-        {
-        "type": "range",
-        "id": "caption-spacer-height",
-        "min": 0,
-        "max": 300,
-        "step": 5,
-        "unit": "px",
-        "label": "Caption Bottom Space",
-        "default": 5
-
-        },
+      
         {
           "type": "richtext",
           "id": "description",
@@ -422,7 +423,7 @@
   ],
   "presets": [
     {
-      "name": "Ninety Multicolumn",
+      "name": "Ninety Threecolumn",
       "blocks": [
         {
           "type": "column"
