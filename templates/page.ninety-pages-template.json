@@ -146,12 +146,32 @@
         "show-divider": true,
         "divider-height": 250
       }
+    },
+    "90852813-7e9e-4b85-9085-9c6266216894": {
+      "type": "image_banner_wax",
+      "blocks": {
+        "95d41b3b-1e20-4b6b-9d62-ea087a9192c4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blf-gallery-mg-3592-1600-1000-80_1.png",
+            "Single_Image_Width": 1150,
+            "caption-image": "<p>(above) the pacific ocean is home to the wildlife conservation wild aid work towards<\/p>",
+            "image_height": "auto"
+          }
+        }
+      },
+      "block_order": [
+        "95d41b3b-1e20-4b6b-9d62-ea087a9192c4"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "699d4a18-9707-4ddf-9d9b-f37a58051bd6",
     "056d8f6f-e3b8-44f4-9ee5-b240abe5fea8",
-    "b579c213-d6c6-4584-81d7-028cacf54d3c"
+    "b579c213-d6c6-4584-81d7-028cacf54d3c",
+    "90852813-7e9e-4b85-9085-9c6266216894"
   ]
 }
