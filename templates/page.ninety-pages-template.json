@@ -13,12 +13,18 @@
         "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-0": {
           "type": "heading",
           "settings": {
-            "heading": "Headline",
+            "heading": "Profit Sharing",
             "heading-font-family": "",
-            "heading-font-weight": 700,
+            "heading-font-weight": 400,
             "heading-font-color": "",
             "heading-size": 100,
-            "heading-line-height": 1.6
+            "heading-line-height": 1
+          }
+        },
+        "aef1d411-7e7a-4d2b-85f3-1a7bcd926454": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 100
           }
         },
         "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-1": {
@@ -31,15 +37,35 @@
             "text-size": 26,
             "text-line-height": 1.8
           }
+        },
+        "b29faadc-edee-4649-945d-cfbc9e10a274": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 85
+          }
+        },
+        "50094dee-1f60-4430-8c90-70092f8ddfa8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re focused on sustainable practices and materials, creating collections with longevity and circularity at their heart. But what sets us apart is our revolutionary profit sharing model, providing the tools of empowerment for everyone involved in the creation of those collections and giving back to the causes close to our heart.<\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 400,
+            "text-font-color": "#121212",
+            "text-size": 16,
+            "text-line-height": 1.8
+          }
         }
       },
       "block_order": [
         "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-0",
-        "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-1"
+        "aef1d411-7e7a-4d2b-85f3-1a7bcd926454",
+        "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-1",
+        "b29faadc-edee-4649-945d-cfbc9e10a274",
+        "50094dee-1f60-4430-8c90-70092f8ddfa8"
       ],
       "settings": {
         "section-width": "custom",
-        "custom-section-width": 1450,
+        "custom-section-width": 1250,
         "column-gap": 120,
         "image": "shopify:\/\/shop_images\/ps.png",
         "custom-image-width": 475,
