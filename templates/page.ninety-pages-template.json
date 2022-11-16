@@ -6,9 +6,51 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "699d4a18-9707-4ddf-9d9b-f37a58051bd6": {
+      "type": "ninety-image-with-text",
+      "blocks": {
+        "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Headline",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 100,
+            "heading-line-height": 1.6
+          }
+        },
+        "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ninety Percent’s founders created a visionary business model with deep-rooted values in our people and the planet– each year 90% of our distributable profits are shared between charitable causes and the people that make our collections happen.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 400,
+            "text-font-color": "#121212",
+            "text-size": 26,
+            "text-line-height": 1.8
+          }
+        }
+      },
+      "block_order": [
+        "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-0",
+        "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-1"
+      ],
+      "settings": {
+        "section-width": "custom",
+        "custom-section-width": 1450,
+        "column-gap": 120,
+        "image": "shopify:\/\/shop_images\/ps.png",
+        "custom-image-width": 475,
+        "row_reverse": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "699d4a18-9707-4ddf-9d9b-f37a58051bd6"
   ]
 }
