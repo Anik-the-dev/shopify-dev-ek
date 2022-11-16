@@ -142,7 +142,7 @@
       ],
       "settings": {
         "full-text-section-width": 1250,
-        "column-gap": 50,
+        "column-gap": 120,
         "show-divider": true,
         "divider-height": 250
       }
