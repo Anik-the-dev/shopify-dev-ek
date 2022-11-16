@@ -13,11 +13,11 @@
     column-gap: 120px;
   }   
   
-  .image-container-wrapper-el {
-    width: 464px;
+  .section-{{ section.id }} .image-container-wrapper-el {
+    width: {{ section.settings.custom-image-width }}px
   }
   
-  .image-container-wrapper-el img {
+  .section-{{ section.id }} .image-container-wrapper-el img {
     display: block;
     width: 100%;
   }
@@ -78,21 +78,27 @@
         font-size:{{ block.settings.heading-size }}px;
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: 400;
+        font-family: {{ block.settings.heading-font-family }};
+        font-weight: {{ block.settings.heading-font-weight }};
+        color: {{ block.settings.heading-font-color }};
         line-height: {{ block.settings.heading-line-height }} 
     }
     .custom-text-font-size-{{ block.id }} {
         font-size:{{ block.settings.text-size }}px;
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: 400;
+        font-family: {{ block.settings.text-font-family }};
+        font-weight: {{ block.settings.text-font-weight }};
+        color: {{ block.settings.text-font-color }};
         line-height: {{ block.settings.text-line-height }} 
     }
     .custom-caption-font-size-{{ block.id }} {
         font-size:{{ block.settings.caption-size }}px;
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: 600;
+        font-family: {{ block.settings.caption-font-family }};
+        font-weight: {{ block.settings.caption-font-weight }};
+        color: {{ block.settings.caption-font-color }};
         line-height: {{ block.settings.caption-line-height }} 
     }
 
@@ -105,6 +111,8 @@
             <div class="image-container-wrapper-el">
               {% if section.settings.image %}
                   <img class="img" src=" {{ section.settings.image | img_url: 'master' }} " alt="" height="" width="" loading="lazy">   
+              {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {% endif %} 
             </div>         
 
@@ -188,6 +196,16 @@
       "id": "image",
       "label": "Image"
     },
+    {  
+        "type": "range",
+        "id": "custom-image-width",
+        "label": "Custom image width",
+        "min": 50,
+        "max": 1200,
+        "step": 25,
+        "unit": "px",
+        "default": 475
+        },
     {
         "type": "checkbox",
         "id": "row_reverse",
@@ -228,7 +246,30 @@
           "type": "text",
           "id": "heading",
           "default": "Headline",
-          "label": "Headline"
+          "label": "Heading"
+        },
+        {
+        "type": "font",
+        "id": "heading-font-family",
+        "label": "Heading Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Heading Font Weight",
+        "default": 700
+
+        },
+
+        {
+        "type": "color",
+        "id": "heading-font-color",
+        "label": "Heading Font Color" 
+        
         },
         {
         "type": "range",
@@ -263,6 +304,29 @@
           "label": "Text"
         },
         {
+        "type": "font",
+        "id": "caption-font-family",
+        "label": "Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Caption Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "caption-font-color",
+        "label": "Caption Font Color" 
+        
+        },
+        {
         "type": "range",
         "id": "caption-size",
         "min": 4,
@@ -280,22 +344,6 @@
         "step": 0.2,
         "label": "Caption Line Height",
         "default": 1.2
-        },
-        {
-          "type": "select",
-          "id": "text_style",
-          "options": [
-            {
-              "value": "subtitle",
-              "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__1.label"
-            },
-            {
-              "value": "caption-with-letter-spacing",
-              "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__2.label"
-            }
-          ],
-          "default": "caption-with-letter-spacing",
-          "label": "t:sections.image-with-text.blocks.caption.settings.text_style.label"
         }
       ]
     },
@@ -309,6 +357,29 @@
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "Content"
+        },
+        {
+        "type": "font",
+        "id": "text-font-family",
+        "label": "Text Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "text-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Text Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "text-font-color",
+        "label": "Text Font Color" 
+        
         },
         {
         "type": "range",

@@ -45,7 +45,9 @@
             font-size: {{ block.settings.heading-size }}px;
             margin-top: 0;
             margin-bottom: 0;
-            font-weight: 400;
+            font-family: {{ block.settings.heading-font-family }};
+            font-weight: {{ block.settings.heading-font-weight }};
+            color: {{ block.settings.heading-font-color }};
             line-height: {{ block.settings.heading-line-height }} 
 
         }
@@ -53,7 +55,9 @@
             font-size: {{ block.settings.caption-size }}px;
             margin-top: 10px;
             margin-bottom: 10px;
-            font-weight: 400;
+            font-family: {{ block.settings.caption-font-family }};
+            font-weight: {{ block.settings.caption-font-weight }};
+            color: {{ block.settings.caption-font-color }};
             line-height: {{ block.settings.caption-line-height }};
 
         }
@@ -61,7 +65,9 @@
             font-size: {{ block.settings.description-size }}px;
             margin-top: 0;
             margin-bottom: 0;
-            font-weight: 400;
+            font-family: {{ block.settings.text-font-family }};
+            font-weight: {{ block.settings.text-font-weight }};
+            color: {{ block.settings.text-font-color }};
             line-height: {{ block.settings.description-line-height }};
             text-align: justify; 
 
@@ -99,7 +105,7 @@
     /* static css */
     .np-grid-container {
         display: grid;
-        grid-gap: 90px;
+        grid-gap: {{ section.settings.column-gap }}px;
         margin: 5px;
     }
     .np-multicolumn-wrapper{
@@ -115,6 +121,8 @@
         height: auto;
         position: relative;
     }
+
+    
 
 
     /* condition dynamic css */
@@ -227,8 +235,19 @@
         "max": 1900,
         "step": 50,
         "unit": "px",
-        "default": 1200
+        "default": 1400
     },
+    {
+        "type": "range",
+        "id": "column-gap",
+        "min": 0,
+        "max": 300,
+        "step": 10,
+        "unit": "px",
+        "label": "Column Gap",
+        "default": 90
+
+      },
     {
     "type": "select",
     "id": "multicolumn-style",
@@ -246,6 +265,10 @@
     "default": "style1"
     
     }, 
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
         
     {
       "type": "range",
@@ -294,6 +317,30 @@
           "label": "Image caption",
           "info": "Blank will remove the caption from image"
         },
+        {
+        "type": "font",
+        "id": "caption-font-family",
+        "label": "Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Caption Font Weight",
+        "default": 100
+
+        },
+
+        {
+        "type": "color",
+        "id": "caption-font-color",
+        "label": "Caption Font Color" 
+        
+        },
+
         {
         "type": "range",
         "id": "caption-size",
@@ -352,6 +399,27 @@
           "label": "Heading"
         },
         {
+          "type": "font",
+          "id": "heading-font-family",
+          "label": "Heading Font Family"
+        },
+        {
+        "type": "range",
+        "id": "heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Heading Font Weight",
+        "default": 700
+
+        },
+        {
+        "type": "color",
+        "id": "heading-font-color",
+        "label": "Heading Font Color" 
+        
+        },
+        {
         "type": "range",
         "id": "heading-size",
         "min": 4,
@@ -387,6 +455,27 @@
           "id": "description",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "Description"
+        },
+        {
+          "type": "font",
+          "id": "text-font-family",
+          "label": "Text Font Family"
+        },
+        {
+        "type": "range",
+        "id": "text-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Text Font Weight",
+        "default": 300
+
+        },
+        {
+        "type": "color",
+        "id": "text-font-color",
+        "label": "Text Font Color" 
+        
         },
         {
         "type": "range",

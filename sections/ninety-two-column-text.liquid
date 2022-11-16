@@ -1,53 +1,119 @@
 {%- style -%}
-  .tow-col-section-{{ section.id }} {
-    width: {{ section.settings.full-text-section-width }}px
+  /* dynamic css - section */  
+  .two-col-section-{{ section.id }} {
+    width: {{ section.settings.full-text-section-width }}px;
+    margin: 0 auto;
+    height: auto;
+    padding: 25px 0;
+
   }
   .wax-grid-container-2-col-{{ section.id }} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     column-gap: {{ section.settings.column-gap }}px
   }
 
   {% for block in section.blocks %}
-    #wrapper-{{ block.id }}{}
-  {% endfor %}
-  .tow-col-section {
-        margin: 0 auto;
-        height: auto;
-        padding: 15px 0;
+    #wrapper-{{ block.id }} .customized-heading-{{ block.id }} {
+        font-size: {{ block.settings.heading-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.heading-font-family }};
+        font-weight: {{ block.settings.heading-font-weight }};
+        color: {{ block.settings.heading-font-color }};
+        line-height: {{ block.settings.heading-line-height }} 
+
     }
-    .wax-grid-container-2-col {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+    #wrapper-{{ block.id }} .customized-caption-{{ block.id }} {
+        font-size: {{ block.settings.caption-size }}px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: {{ block.settings.caption-font-family }};
+        font-weight: {{ block.settings.caption-font-weight }};
+        color: {{ block.settings.caption-font-color }};
+        line-height: {{ block.settings.caption-line-height }};
+
+    }
+    #wrapper-{{ block.id }} .customized-description-{{ block.id }} {
+        font-size: {{ block.settings.description-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.text-font-family }};
+        font-weight: {{ block.settings.text-font-weight }};
+        color: {{ block.settings.text-font-color }};
+        line-height: {{ block.settings.description-line-height }};
+        text-align: justify; 
+
+    }
+
+    #wrapper-{{ block.id }}  .heading-space-container-{{ block.id }}{
+        height: {{ block.settings.heading-spacer-height }}px;
+        padding: 0px;
+    }
+    #wrapper-{{ block.id }}  .caption-space-container-{{ block.id }}{
+        height: {{ block.settings.caption-spacer-height }}px;
+        padding: 0px;
+    }
+    #wrapper-{{ block.id }}  .description-space-container-{{ block.id }}{
+        height: {{ block.settings.description-spacer-height }}px;
+        padding: 0px;
+    }
+
+  {% endfor %}
+
+    .show-divider-{{ section.id }} {
+        padding: {{ section.settings.divider-height }}px 0;
+        background: linear-gradient(#2B2725, #2B2725) center/0.25px 100% no-repeat;
+        background-position:50% 0;
     }
 {%- endstyle -%}
 
-<div class="tow-col-section-{{ section.id }} tow-col-section">
-  <div class="wax-grid-container-2-col-{{ section.id }} wax-grid-container-2-col">
+<div class="two-col-section-{{ section.id }} {% if section.settings.show-divider %}show-divider-{{ section.id }}{% endif %} ">
+  <div class="wax-grid-container-2-col-{{ section.id }}">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when "left_text" %}
           <div class="left-text" id="wrapper-{{ block.id }}">
-            <p class=" ">
-              {% if block.settings.left_text_section == blank %}
-                Anik ipsum dolor sit amet consectetur adipisicing elit. Corporis corrupti, labore consectetur ad eum consequatur doloribus cum, quod molestias soluta architecto eos pariatur ex. Quibusdam impedit sed totam natus nam.
-              {% else %}
-                {{ block.settings.left_text_section }}
-
+              {% if block.settings.heading %}
+                <h3 class="customized-heading-{{ block.id }}" >{{ block.settings.heading }}</h3>
+              {% endif %} 
+              <div class="heading-space-container-{{ block.id }}">                           
+              </div>
+              {% if block.settings.caption %} 
+              <p class="customized-caption-{{ block.id }}" >{{ block.settings.caption }}</p>
+            {% endif %}
+            <div class="caption-space-container-{{ block.id }}">                           
+            </div>
+              {% if block.settings.description %}
+                <p class="customized-description-{{ block.id }}">{{ block.settings.description | replace: 'p>', 'span>' }}</p>
+              
               {% endif %}
-            </p>
+              <div class="description-space-container-{{ block.id }}">                           
+              </div>
+
 
           </div>
         {% when "right_text" %}
 
           <div class="right-text" id="wrapper-{{ block.id }}">
-            <p class=" ">
-              {% if block.settings.right_text_section == blank %}
-                Anik ipsum dolor sit amet consectetur adipisicing elit. Corporis corrupti, labore consectetur ad eum consequatur doloribus cum, quod molestias soluta architecto eos pariatur ex. Quibusdam impedit sed totam natus nam.
-              {% else %}
-                {{ block.settings.right_text_section }}
+            {% if block.settings.heading %}
+              <h3 class="customized-heading-{{ block.id }}" >{{ block.settings.heading }}</h3>
+            {% endif %} 
+            <div class="heading-space-container-{{ block.id }}">                           
+            </div>
+            {% if block.settings.caption %} 
+            <p class="customized-caption-{{ block.id }}" >{{ block.settings.caption }}</p>
+          {% endif %}
+          <div class="caption-space-container-{{ block.id }}">                           
+          </div>
+            {% if block.settings.description %}
+              <p class="customized-description-{{ block.id }}">{{ block.settings.description | replace: 'p>', 'span>' }}</p>
+            
+            {% endif %}
+            <div class="description-space-container-{{ block.id }}">                           
+            </div>
 
-              {% endif %}
-            </p>
 
           </div>
 
@@ -73,7 +139,7 @@
       "step": 25,
       "unit": "px",
       "label": "Section Width",
-      "default": 1200
+      "default": 1400
 
     }, {
       "type": "range",
@@ -84,6 +150,24 @@
       "unit": "px",
       "label": "Column Gap",
       "default": 50
+
+    },
+    {
+        "type":"checkbox",
+        "id": "show-divider",
+        "label": "Show Divider",
+        "default": true
+
+    },
+    {
+      "type": "range",
+      "id": "divider-height",
+      "min": 25,
+      "max": 800,
+      "step": 25,
+      "unit": "px",
+      "label": "Divider Height",
+      "default": 100
 
     }
   ],
@@ -98,6 +182,29 @@
           "id": "heading",
           "default": "Column",
           "label": "Heading"
+        },
+        {
+        "type": "font",
+        "id": "heading-font-family",
+        "label": "Heading Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Heading Font Weight",
+        "default": 700
+
+        },
+
+        {
+        "type": "color",
+        "id": "heading-font-color",
+        "label": "Heading Font Color" 
+        
         },
         {
         "type": "range",
@@ -136,6 +243,29 @@
           "label": "Caption"
         },
         {
+        "type": "font",
+        "id": "caption-font-family",
+        "label": "Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Caption Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "caption-font-color",
+        "label": "Caption Font Color" 
+        
+        },
+        {
         "type": "range",
         "id": "caption-size",
         "min": 4,
@@ -171,6 +301,29 @@
           "id": "description",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "Description"
+        },
+        {
+        "type": "font",
+        "id": "text-font-family",
+        "label": "Text Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "text-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Text Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "text-font-color",
+        "label": "Text Font Color" 
+        
         },
         {
         "type": "range",
@@ -214,6 +367,29 @@
           "label": "Heading"
         },
         {
+        "type": "font",
+        "id": "heading-font-family",
+        "label": "Heading Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Heading Font Weight",
+        "default": 700
+
+        },
+
+        {
+        "type": "color",
+        "id": "heading-font-color",
+        "label": "Heading Font Color" 
+        
+        },
+        {
         "type": "range",
         "id": "heading-size",
         "min": 4,
@@ -248,6 +424,29 @@
           "id": "caption",
           "default": "Add a caption",
           "label": "Caption"
+        },
+        {
+        "type": "font",
+        "id": "caption-font-family",
+        "label": "Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Caption Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "caption-font-color",
+        "label": "Caption Font Color" 
+        
         },
         {
         "type": "range",
@@ -285,6 +484,29 @@
           "id": "description",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "Description"
+        },
+        {
+        "type": "font",
+        "id": "text-font-family",
+        "label": "Text Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "text-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Text Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "text-font-color",
+        "label": "Text Font Color" 
+        
         },
         {
         "type": "range",
