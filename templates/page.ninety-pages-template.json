@@ -147,6 +147,12 @@
         "divider-height": 250
       }
     },
+    "dde32a3a-8b22-4001-86e8-beeaf7de5bfc": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
     "90852813-7e9e-4b85-9085-9c6266216894": {
       "type": "image_banner_wax",
       "blocks": {
@@ -619,6 +625,7 @@
     "699d4a18-9707-4ddf-9d9b-f37a58051bd6",
     "056d8f6f-e3b8-44f4-9ee5-b240abe5fea8",
     "b579c213-d6c6-4584-81d7-028cacf54d3c",
+    "dde32a3a-8b22-4001-86e8-beeaf7de5bfc",
     "90852813-7e9e-4b85-9085-9c6266216894",
     "781db3fe-a934-449c-8435-4f179bdc22fa",
     "dbfd5346-0501-4b34-b9a8-c79801d81222",
