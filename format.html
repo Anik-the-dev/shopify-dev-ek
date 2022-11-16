@@ -1,5 +1,87 @@
-<div class="image-text-main-container">
-    <div class="image-container">   
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: linear-gradient(#000, #000) center/2px 100% no-repeat;
+        grid-gap: 16px;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .grid-item {
+        height: 20px;
+        background-color: red;
+        position: relative;
+      }
+
+      .grid-container.another {
+        grid-template-columns: 2fr 1fr;
+        background-position: 66.5% 0;
+      }
+      .wrap{
+        padding: 20px 0;
+        background: linear-gradient(#2B2725, #2B2725) center/0.25px
+            100% no-repeat,
+          linear-gradient(#2B2725, #2B2725) center/0.25px 100%
+            no-repeat;
+        background-position: 33% 0, 67% 0;
+      }
+
+      .grid-container.column-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: center;
+        justify-content: center;
+      }
+      .hr {
+        border-bottom: 5px;
+      }
+      .grid-container.column-3 > .grid-item:nth-child(6n-5)::after {
+        content: " ";
+        position: absolute;
+        top: 135% ;
+        left: 0;
+        border-bottom: 0.25px solid #b8afab;
+        width: calc(100vw - 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
     </div>
-    <div class="text-container"></div>
-</div>
+
+    <div class="grid-container another">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+    <div class="wrap">
+        <div class="grid-container column-3">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+          </div>
+    </div>
+
+
+  </body>
+</html>

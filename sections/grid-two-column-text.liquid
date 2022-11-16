@@ -9,6 +9,16 @@
   {% for block in section.blocks %}
     #wrapper-{{ block.id }}{}
   {% endfor %}
+  .tow-col-section {
+        margin: 0 auto;
+        height: auto;
+        padding: 15px 0;
+    }
+    .wax-grid-container-2-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
 {%- endstyle -%}
 
 <div class="tow-col-section-{{ section.id }} tow-col-section">

@@ -1,0 +1,340 @@
+{%- style -%}
+  .tow-col-section-{{ section.id }} {
+    width: {{ section.settings.full-text-section-width }}px
+  }
+  .wax-grid-container-2-col-{{ section.id }} {
+    column-gap: {{ section.settings.column-gap }}px
+  }
+
+  {% for block in section.blocks %}
+    #wrapper-{{ block.id }}{}
+  {% endfor %}
+  .tow-col-section {
+        margin: 0 auto;
+        height: auto;
+        padding: 15px 0;
+    }
+    .wax-grid-container-2-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+{%- endstyle -%}
+
+<div class="tow-col-section-{{ section.id }} tow-col-section">
+  <div class="wax-grid-container-2-col-{{ section.id }} wax-grid-container-2-col">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when "left_text" %}
+          <div class="left-text" id="wrapper-{{ block.id }}">
+            <p class=" ">
+              {% if block.settings.left_text_section == blank %}
+                Anik ipsum dolor sit amet consectetur adipisicing elit. Corporis corrupti, labore consectetur ad eum consequatur doloribus cum, quod molestias soluta architecto eos pariatur ex. Quibusdam impedit sed totam natus nam.
+              {% else %}
+                {{ block.settings.left_text_section }}
+
+              {% endif %}
+            </p>
+
+          </div>
+        {% when "right_text" %}
+
+          <div class="right-text" id="wrapper-{{ block.id }}">
+            <p class=" ">
+              {% if block.settings.right_text_section == blank %}
+                Anik ipsum dolor sit amet consectetur adipisicing elit. Corporis corrupti, labore consectetur ad eum consequatur doloribus cum, quod molestias soluta architecto eos pariatur ex. Quibusdam impedit sed totam natus nam.
+              {% else %}
+                {{ block.settings.right_text_section }}
+
+              {% endif %}
+            </p>
+
+          </div>
+
+
+
+      {% endcase %}
+
+    {% endfor %}
+
+  </div>
+
+
+
+{% schema %}
+{
+  "name": "Ninety Two Column Text",
+  "settings": [
+    {
+      "type": "range",
+      "id": "full-text-section-width",
+      "min": 300,
+      "max": 1800,
+      "step": 25,
+      "unit": "px",
+      "label": "Section Width",
+      "default": 1200
+
+    }, {
+      "type": "range",
+      "id": "column-gap",
+      "min": 0,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Column Gap",
+      "default": 50
+
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "left_text",
+      "name": "Left Text Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Column",
+          "label": "Heading"
+        },
+        {
+        "type": "range",
+        "id": "heading-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Heading Font Size",
+        "default": 28
+        },
+        {
+        "type": "range",
+        "id": "heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Heading Line Height",
+        "default": 1.2
+        },
+        {
+        "type": "range",
+        "id": "heading-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Heading Bottom Space",
+        "default": 15
+
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "Add a caption",
+          "label": "Caption"
+        },
+        {
+        "type": "range",
+        "id": "caption-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Caption Font Size",
+        "default": 16
+        },
+        {
+        "type": "range",
+        "id": "caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Caption Line Height",
+        "default": 1.2
+        },
+           
+        {
+        "type": "range",
+        "id": "caption-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Caption Bottom Space",
+        "default": 5
+
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "Description"
+        },
+        {
+        "type": "range",
+        "id": "description-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Text Font Size",
+        "default": 16
+        },
+        {
+        "type": "range",
+        "id": "description-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Description Line Height",
+        "default": 1.2
+        },
+        {
+        "type": "range",
+        "id": "description-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Description Bottom Space",
+        "default": 0
+
+        }
+      ]
+    }, {
+      "type": "right_text",
+      "name": "Right Text Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Column",
+          "label": "Heading"
+        },
+        {
+        "type": "range",
+        "id": "heading-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Heading Font Size",
+        "default": 28
+        },
+        {
+        "type": "range",
+        "id": "heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Heading Line Height",
+        "default": 1.2
+        },
+        {
+        "type": "range",
+        "id": "heading-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Heading Bottom Space",
+        "default": 15
+
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "Add a caption",
+          "label": "Caption"
+        },
+        {
+        "type": "range",
+        "id": "caption-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Caption Font Size",
+        "default": 16
+        },
+        {
+        "type": "range",
+        "id": "caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Caption Line Height",
+        "default": 1.2
+        },
+           
+        {
+        "type": "range",
+        "id": "caption-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Caption Bottom Space",
+        "default": 5
+
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "Description"
+        },
+        {
+        "type": "range",
+        "id": "description-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Text Font Size",
+        "default": 16
+        },
+        {
+        "type": "range",
+        "id": "description-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Description Line Height",
+        "default": 1.2
+        },
+        {
+        "type": "range",
+        "id": "description-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Description Bottom Space",
+        "default": 0
+
+        }
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "content",
+      "name": "Ninety Two Column Text",
+
+      "blocks": [
+        {
+          "type": "left_text"
+        }, {
+          "type": "right_text"
+        }
+      ]
+    }
+
+  ]
+
+}
+{% endschema %}

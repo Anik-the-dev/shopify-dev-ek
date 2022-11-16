@@ -1,5 +1,9 @@
 {{ 'component-ninety-image-with-text.css' | asset_url | stylesheet_tag }}
 {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    }
     .section-{{ section.id }}.section-width-small {
         max-width: 600px;
         margin: 0 auto;
@@ -10,7 +14,7 @@
     }
     .section-{{ section.id }}.section-width-full {
         max-width: 100%;
-        margin: 0 auto;
+        margin: 10px auto;
     }
     .section-{{ section.id }}.section-width-custom {
         max-width: {{ section.settings.custom-section-width | append: "px" }};
@@ -54,7 +58,7 @@
   {% endfor %}
 {%- endstyle -%}
 
-<section class="section-{{ section.id }} section-width-{{ section.settings.section-width }} ">
+<section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">
     <div class="flex-two-col-el col-gap-el-{{ section.id }} {% if section.settings.row_reverse %}row-reverse-{{ section.id }}{% endif %}">
         <div class="image-container-el">
           <div class="image-container-wrapper-el">
@@ -111,7 +115,7 @@
             "label": "Custom"
             }
         ],
-        "default": "medium",
+        "default": "custom",
         "info":"Choose custom for changing custom width"
     },
     {  
@@ -122,7 +126,7 @@
         "max": 1900,
         "step": 50,
         "unit": "px",
-        "default": 800
+        "default": 1200
     },
     {
         "type": "range",
