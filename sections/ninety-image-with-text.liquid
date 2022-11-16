@@ -1,5 +1,46 @@
-{{ 'component-ninety-image-with-text.css' | asset_url | stylesheet_tag }}
 {%- style -%}
+    /* static */
+    .profit-sharing-el {
+    width: 1200px;
+    margin: 80px auto;
+  }
+  .flex-two-col-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-gap-el {
+    column-gap: 120px;
+  }   
+  
+  .image-container-wrapper-el {
+    width: 464px;
+  }
+  
+  .image-container-wrapper-el img {
+    display: block;
+    width: 100%;
+  }
+  
+  .test-container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 150px;
+    position: relative;
+    background-color: antiquewhite;
+  }
+  .test-container img{
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+  }
+  
+  /* dynamic */
     .section-{{ section.id }}-padding {
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -61,9 +102,12 @@
 <section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">
     <div class="flex-two-col-el col-gap-el-{{ section.id }} {% if section.settings.row_reverse %}row-reverse-{{ section.id }}{% endif %}">
         <div class="image-container-el">
-          <div class="image-container-wrapper-el">
-            <img class="img" src=" {{ section.settings.image | img_url: 'master' }} " alt="" height="" width="" loading="lazy">   
-          </div>
+            <div class="image-container-wrapper-el">
+              {% if section.settings.image %}
+                  <img class="img" src=" {{ section.settings.image | img_url: 'master' }} " alt="" height="" width="" loading="lazy">   
+                {% endif %} 
+            </div>         
+
         </div>
   
         <div class="text-container-el">
