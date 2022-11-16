@@ -380,29 +380,55 @@
         "template--15921824104642__765f3ea4-7f6d-41d2-8b02-0c765073756c-166860179037ec9849-0": {
           "type": "heading",
           "settings": {
-            "heading": "Headline",
+            "heading": "Our People",
             "heading-font-family": "",
-            "heading-font-weight": 700,
+            "heading-font-weight": 400,
             "heading-font-color": "",
-            "heading-size": 100,
+            "heading-size": 72,
             "heading-line-height": 1.6
+          }
+        },
+        "c78ebf05-f7bb-4790-b9ff-92c093b95a69": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
           }
         },
         "template--15921824104642__765f3ea4-7f6d-41d2-8b02-0c765073756c-166860179037ec9849-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>We’re a community. From our headquarters to our factories, there is a connection between all of the people behind our collections – everyone receives a share of the company’s profits. 10% of our profits are reinvested into our people. <\/p>",
             "text-font-family": "",
             "text-font-weight": 300,
             "text-font-color": "",
             "text-size": 26,
-            "text-line-height": 1.2
+            "text-line-height": 2
+          }
+        },
+        "b8c9582c-9fd7-4e0e-bd71-a78cefb49b3f": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "5f1abde8-a2f0-44ff-9cf3-dd57d0fc1b90": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We know and respect our suppliers, factories and each garment maker in the production chain. People make our collections happen, so they reap the rewards. This is how business should be done.<\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "text-size": 16,
+            "text-line-height": 1.6
           }
         }
       },
       "block_order": [
         "template--15921824104642__765f3ea4-7f6d-41d2-8b02-0c765073756c-166860179037ec9849-0",
-        "template--15921824104642__765f3ea4-7f6d-41d2-8b02-0c765073756c-166860179037ec9849-1"
+        "c78ebf05-f7bb-4790-b9ff-92c093b95a69",
+        "template--15921824104642__765f3ea4-7f6d-41d2-8b02-0c765073756c-166860179037ec9849-1",
+        "b8c9582c-9fd7-4e0e-bd71-a78cefb49b3f",
+        "5f1abde8-a2f0-44ff-9cf3-dd57d0fc1b90"
       ],
       "settings": {
         "section-width": "custom",
