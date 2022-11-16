@@ -545,6 +545,73 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "571efd0a-1fd5-4efa-8797-582ae0bbb306": {
+      "type": "ninety-two-column-text",
+      "blocks": {
+        "template--15921824104642__571efd0a-1fd5-4efa-8797-582ae0bbb306-1668601790ce0a3e29-0": {
+          "type": "left_text",
+          "settings": {
+            "heading": "",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "caption": "",
+            "caption-font-family": "",
+            "caption-font-weight": 300,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "description": "",
+            "text-font-family": "",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        },
+        "template--15921824104642__571efd0a-1fd5-4efa-8797-582ae0bbb306-1668601790ce0a3e29-1": {
+          "type": "right_text",
+          "settings": {
+            "heading": "Column",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "caption": "Add a caption",
+            "caption-font-family": "",
+            "caption-font-weight": 300,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--15921824104642__571efd0a-1fd5-4efa-8797-582ae0bbb306-1668601790ce0a3e29-0",
+        "template--15921824104642__571efd0a-1fd5-4efa-8797-582ae0bbb306-1668601790ce0a3e29-1"
+      ],
+      "settings": {
+        "full-text-section-width": 1400,
+        "column-gap": 50,
+        "show-divider": true,
+        "divider-height": 100
+      }
     }
   },
   "order": [
@@ -556,6 +623,7 @@
     "781db3fe-a934-449c-8435-4f179bdc22fa",
     "dbfd5346-0501-4b34-b9a8-c79801d81222",
     "765f3ea4-7f6d-41d2-8b02-0c765073756c",
-    "ac748ad0-aa91-4d4e-adff-d9020a1142d8"
+    "ac748ad0-aa91-4d4e-adff-d9020a1142d8",
+    "571efd0a-1fd5-4efa-8797-582ae0bbb306"
   ]
 }
