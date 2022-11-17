@@ -252,7 +252,7 @@
             "description": "<p>While most wildlife conservation groups focus on scientific studies and anti-poaching efforts, Wild Aid work to reduce global consumption of wildlife products and to increase local support for conservation efforts. They collaborate with government and NGO partners to secure marine protected areas, such as the Galapagos Islands in Ecuador and Palau’s Northern Reefs, from threats such as illegal fishing.<\/p>",
             "text-font-family": "",
             "text-font-weight": 300,
-            "text-font-color": "#121212",
+            "text-font-color": "#000000",
             "description-size": 12,
             "description-line-height": 1.8,
             "description-spacer-height": 0
@@ -286,7 +286,7 @@
             "description": "<p>Since 2010, Big Life has worked on the ground in East Africa partnering with local communities to protect nature. Employing hundreds of Maasai rangers, they protect two million acres of wilderness in the Amboseli-Tsavo-Kilimanjaro ecosystem. Seeking to safeguard and sustain wildlife and wildlands, including one of the greatest populations of elephants left in the region. It is the first organisation with coordinated anti-poaching teams operating on both sides of the Kenya-Tanzania border.<br\/><br\/><br\/><br\/><br\/><\/p>",
             "text-font-family": "",
             "text-font-weight": 300,
-            "text-font-color": "#121212",
+            "text-font-color": "#000000",
             "description-size": 12,
             "description-line-height": 1.8,
             "description-spacer-height": 0
@@ -375,7 +375,7 @@
             "heading": "BRAC",
             "heading-font-family": "Helvetica, Arial, sans-serif",
             "heading-font-weight": 400,
-            "heading-font-color": "#121212",
+            "heading-font-color": "#000000",
             "heading-size": 28,
             "heading-line-height": 1.2,
             "heading-spacer-height": 20,
@@ -388,7 +388,7 @@
             "description": "<p>BRAC helps those living in poverty to reach their potential. The organisation uses an integrated model to change systems of inequality, through social development programmes, humanitarian response, social enterprises, socially responsible investments and health and education. BRAC acts as a catalyst, creating opportunities for people to transform their lives. Recent projects have included supporting vulnerable mothers and babies in Liberia and funding early education programmes for girls in Pakistan.<\/p>",
             "text-font-family": "Helvetica, Arial, sans-serif",
             "text-font-weight": 300,
-            "text-font-color": "",
+            "text-font-color": "#000000",
             "description-size": 12,
             "description-line-height": 1.8,
             "description-spacer-height": 0
