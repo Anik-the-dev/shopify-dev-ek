@@ -650,7 +650,7 @@
             "description-size": 16,
             "description-line-height": 1.2,
             "description-spacer-height": 0,
-            "bottom-text": "Add a Bottom Text",
+            "bottom-text": "",
             "bottom-text-font-weight": 300,
             "bottom-text-font-color": "",
             "bottom-text-size": 16,
@@ -661,7 +661,7 @@
         "template--15921824104642__571efd0a-1fd5-4efa-8797-582ae0bbb306-1668601790ce0a3e29-1": {
           "type": "right_text",
           "settings": {
-            "block-custom-width": 300,
+            "block-custom-width": 500,
             "heading": "TANGIBLE STRIDES:",
             "heading-font-family": "",
             "heading-font-weight": 400,
@@ -676,14 +676,14 @@
             "caption-size": 16,
             "caption-line-height": 1.2,
             "caption-spacer-height": 45,
-            "description": "<p>From the beginning, our purpose has been to create ready-to-wear clothing, cut in the finest materials, selected to have the lowest impact on our global environment. Pieces designed for longevity, made with purpose – for the world we want. <br\/><br\/><br\/><br\/>EXPLORE SUSTAINABILITY & MATERIALS<\/p>",
+            "description": "<p>From the beginning, our purpose has been to create ready-to-wear clothing, cut in the finest materials, selected to have the lowest impact on our global environment. Pieces designed for longevity, made with purpose – for the world we want. <br\/><\/p>",
             "text-font-family": "",
             "text-font-weight": 300,
             "text-font-color": "#121212",
             "description-size": 16,
             "description-line-height": 1.6,
-            "description-spacer-height": 0,
-            "bottom-text": "Add a Bottom Text",
+            "description-spacer-height": 50,
+            "bottom-text": "EXPLORE SUSTAINABILITY & MATERIALS",
             "bottom-text-font-weight": 300,
             "bottom-text-font-color": "",
             "bottom-text-size": 16,
@@ -698,7 +698,7 @@
       ],
       "settings": {
         "full-text-section-width": 1400,
-        "column-gap": 50,
+        "column-gap": 120,
         "show-divider": false,
         "divider-height": 100
       }
