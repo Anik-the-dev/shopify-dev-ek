@@ -61,6 +61,17 @@
             line-height: {{ block.settings.caption-line-height }};
 
         }
+        .item-{{ block.id }} .customized-sub-heading-{{ block.id }} {
+            font-size: {{ block.settings.sub-heading-size }}px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: {{ block.settings.sub-heading-font-family }};
+            font-weight: {{ block.settings.sub-heading-font-weight }};
+            color: {{ block.settings.sub-heading-font-color }};
+            line-height: {{ block.settings.sub-heading-line-height }};
+            text-align: justify; 
+
+        }
         .item-{{ block.id }} .customized-description-{{ block.id }} {
             font-size: {{ block.settings.description-size }}px;
             margin-top: 0;
@@ -77,6 +88,10 @@
             padding: 0px;
         }
         .caption-space-container-{{ block.id }}{
+            height: {{ block.settings.caption-spacer-height }}px;
+            padding: 0px;
+        }
+        .sub-heading-space-container-{{ block.id }}{
             height: {{ block.settings.caption-spacer-height }}px;
             padding: 0px;
         }
@@ -171,6 +186,11 @@
                                 {% endif %} 
                                 <div class="heading-space-container-{{ block.id }}">                           
                                 </div>
+                                {% if block.settings.heading %}
+                                  <h4 class="customized-sub-heading-{{ block.id }}" >{{ block.settings.sub-heading }}</h4>
+                                {% endif %} 
+                                <div class="sub-heading-space-container-{{ block.id }}">                           
+                                </div>                              
                                 {% if block.settings.description %}
                                   <p class="customized-description-{{ block.id }}">{{ block.settings.description | replace: 'p>', 'span>' }}</p>
                                 
@@ -447,6 +467,66 @@
         "unit": "px",
         "label": "Heading Bottom Space",
         "default": 15
+
+        },
+        {
+          "type": "text",
+          "id": "sub-heading",
+          "default": "Add a Sub Heading",
+          "label": "Sub Heading"
+        },
+        {
+        "type": "font",
+        "id": "sub-heading-font-family",
+        "label": "Sub Heading Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "sub-heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Sub Heading Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "sub-heading-font-color",
+        "label": "Sub Heading Font Color" 
+        
+        },
+        {
+        "type": "range",
+        "id": "sub-heading-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Sub Heading Font Size",
+        "default": 16
+        },
+        {
+        "type": "range",
+        "id": "sub-heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Sub Heading Line Height",
+        "default": 1.2
+        },
+           
+        {
+        "type": "range",
+        "id": "sub-heading-spacer-height",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Sub Heading Bottom Space",
+        "default": 5
 
         },
       
