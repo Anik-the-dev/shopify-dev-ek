@@ -355,7 +355,7 @@
             "description": "<p>War Child UK want a world where no child’s life is torn apart by war. They protect, educate and stand up for the rights of children caught up in conflict. They aim to reach children as early as possible when conflict breaks out, and stay to support them through their recovery - helping to keep them safe, give them an education, and equip them with skills for the future.<\/p>",
             "text-font-family": "Helvetica, Arial, sans-serif",
             "text-font-weight": 300,
-            "text-font-color": "#121212",
+            "text-font-color": "#000000",
             "description-size": 12,
             "description-line-height": 1.8,
             "description-spacer-height": 0
