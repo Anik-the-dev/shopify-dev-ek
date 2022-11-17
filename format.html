@@ -82,6 +82,74 @@
           </div>
     </div>
 
-
+  <!-- ninety -->
+  <div class="two-col-section-{{ section.id }} {% if section.settings.show-divider %}show-divider-{{ section.id }}{% endif %} ">
+    <div class="wax-grid-container-2-col-{{ section.id }}">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when "left_text" %}
+            <div class="left-text" id="wrapper-{{ block.id }}">
+                {% if block.settings.heading %}
+                  <h3 class="customized-heading-{{ block.id }}" >{{ block.settings.heading }}</h3>
+                {% endif %} 
+                <div class="heading-space-container-{{ block.id }}">                           
+                </div>
+                {% if block.settings.caption %} 
+                <h4 class="customized-caption-{{ block.id }}" >{{ block.settings.caption }}</h4>
+              {% endif %}
+              <div class="caption-space-container-{{ block.id }}">                           
+              </div>
+                {% if block.settings.description %}
+                  <p class="customized-description-{{ block.id }}">{{ block.settings.description | replace: 'p>', 'span>' }}</p>
+                
+                {% endif %}
+                <div class="description-space-container-{{ block.id }}">                           
+                </div>
+                {% if block.settings.bottom-text %}
+                  <p class="customized-bottom-text-{{ block.id }}">{{ block.settings.bottom-text | replace: 'p>', 'span>' }}</p>
+                
+                {% endif %}
+                <div class="bottom-text-space-container-{{ block.id }}">                           
+                </div>
+  
+  
+            </div>
+          {% when "right_text" %}
+  
+            <div class="right-text" id="wrapper-{{ block.id }}">
+              {% if block.settings.heading %}
+                <h3 class="customized-heading-{{ block.id }}" >{{ block.settings.heading }}</h3>
+              {% endif %} 
+              <div class="heading-space-container-{{ block.id }}">                           
+              </div>
+              {% if block.settings.caption %} 
+              <p class="customized-caption-{{ block.id }}" >{{ block.settings.caption }}</p>
+            {% endif %}
+            <div class="caption-space-container-{{ block.id }}">                           
+            </div>
+              {% if block.settings.description %}
+                <p class="customized-description-{{ block.id }}">{{ block.settings.description | replace: 'p>', 'span>' }}</p>
+              
+              {% endif %}
+              <div class="description-space-container-{{ block.id }}">                           
+              </div>
+              {% if block.settings.bottom-text %}
+                <p class="customized-bottom-text-{{ block.id }}">{{ block.settings.bottom-text | replace: 'p>', 'span>' }}</p>
+              
+              {% endif %}
+              <div class="bottom-text-space-container-{{ block.id }}">                           
+              </div>
+  
+  
+            </div>
+  
+  
+  
+        {% endcase %}
+  
+      {% endfor %}
+  
+    </div>
+  </div>
   </body>
 </html>
