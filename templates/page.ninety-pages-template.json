@@ -620,8 +620,8 @@
       ],
       "settings": {
         "section-width": "custom",
-        "custom-section-width": 1450,
-        "column-gap": 90,
+        "custom-section-width": 1400,
+        "column-gap": 60,
         "multicolumn-style": "style2",
         "padding_top": 0,
         "padding_bottom": 0
@@ -702,7 +702,7 @@
         "template--15921824104642__571efd0a-1fd5-4efa-8797-582ae0bbb306-1668601790ce0a3e29-1"
       ],
       "settings": {
-        "full-text-section-width": 1400,
+        "full-text-section-width": 1250,
         "column-gap": 160,
         "show-divider": false,
         "divider-height": 100
