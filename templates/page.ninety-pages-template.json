@@ -699,7 +699,7 @@
       ],
       "settings": {
         "full-text-section-width": 1400,
-        "column-gap": 120,
+        "column-gap": 160,
         "show-divider": false,
         "divider-height": 100
       }
