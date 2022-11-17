@@ -620,7 +620,7 @@
         "column-gap": 90,
         "multicolumn-style": "style2",
         "padding_top": 52,
-        "padding_bottom": 100
+        "padding_bottom": 0
       }
     },
     "571efd0a-1fd5-4efa-8797-582ae0bbb306": {
