@@ -88,6 +88,7 @@
         line-height: {{ block.settings.heading-line-height }} 
     }
     .custom-text-font-size-{{ block.id }} {
+        width:{{ block.settings.text-block-width }}px;
         font-size:{{ block.settings.text-size }}px;
         margin-top: 0;
         margin-bottom: 0;
@@ -363,8 +364,19 @@
     {
       "type": "text",
       "name": "Text",
-      "limit": 5,
+      "limit": 8,
       "settings": [
+        {
+          "type": "range",
+          "id": "text-block-width",
+          "min": 100,
+          "max": 1800,
+          "step": 25,
+          "unit": "px",
+          "label": "Text Section Width",
+          "default": 600
+
+        }, 
         {
           "type": "richtext",
           "id": "text",
