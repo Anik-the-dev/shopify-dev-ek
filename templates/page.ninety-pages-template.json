@@ -31,12 +31,13 @@
         "template--15921824104642__699d4a18-9707-4ddf-9d9b-f37a58051bd6-166860179037ec9849-1": {
           "type": "text",
           "settings": {
+            "text-block-width": 650,
             "text": "<p>Ninety Percent’s founders created a visionary business model with deep-rooted values in our people and the planet– each year 90% of our distributable profits are shared between charitable causes and the people that make our collections happen.<\/p>",
             "text-font-family": "",
             "text-font-weight": 400,
-            "text-font-color": "#121212",
+            "text-font-color": "#000000",
             "text-size": 26,
-            "text-line-height": 1.8
+            "text-line-height": 1.6
           }
         },
         "b29faadc-edee-4649-945d-cfbc9e10a274": {
@@ -48,10 +49,11 @@
         "50094dee-1f60-4430-8c90-70092f8ddfa8": {
           "type": "text",
           "settings": {
+            "text-block-width": 650,
             "text": "<p>We’re focused on sustainable practices and materials, creating collections with longevity and circularity at their heart. But what sets us apart is our revolutionary profit sharing model, providing the tools of empowerment for everyone involved in the creation of those collections and giving back to the causes close to our heart.<\/p>",
             "text-font-family": "Helvetica, Arial, sans-serif",
             "text-font-weight": 400,
-            "text-font-color": "#121212",
+            "text-font-color": "#000000",
             "text-size": 16,
             "text-line-height": 1.8
           }
@@ -455,6 +457,7 @@
         "template--15921824104642__765f3ea4-7f6d-41d2-8b02-0c765073756c-166860179037ec9849-1": {
           "type": "text",
           "settings": {
+            "text-block-width": 600,
             "text": "<p>We’re a community. From our headquarters to our factories, there is a connection between all of the people behind our collections – everyone receives a share of the company’s profits. 10% of our profits are reinvested into our people. <\/p>",
             "text-font-family": "",
             "text-font-weight": 300,
@@ -472,6 +475,7 @@
         "5f1abde8-a2f0-44ff-9cf3-dd57d0fc1b90": {
           "type": "text",
           "settings": {
+            "text-block-width": 600,
             "text": "<p>We know and respect our suppliers, factories and each garment maker in the production chain. People make our collections happen, so they reap the rewards. This is how business should be done.<\/p>",
             "text-font-family": "Helvetica, Arial, sans-serif",
             "text-font-weight": 300,
