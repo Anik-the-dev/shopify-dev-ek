@@ -405,7 +405,7 @@
       ],
       "settings": {
         "section-width": "custom",
-        "custom-section-width": 1300,
+        "custom-section-width": 1250,
         "column-gap": 90,
         "multicolumn-style": "style1",
         "padding_top": 32,
