@@ -7,7 +7,8 @@
       margin: 0 auto;
     }
     .single-image-container-{{ block.id }} p{
-      text-align:center;
+      text-align:left;
+      margin-top: 0px;
     }
 
     .single-image-container-{{ block.id }} img {
@@ -18,15 +19,15 @@
       height: auto 
     }
     .small-{{ block.id }}{
-      height: 400px;
+      height: 500px;
       overflow: hidden
     }
     .medium-{{ block.id }}{
-      height: 700px;
+      height: 900px;
       overflow: hidden
     }
     .large-{{ block.id }}{
-      height: 900px;
+      height: 1200px;
       overflow: hidden
     }
   
@@ -37,8 +38,10 @@
 {% for block in section.blocks %}
   {% case block.type %}
     {% when "image" %}
-      <div class="single-image-container-{{ block.id }} {{ block.settings.image_height }}-{{ block.id }}">
-        <img src=" {{ block.settings.image | img_url: "grande" }} " alt="" height="" width="" loading="lazy">
+      <div class="single-image-container-{{ block.id }}">
+        <div class="{{ block.settings.image_height }}-{{ block.id }}">
+          <img src=" {{ block.settings.image | img_url: "grande" }} " alt="" height="" width="" loading="lazy">
+        </div>
         {% if block.settings.caption-image %}
           {{ block.settings.caption-image }}
         {% endif %}

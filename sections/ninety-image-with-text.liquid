@@ -21,6 +21,10 @@
     display: block;
     width: 100%;
   }
+  .section-{{ section.id }} .image-container-wrapper-el p{
+    text-align:left;
+    margin-top: 0px;
+  }
   
   .test-container {
     width: 300px;
@@ -110,7 +114,10 @@
         <div class="image-container-el">
             <div class="image-container-wrapper-el">
               {% if section.settings.image %}
-                  <img class="img" src=" {{ section.settings.image | img_url: 'master' }} " alt="" height="" width="" loading="lazy">   
+                  <img class="img" src=" {{ section.settings.image | img_url: 'master' }} " alt="" height="" width="" loading="lazy">
+                  {% if section.settings.caption-image %}
+                    <p>{{ section.settings.caption-image }}</p>
+                  {% endif %}   
               {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {% endif %} 
@@ -205,7 +212,13 @@
         "step": 25,
         "unit": "px",
         "default": 475
-        },
+    },
+    {
+        "type": "text",
+        "id": "caption-image",
+        "label": "Add a image caption",
+        "info": "Blank will remove the caption from image"
+    },
     {
         "type": "checkbox",
         "id": "row_reverse",
