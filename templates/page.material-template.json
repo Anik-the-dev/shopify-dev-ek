@@ -161,10 +161,36 @@
             "left-text-size": 16,
             "left-text-line-height": 1.8
           }
+        },
+        "3e9578b8-4971-4e2d-a3e4-a0caac277c2a": {
+          "type": "caption",
+          "settings": {
+            "right-caption": "Add a caption",
+            "right-caption-font-family": "Helvetica, Arial, sans-serif",
+            "right-caption-font-weight": 300,
+            "right-caption-font-color": "#000000",
+            "right-caption-size": 12,
+            "right-caption-line-height": 1.2,
+            "left-caption": "EXPLORE STYLES",
+            "left-caption-font-family": "Helvetica, Arial, sans-serif",
+            "left-caption-font-weight": 300,
+            "left-caption-font-color": "#000000",
+            "left-caption-size": 13,
+            "left-caption-line-height": 1.2
+          }
+        },
+        "f709c624-9ab4-4b61-ba73-67014f1e9cca": {
+          "type": "spacer",
+          "settings": {
+            "right-spacer-height": 50,
+            "left-spacer-height": 500
+          }
         }
       },
       "block_order": [
-        "template--15927171842242__24e34a4c-96b8-4329-85b9-0cd2617759ec-166878163288e3c0d3-0"
+        "template--15927171842242__24e34a4c-96b8-4329-85b9-0cd2617759ec-166878163288e3c0d3-0",
+        "3e9578b8-4971-4e2d-a3e4-a0caac277c2a",
+        "f709c624-9ab4-4b61-ba73-67014f1e9cca"
       ],
       "settings": {
         "section-width": "custom",
