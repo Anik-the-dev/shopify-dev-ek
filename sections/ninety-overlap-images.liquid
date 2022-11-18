@@ -1,5 +1,29 @@
 {%- style -%}
-.grid-container {
+ /* dynamic */
+ .section-{{ section.id }}-padding {
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    }
+    .section-{{ section.id }}.section-width-small {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .section-{{ section.id }}.section-width-medium {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .section-{{ section.id }}.section-width-full {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .section-{{ section.id }}.section-width-custom {
+        max-width: {{ section.settings.custom-section-width | append: "px" }};
+        margin: 0 auto;
+    }
+
+    /* static css */
+
+.grid-container-nel-{{ section.id }} {
     display: grid;
     grid-template-columns: 43% 15% 42%;
     padding: 10px;
@@ -7,74 +31,178 @@
     margin: 0 auto;
   }
 
-  .grid-item {
-    padding: 20px;
-    font-size: 30px;
+  .grid-container-nel-{{ section.id }} .grid-item-nel {
+    padding: 5px;
     position: relative;
   }
-  .grid-item:first-child{
+  .grid-container-nel-{{ section.id }} .grid-item-nel:first-child{
     grid-row: span 2;
   }
-  .grid-item:nth-child(5){
+  .grid-container-nel-{{ section.id }} .grid-item-nel:nth-child(5){
     grid-row: span 2;
   }
-  .grid-item img{
+  .grid-container-nel-{{ section.id }} .grid-item-nel img{
     width: 100%;
   }
-  .grid-item.firstpara p{
-    font-size: 16px;
+  
+  .grid-container-nel-{{ section.id }} .grid-item-nel.firstpara p{
     text-align: left;
     position: absolute;
     top: 40%;
     left: -126px;
-    width: 80%;    
 }
-.grid-item.secondpara p{
-    font-size: 16px;
+.grid-container-nel-{{ section.id }} .grid-item-nel.firstpara .right-head-pos{
+   top: 25%;
+}
+.grid-container-nel-{{ section.id }} .grid-item-nel.secondpara p{
     text-align: left;
     position: absolute;
     top: 20%;
-    right: 0;
-    width: 80%;    
+    left: 10%;
 }
-.grid-item.mt_el{
+.grid-container-nel-{{ section.id }} .grid-item-nel.secondpara .left-head-pos{
+   top: 8%;
+}
+.grid-container-nel-{{ section.id }} .grid-item-nel.secondpara .left-cap-pos{
+   top: 50%;
+}
+.grid-container-nel-{{ section.id }} .grid-item-nel.mt_el{
     margin-top: 100px;
 }
 
+/* dynamic css for blocks */
+{% for block in section.blocks %}
+  /* right text css */
+    .right-space-container-{{ block.id }}{
+            height: {{ block.settings.right-spacer-height }}px;
+            padding: 0px;
+    }
+    .right-custom-heading-font-size-{{ block.id }} {
+        font-size:{{ block.settings.right-heading-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.right-heading-font-family }};
+        font-weight: {{ block.settings.right-heading-font-weight }};
+        color: {{ block.settings.right-heading-font-color }};
+        line-height: {{ block.settings.right-heading-line-height }} 
+    }
+    .right-custom-text-font-size-{{ block.id }} {
+        width:{{ block.settings.right-text-block-width }}px;
+        font-size:{{ block.settings.right-text-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.right-text-font-family }};
+        font-weight: {{ block.settings.right-text-font-weight }};
+        color: {{ block.settings.right-text-font-color }};
+        line-height: {{ block.settings.right-text-line-height }} 
+    }
+    .right-custom-caption-font-size-{{ block.id }} {
+        font-size:{{ block.settings.right-caption-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.right-caption-font-family }};
+        font-weight: {{ block.settings.right-caption-font-weight }};
+        color: {{ block.settings.right-caption-font-color }};
+        line-height: {{ block.settings.right-caption-line-height }} 
+    }
+    /* left text dynamic css */
+    .left-space-container-{{ block.id }}{
+            height: {{ block.settings.left-spacer-height }}px;
+            padding: 0px;
+    }
+    .left-custom-heading-font-size-{{ block.id }} {
+        font-size:{{ block.settings.left-heading-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.left-heading-font-family }};
+        font-weight: {{ block.settings.left-heading-font-weight }};
+        color: {{ block.settings.left-heading-font-color }};
+        line-height: {{ block.settings.left-heading-line-height }} 
+    }
+    .left-custom-text-font-size-{{ block.id }} {
+        width:{{ block.settings.left-text-block-width }}px;
+        font-size:{{ block.settings.left-text-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.left-text-font-family }};
+        font-weight: {{ block.settings.left-text-font-weight }};
+        color: {{ block.settings.left-text-font-color }};
+        line-height: {{ block.settings.left-text-line-height }} 
+    }
+    .left-custom-caption-font-size-{{ block.id }} {
+        font-size:{{ block.settings.left-caption-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.left-caption-font-family }};
+        font-weight: {{ block.settings.left-caption-font-weight }};
+        color: {{ block.settings.left-caption-font-color }};
+        line-height: {{ block.settings.left-caption-line-height }} ;
+        text-decoration: underline; 
+        text-underline-offset: 15px
+    }
+
+
+  {% endfor %}
     
 {%- endstyle -%}
 
 <section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">
-    <div class="grid-container">
-        <div class="grid-item">
+    <div class="grid-container-nel-{{ section.id }}">
+        <div class="grid-item-nel">
+          {% if section.settings.image1 %}
             <img class="img" src=" {{ section.settings.image1 | img_url: 'master' }} " alt="" height="" width="" loading="lazy">
+            {% if section.settings.caption-image-one %}
+              <p>{{ section.settings.caption-image-one }}</p>
+            {% endif %}   
+        {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %} 
         </div>
-        <div class="grid-item"> <p></p> </div>
-        <div class="grid-item firstpara">
-          <p>
-            We choose to use certified organic cotton fabric, grown without the
-            use of pesticides, meaning it’s less harmful on your skin and on the
-            planet. We only source Global Organic Textile Standard (GOTS)
-            certified cotton yarns, widely seen as the gold standard for clothing
-            and textiles.
-          </p>
+        <div class="grid-item-nel"> <p></p> </div>
+        <div class="grid-item-nel firstpara">
+          {% for block in section.blocks %} 
+            {% case block.type %} 
+                {% when "heading" %}
+                    <p class="right-custom-heading-font-size-{{ block.id }} right-head-pos">{{ block.settings.right-heading }}</p>
+                {% when "text" %}
+                    <p class="ps-text right-custom-text-font-size-{{ block.id }}"> {{ block.settings.right-text | replace: 'p>', 'span>' }}</p>
+                {%- when 'spacer' -%}
+                    <div class="right-space-container-{{ block.id }}">
+                    </div>
+                        
+            {% endcase %} 
+          {% endfor %}
         </div>
-        <div class="grid-item"><p></p></div>
-        <div class="grid-item mt_el">
+        <div class="grid-item-nel"><p></p></div>
+        <div class="grid-item-nel mt_el">
           <div class="secondimg ">
-            <img class="img" src=" {{ section.settings.image2 | img_url: 'master' }} " alt="" height="" width="" loading="lazy">
+            {% if section.settings.image2 %}
+              <img class="img" src=" {{ section.settings.image2 | img_url: 'master' }} " alt="" height="" width="" loading="lazy">
+              {% if section.settings.caption-image-two %}
+                <p>{{ section.settings.caption-image-two }}</p>
+              {% endif %}   
+          {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %} 
         </div>
         </div>
-        <div class="grid-item secondpara">
-          <p>
-              We choose to use certified organic cotton fabric, grown without the
-              use of pesticides, meaning it’s less harmful on your skin and on the
-              planet. We only source Global Organic Textile Standard (GOTS)
-              certified cotton yarns, widely seen as the gold standard for clothing
-              and textiles.
-            </p>
+        <div class="grid-item-nel secondpara">
+          {% for block in section.blocks %} 
+            {% case block.type %} 
+                {% when "heading" %}
+                    <p class="left-custom-heading-font-size-{{ block.id }} left-head-pos">{{ block.settings.left-heading }}</p>
+                {% when "text" %}
+                    <p class="ps-text left-custom-text-font-size-{{ block.id }}"> {{ block.settings.left-text | replace: 'p>', 'span>' }}</p>
+                {% when "caption" %}
+                    <p class=" left-custom-caption-font-size-{{ block.id }} left-cap-pos"> {{ block.settings.left-caption }}</p>
+                {%- when 'spacer' -%}
+                    <div class="left-space-container-{{ block.id }}">   
+                    </div>
+                        
+            {% endcase %} 
+          {% endfor %}
         </div>
-        <div class="grid-item"><p></p></div>
+        <div class="grid-item-nel"><p></p></div>
       </div>
 
 
@@ -185,52 +313,109 @@
       "limit": 1,
       "settings": [
         {
+          "type": "header",
+          "content": "Right Text Section"
+        },
+        {
           "type": "text",
-          "id": "heading",
-          "default": "Headline",
-          "label": "Heading"
+          "id": "right-heading",
+          "default": "headline",
+          "label": "Right heading"
         },
         {
         "type": "font",
-        "id": "heading-font-family",
-        "label": "Heading Font Family"
+        "id": "right-heading-font-family",
+        "label": "Right Heading Font Family"
         },
 
         {
         "type": "range",
-        "id": "heading-font-weight",
+        "id": "right-heading-font-weight",
         "min": 100,
         "max": 900,
         "step": 100,
-        "label": "Heading Font Weight",
+        "label": "Right Heading Font Weight",
         "default": 700
 
         },
 
         {
         "type": "color",
-        "id": "heading-font-color",
-        "label": "Heading Font Color",
+        "id": "right-heading-font-color",
+        "label": "Right Heading Font Color",
         "default": "#000000" 
         
         },
         {
         "type": "range",
-        "id": "heading-size",
+        "id": "right-heading-size",
         "min": 8,
         "max": 160,
         "step": 2,
         "unit": "px",
-        "label": "Heading Size",
+        "label": "Right Heading Size",
         "default": 32
         },
         {
         "type": "range",
-        "id": "heading-line-height",
+        "id": "right-heading-line-height",
         "min": 0,
         "max": 5,
         "step": 0.1,
-        "label": "Heading Line Height",
+        "label": "Right Heading Line Height",
+        "default": 1.6
+        },
+        {
+          "type": "header",
+          "content": "Left Text Section"
+        },
+        {
+          "type": "text",
+          "id": "left-heading",
+          "default": "headline",
+          "label": "Left heading"
+        },
+        {
+        "type": "font",
+        "id": "left-heading-font-family",
+        "label": "Left Heading Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "left-heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Left Heading Font Weight",
+        "default": 700
+
+        },
+
+        {
+        "type": "color",
+        "id": "left-heading-font-color",
+        "label": "Left Heading Font Color",
+        "default": "#000000" 
+        
+        },
+        {
+        "type": "range",
+        "id": "left-heading-size",
+        "min": 8,
+        "max": 160,
+        "step": 2,
+        "unit": "px",
+        "label": "Left Heading Size",
+        "default": 32
+        },
+        {
+        "type": "range",
+        "id": "left-heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Left Heading Line Height",
         "default": 1.6
         }
       ]
@@ -238,56 +423,114 @@
     {
       "type": "caption",
       "name": "Caption",
-      "limit": 5,
+      "limit": 1,
       "settings": [
         {
+          "type": "header",
+          "content": "Right Text Section"
+        },
+        {
           "type": "text",
-          "id": "caption",
-          "default": "Add a tagline",
-          "label": "Text"
+          "id": "right-caption",
+          "default": "Add a caption",
+          "label": "Right Text"
         },
         {
         "type": "font",
-        "id": "caption-font-family",
-        "label": "Caption Font Family"
+        "id": "right-caption-font-family",
+        "label": "Right Caption Font Family"
         },
 
         {
         "type": "range",
-        "id": "caption-font-weight",
+        "id": "right-caption-font-weight",
         "min": 100,
         "max": 900,
         "step": 100,
-        "label": "Caption Font Weight",
+        "label": "Right Caption Font Weight",
         "default": 300
 
         },
 
         {
         "type": "color",
-        "id": "caption-font-color",
-        "label": "Caption Font Color",
+        "id": "right-caption-font-color",
+        "label": "Right Caption Font Color",
         "default": "#000000" 
  
         
         },
         {
         "type": "range",
-        "id": "caption-size",
+        "id": "right-caption-size",
         "min": 4,
         "max": 100,
         "step": 1,
         "unit": "px",
-        "label": "Caption Size",
+        "label": "Right Caption Size",
         "default": 12
         },
         {
         "type": "range",
-        "id": "caption-line-height",
+        "id": "right-caption-line-height",
         "min": 0,
         "max": 5,
         "step": 0.1,
-        "label": "Caption Line Height",
+        "label": "Right Caption Line Height",
+        "default": 1.2
+        },
+        {
+          "type": "header",
+          "content": "Left Text Section"
+        },
+        {
+          "type": "text",
+          "id": "left-caption",
+          "default": "Add a caption",
+          "label": "Left Text"
+        },
+        {
+        "type": "font",
+        "id": "left-caption-font-family",
+        "label": "Left Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "left-caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Left Caption Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "left-caption-font-color",
+        "label": "Left Caption Font Color",
+        "default": "#000000" 
+ 
+        
+        },
+        {
+        "type": "range",
+        "id": "left-caption-size",
+        "min": 4,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Left Caption Size",
+        "default": 12
+        },
+        {
+        "type": "range",
+        "id": "left-caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Left Caption Line Height",
         "default": 1.2
         }
       ]
@@ -295,69 +538,139 @@
     {
       "type": "text",
       "name": "Text",
-      "limit": 8,
+      "limit": 1,
       "settings": [
         {
+          "type": "header",
+          "content": "Right Text Section"
+        },
+        {
           "type": "range",
-          "id": "text-block-width",
+          "id": "right-text-block-width",
           "min": 50,
           "max": 1600,
           "step": 25,
           "unit": "px",
-          "label": "Text Section Width",
+          "label": "Right Text Section Width",
           "default": 550
 
         }, 
         {
           "type": "richtext",
-          "id": "text",
+          "id": "right-text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-          "label": "Content"
+          "label": "Right Content"
         },
         {
         "type": "font",
-        "id": "text-font-family",
-        "label": "Text Font Family"
+        "id": "right-text-font-family",
+        "label": "Right Text Font Family"
         },
 
         {
         "type": "range",
-        "id": "text-font-weight",
+        "id": "right-text-font-weight",
         "min": 100,
         "max": 900,
         "step": 100,
-        "label": "Text Font Weight",
+        "label": "Right Text Font Weight",
         "default": 300
 
         },
 
         {
         "type": "color",
-        "id": "text-font-color",
-        "label": "Text Font Color",
+        "id": "right-text-font-color",
+        "label": "Right Text Font Color",
         "default": "#000000" 
  
         
         },
         {
         "type": "range",
-        "id": "text-size",
+        "id": "right-text-size",
         "min": 8,
         "max": 100,
         "step": 1,
         "unit": "px",
-        "label": "Text Size",
+        "label": "Right Text Size",
         "default": 26
         },
         {
         "type": "range",
-        "id": "text-line-height",
+        "id": "right-text-line-height",
         "min": 0,
         "max": 5,
         "step": 0.1,
-        "label": "Text Line Height",
+        "label": "Right Text Line Height",
+        "default": 1.2
+        },
+        {
+          "type": "header",
+          "content": "Left Text Section"
+        },
+        {
+          "type": "range",
+          "id": "left-text-block-width",
+          "min": 50,
+          "max": 1600,
+          "step": 25,
+          "unit": "px",
+          "label": "Left Text Section Width",
+          "default": 550
+
+        }, 
+        {
+          "type": "richtext",
+          "id": "left-text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "Left Content"
+        },
+        {
+        "type": "font",
+        "id": "left-text-font-family",
+        "label": "Left Text Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "left-text-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Left Text Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "left-text-font-color",
+        "label": "Left Text Font Color",
+        "default": "#000000" 
+ 
+        
+        },
+        {
+        "type": "range",
+        "id": "left-text-size",
+        "min": 8,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Left Text Size",
+        "default": 26
+        },
+        {
+        "type": "range",
+        "id": "left-text-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Left Text Line Height",
         "default": 1.2
         }
+        
       ]
     },
     {
@@ -366,12 +679,23 @@
             "settings": [
                 {
                     "type": "range",
-                    "id": "spacer-height",
+                    "id": "right-spacer-height",
                     "min": 10,
                     "max": 500,
                     "step": 10,
                     "unit": "px",
-                    "label": "Space height",
+                    "label": "Right top padding",
+                    "default": 50
+
+                },
+                {
+                    "type": "range",
+                    "id": "left-spacer-height",
+                    "min": 10,
+                    "max": 500,
+                    "step": 10,
+                    "unit": "px",
+                    "label": "Left padding bottom",
                     "default": 50
 
                 }
