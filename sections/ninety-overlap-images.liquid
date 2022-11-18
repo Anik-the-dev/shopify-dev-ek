@@ -1,0 +1,392 @@
+{%- style -%}
+.grid-container {
+    display: grid;
+    grid-template-columns: 43% 15% 42%;
+    padding: 10px;
+    width: 1340px;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+  }
+  .grid-item:first-child{
+    grid-row: span 2;
+  }
+  .grid-item:nth-child(5){
+    grid-row: span 2;
+  }
+  .grid-item img{
+    width: 100%;
+  }
+  .grid-item.firstpara p{
+    font-size: 16px;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: -126px;
+    width: 80%;    
+}
+.grid-item.secondpara p{
+    font-size: 16px;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 80%;    
+}
+.grid-item.mt_el{
+    margin-top: 100px;
+}
+
+    
+{%- endstyle -%}
+
+<section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">
+    <div class="grid-container">
+        <div class="grid-item">
+            <img class="img" src=" {{ section.settings.image1 | img_url: 'master' }} " alt="" height="" width="" loading="lazy">
+        </div>
+        <div class="grid-item"> <p></p> </div>
+        <div class="grid-item firstpara">
+          <p>
+            We choose to use certified organic cotton fabric, grown without the
+            use of pesticides, meaning it’s less harmful on your skin and on the
+            planet. We only source Global Organic Textile Standard (GOTS)
+            certified cotton yarns, widely seen as the gold standard for clothing
+            and textiles.
+          </p>
+        </div>
+        <div class="grid-item"><p></p></div>
+        <div class="grid-item mt_el">
+          <div class="secondimg ">
+            <img class="img" src=" {{ section.settings.image2 | img_url: 'master' }} " alt="" height="" width="" loading="lazy">
+        </div>
+        </div>
+        <div class="grid-item secondpara">
+          <p>
+              We choose to use certified organic cotton fabric, grown without the
+              use of pesticides, meaning it’s less harmful on your skin and on the
+              planet. We only source Global Organic Textile Standard (GOTS)
+              certified cotton yarns, widely seen as the gold standard for clothing
+              and textiles.
+            </p>
+        </div>
+        <div class="grid-item"><p></p></div>
+      </div>
+
+
+</section>
+
+{% schema %}
+{
+  "name": "Ninety Overlap Images",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section width"
+    },
+    {
+        "type": "select",
+        "id": "section-width",
+        "label": "Section width",
+        "options": [
+            {
+            "value": "small",
+            "label": "Small"
+            },
+            {
+            "value": "medium",
+            "label": "Medium"
+            },
+            {
+            "value": "full",
+            "label": "Full"
+            },
+            {
+            "value": "custom",
+            "label": "Custom"
+            }
+        ],
+        "default": "custom",
+        "info":"Choose custom for changing custom width"
+    },
+    {  
+        "type": "range",
+        "id": "custom-section-width",
+        "label": "Custom Section width",
+        "min": 200,
+        "max": 1900,
+        "step": 25,
+        "unit": "px",
+        "default": 1450
+    },
+    {
+      "type": "header",
+      "content": "Image one"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image one"
+    },
+    {
+        "type": "text",
+        "id": "caption-image-one",
+        "label": "Add a image caption",
+        "info": "Blank will remove the caption from image"
+    },
+    {
+      "type": "header",
+      "content": "Image two"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image two"
+    },
+    {
+        "type": "text",
+        "id": "caption-image-two",
+        "label": "Add a image caption",
+        "info": "Blank will remove the caption from image"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Headline",
+          "label": "Heading"
+        },
+        {
+        "type": "font",
+        "id": "heading-font-family",
+        "label": "Heading Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Heading Font Weight",
+        "default": 700
+
+        },
+
+        {
+        "type": "color",
+        "id": "heading-font-color",
+        "label": "Heading Font Color",
+        "default": "#000000" 
+        
+        },
+        {
+        "type": "range",
+        "id": "heading-size",
+        "min": 8,
+        "max": 160,
+        "step": 2,
+        "unit": "px",
+        "label": "Heading Size",
+        "default": 32
+        },
+        {
+        "type": "range",
+        "id": "heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Heading Line Height",
+        "default": 1.6
+        }
+      ]
+    },
+    {
+      "type": "caption",
+      "name": "Caption",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "Add a tagline",
+          "label": "Text"
+        },
+        {
+        "type": "font",
+        "id": "caption-font-family",
+        "label": "Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Caption Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "caption-font-color",
+        "label": "Caption Font Color",
+        "default": "#000000" 
+ 
+        
+        },
+        {
+        "type": "range",
+        "id": "caption-size",
+        "min": 4,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Caption Size",
+        "default": 12
+        },
+        {
+        "type": "range",
+        "id": "caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Caption Line Height",
+        "default": 1.2
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "range",
+          "id": "text-block-width",
+          "min": 50,
+          "max": 1600,
+          "step": 25,
+          "unit": "px",
+          "label": "Text Section Width",
+          "default": 550
+
+        }, 
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "Content"
+        },
+        {
+        "type": "font",
+        "id": "text-font-family",
+        "label": "Text Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "text-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Text Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "text-font-color",
+        "label": "Text Font Color",
+        "default": "#000000" 
+ 
+        
+        },
+        {
+        "type": "range",
+        "id": "text-size",
+        "min": 8,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Text Size",
+        "default": 26
+        },
+        {
+        "type": "range",
+        "id": "text-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Text Line Height",
+        "default": 1.2
+        }
+      ]
+    },
+    {
+            "name": "spacer",
+            "type": "spacer",
+            "settings": [
+                {
+                    "type": "range",
+                    "id": "spacer-height",
+                    "min": 10,
+                    "max": 500,
+                    "step": 10,
+                    "unit": "px",
+                    "label": "Space height",
+                    "default": 50
+
+                }
+            ]
+    } 
+  ],
+  "presets": [
+    {
+      "name": "Ninety Overlap Images",
+      "blocks": [
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
