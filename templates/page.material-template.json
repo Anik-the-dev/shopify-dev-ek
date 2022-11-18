@@ -153,13 +153,13 @@
             "right-text-font-color": "#2b2725",
             "right-text-size": 16,
             "right-text-line-height": 1.8,
-            "left-text-block-width": 550,
-            "left-text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "left-text-block-width": 525,
+            "left-text": "<p>Conventional cotton often has a high environmental impact, requiring vasts amounts of water to produce and depleting the soil quality. Our value chain from farm to yarn ensures no harmful chemicals are used in the fields or contaminate water, that water consumption is controlled and workers rights are preserved.  <\/p>",
             "left-text-font-family": "",
-            "left-text-font-weight": 300,
-            "left-text-font-color": "#000000",
-            "left-text-size": 26,
-            "left-text-line-height": 1.2
+            "left-text-font-weight": 400,
+            "left-text-font-color": "#2b2725",
+            "left-text-size": 16,
+            "left-text-line-height": 1.8
           }
         }
       },
