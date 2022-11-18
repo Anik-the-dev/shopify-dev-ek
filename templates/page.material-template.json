@@ -68,12 +68,51 @@
         "caption-image": "",
         "row_reverse": false,
         "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "dd8b0e8f-f791-471a-b0e9-843dd9f21248": {
+      "type": "ninety-single-col-text",
+      "blocks": {
+        "template--15927171842242__dd8b0e8f-f791-471a-b0e9-843dd9f21248-1668781633bc7adb71-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 36,
+            "heading-line-height": 1.6
+          }
+        },
+        "template--15927171842242__dd8b0e8f-f791-471a-b0e9-843dd9f21248-1668781633bc7adb71-1": {
+          "type": "text",
+          "settings": {
+            "text-block-width": 450,
+            "text": "<p>We choose to use certified organic cotton fabric, grown without the use of pesticides, meaning it’s less harmful on your skin and on the planet. We only source Global Organic Textile Standard (GOTS) certified cotton yarns, widely seen as the gold standard for clothing and textiles.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 400,
+            "text-font-color": "#2b2725",
+            "text-size": 16,
+            "text-line-height": 1.8
+          }
+        }
+      },
+      "block_order": [
+        "template--15927171842242__dd8b0e8f-f791-471a-b0e9-843dd9f21248-1668781633bc7adb71-0",
+        "template--15927171842242__dd8b0e8f-f791-471a-b0e9-843dd9f21248-1668781633bc7adb71-1"
+      ],
+      "settings": {
+        "section-width": "custom",
+        "custom-section-width": 575,
+        "padding_top": 92,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "1956c955-7534-4ef0-9c14-23876224241e"
+    "1956c955-7534-4ef0-9c14-23876224241e",
+    "dd8b0e8f-f791-471a-b0e9-843dd9f21248"
   ]
 }
