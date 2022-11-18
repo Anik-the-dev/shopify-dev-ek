@@ -133,6 +133,49 @@
       ],
       "settings": {
       }
+    },
+    "662aa8d4-f7a3-4a3c-8727-ddb9a5d2cc16": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 100
+      }
+    },
+    "24e34a4c-96b8-4329-85b9-0cd2617759ec": {
+      "type": "ninety-overlap-images",
+      "blocks": {
+        "template--15927171842242__24e34a4c-96b8-4329-85b9-0cd2617759ec-166878163288e3c0d3-0": {
+          "type": "text",
+          "settings": {
+            "right-text-block-width": 500,
+            "right-text": "<p>We choose to use certified organic cotton fabric, grown without the use of pesticides, meaning it’s less harmful on your skin and on the planet. We only source Global Organic Textile Standard (GOTS) certified cotton yarns, widely seen as the gold standard for clothing and textiles.<\/p>",
+            "right-text-font-family": "",
+            "right-text-font-weight": 400,
+            "right-text-font-color": "#2b2725",
+            "right-text-size": 16,
+            "right-text-line-height": 1.8,
+            "left-text-block-width": 550,
+            "left-text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "left-text-font-family": "",
+            "left-text-font-weight": 300,
+            "left-text-font-color": "#000000",
+            "left-text-size": 26,
+            "left-text-line-height": 1.2
+          }
+        }
+      },
+      "block_order": [
+        "template--15927171842242__24e34a4c-96b8-4329-85b9-0cd2617759ec-166878163288e3c0d3-0"
+      ],
+      "settings": {
+        "section-width": "custom",
+        "custom-section-width": 1450,
+        "image1": "shopify:\/\/shop_images\/220818_NinetyPercent_SS22_03_110_1.png",
+        "caption-image-one": "",
+        "image2": "shopify:\/\/shop_images\/220818_NinetyPercent_SS22_06_140_R1_3.png",
+        "caption-image-two": "",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -140,6 +183,8 @@
     "1956c955-7534-4ef0-9c14-23876224241e",
     "dd8b0e8f-f791-471a-b0e9-843dd9f21248",
     "71588702-3209-4866-acb5-ca394c38ae4e",
-    "347f5d4d-2d30-45da-89fa-60b1d34abb12"
+    "347f5d4d-2d30-45da-89fa-60b1d34abb12",
+    "662aa8d4-f7a3-4a3c-8727-ddb9a5d2cc16",
+    "24e34a4c-96b8-4329-85b9-0cd2617759ec"
   ]
 }
