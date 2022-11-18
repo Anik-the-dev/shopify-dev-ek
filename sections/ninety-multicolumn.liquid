@@ -25,6 +25,10 @@
         .item-{{ block.id }} {
           position: relative;
         }
+        .item-{{ block.id }} .caption-flex-space-between{
+          display: flex;
+          justify-content: space-between;
+        }
         .image-container-el-{{ block.id }}.image-ver-alignment-top{
         }
         .image-container-el-{{ block.id }}.image-ver-alignment-center{
@@ -59,6 +63,16 @@
             font-weight: {{ block.settings.caption-font-weight }};
             color: {{ block.settings.caption-font-color }};
             line-height: {{ block.settings.caption-line-height }};
+
+        }
+          .item-{{ block.id }} .customized-product-price-{{ block.id }} {
+            font-size: {{ block.settings.product-price-size }}px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: {{ block.settings.product-price-font-family }};
+            font-weight: {{ block.settings.product-price-font-weight }};
+            color: {{ block.settings.product-price-font-color }};
+            line-height: {{ block.settings.product-price-line-height }};
 
         }
         .item-{{ block.id }} .customized-sub-heading-{{ block.id }} {
@@ -174,9 +188,16 @@
                                         <div class="image-container-wrapper-el-{{ block.id }}">
                                           <img class="img" src=" {{ block.settings.image | img_url: 'master' }} " alt="" height="" width="" loading="lazy">   
                                         </div>
-                                        {% if block.settings.caption %} 
-                                         <p class="customized-caption-{{ block.id }}" >{{ block.settings.caption }}</p>
+                                        <div class="caption-flex-space-between">
+                                          {% if block.settings.caption %} 
+                                          <p class="customized-caption-{{ block.id }}" >{{ block.settings.caption }}</p>
+                                         {% endif %}
+                                         {% if block.settings.product-price %} 
+                                         <p class="customized-product-price-{{ block.id }}" >{{ block.settings.product-price }}</p>
                                         {% endif %}
+                                         
+                                        </div>
+
                                         <div class="caption-space-container-{{ block.id }}">                           
                                         </div> 
                                     </div>
@@ -392,6 +413,56 @@
         "default": 5
 
         },
+        {
+          "type": "text",
+          "id": "product-price",
+          "label": "Product Price",
+          "info": "Blank will remove the price"
+        },
+        {
+        "type": "font",
+        "id": "product-price-font-family",
+        "label": "Product Price Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "product-price-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Product Price Font Weight",
+        "default": 100
+
+        },
+
+        {
+        "type": "color",
+        "id": "product-price-font-color",
+        "label": "Product Price Font Color" 
+        
+        },
+
+        {
+        "type": "range",
+        "id": "product-price-size",
+        "min": 4,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "Product Price Font Size",
+        "default": 16
+        },
+        {
+        "type": "range",
+        "id": "product-price-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "label": "Product Price Line Height",
+        "default": 1.2
+        },
+
         {
         "type": "select",
         "id": "image-vertical-alignment",

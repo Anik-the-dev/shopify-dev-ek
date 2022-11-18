@@ -1,0 +1,436 @@
+{%- style -%}
+   
+  /* dynamic */
+    .section-{{ section.id }}-padding {
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    }
+    .section-{{ section.id }}.section-width-small {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .section-{{ section.id }}.section-width-medium {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .section-{{ section.id }}.section-width-full {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .section-{{ section.id }}.section-width-custom {
+        max-width: {{ section.settings.custom-section-width | append: "px" }};
+        margin: 0 auto;
+    }
+
+    .single-text-container-el-{{ section.id }}{
+        margin: 0 auto;
+        padding: 10px 25px
+
+    }
+
+  {% for block in section.blocks %}
+    .section-{{ section.id }} .space-container-{{ block.id }}{
+            height: {{ block.settings.spacer-height }}px;
+            padding: 0px;
+    }
+    .section-{{ section.id }} .custom-heading-font-size-{{ block.id }} {
+        font-size:{{ block.settings.heading-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.heading-font-family }};
+        font-weight: {{ block.settings.heading-font-weight }};
+        color: {{ block.settings.heading-font-color }};
+        line-height: {{ block.settings.heading-line-height }} 
+    }
+    .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
+        width:{{ block.settings.text-block-width }}px;
+        font-size:{{ block.settings.text-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.text-font-family }};
+        font-weight: {{ block.settings.text-font-weight }};
+        color: {{ block.settings.text-font-color }};
+        line-height: {{ block.settings.text-line-height }} 
+    }
+    .section-{{ section.id }} .custom-caption-font-size-{{ block.id }} {
+        font-size:{{ block.settings.caption-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.caption-font-family }};
+        font-weight: {{ block.settings.caption-font-weight }};
+        color: {{ block.settings.caption-font-color }};
+        line-height: {{ block.settings.caption-line-height }} 
+    }
+
+    .section-{{ section.id }} .custom-bottomtext-font-size-{{ block.id }} {
+        font-size: {{ block.settings.bottom-text-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.bottom-text-font-family }};
+        font-weight: {{ block.settings.bottom-text-font-weight }};
+        color: {{ block.settings.bottom-text-font-color }};
+        line-height: {{ block.settings.bottom-text-line-height }};
+        text-align: center;
+        text-decoration: underline; 
+        text-underline-offset: 15px
+
+    }
+
+  {% endfor %}
+{%- endstyle -%}
+
+<section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">
+        <div class="single-text-container-el-{{ section.id }}">
+          <div class="single-text-container-wrapper-el">
+        {% for block in section.blocks %} 
+            {% case block.type %} 
+                {% when "heading" %}
+                    <h2 class="custom-heading-font-size-{{ block.id }}">{{ block.settings.heading }}</h2>
+                {% when "caption" %}
+                    <p class="custom-caption-font-size-{{ block.id }}"> {{ block.settings.caption }}</p>    
+                {% when "text" %}
+                    <p class="custom-text-font-size-{{ block.id }}"> {{ block.settings.text | replace: 'p>', 'span>' }}</p>
+                {% when "bottomtext" %}
+                    <p class="custom-bottomtext-font-size-{{ block.id }}"> {{ block.settings.bottom-text }}</p>
+                {%- when 'spacer' -%}
+                    <div class="space-container-{{ block.id }}">                           
+                    </div>
+                    
+    
+            {% endcase %} 
+        {% endfor %}
+
+          </div>
+        </div>
+     
+
+
+</section>
+
+{% schema %}
+{
+  "name": "Ninety Single Column Text",
+  "settings": [
+    {
+        "type": "select",
+        "id": "section-width",
+        "label": "Section width",
+        "options": [
+            {
+            "value": "small",
+            "label": "Small"
+            },
+            {
+            "value": "medium",
+            "label": "Medium"
+            },
+            {
+            "value": "full",
+            "label": "Full"
+            },
+            {
+            "value": "custom",
+            "label": "Custom"
+            }
+        ],
+        "default": "custom",
+        "info":"Choose custom for changing custom width"
+    },
+    {  
+        "type": "range",
+        "id": "custom-section-width",
+        "label": "Custom Section width",
+        "min": 200,
+        "max": 1900,
+        "step": 25,
+        "unit": "px",
+        "default": 800
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Headline",
+          "label": "Heading"
+        },
+        {
+        "type": "font",
+        "id": "heading-font-family",
+        "label": "Heading Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "heading-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Heading Font Weight",
+        "default": 700
+
+        },
+
+        {
+        "type": "color",
+        "id": "heading-font-color",
+        "label": "Heading Font Color" 
+        
+        },
+        {
+        "type": "range",
+        "id": "heading-size",
+        "min": 8,
+        "max": 200,
+        "step": 2,
+        "unit": "px",
+        "label": "Heading Size",
+        "default": 36
+        },
+        {
+        "type": "range",
+        "id": "heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Heading Line Height",
+        "default": 1.6
+        }
+      ]
+    },
+    {
+      "type": "caption",
+      "name": "Caption",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "Add a caption",
+          "label": "Text"
+        },
+        {
+        "type": "font",
+        "id": "caption-font-family",
+        "label": "Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Caption Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "caption-font-color",
+        "label": "Caption Font Color" 
+        
+        },
+        {
+        "type": "range",
+        "id": "caption-size",
+        "min": 4,
+        "max": 80,
+        "step": 1,
+        "unit": "px",
+        "label": "Caption Size",
+        "default": 14
+        },
+        {
+        "type": "range",
+        "id": "caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Caption Line Height",
+        "default": 1.2
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "range",
+          "id": "text-block-width",
+          "min": 100,
+          "max": 1600,
+          "step": 25,
+          "unit": "px",
+          "label": "Text Section Width",
+          "default": 600
+
+        }, 
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "Content"
+        },
+        {
+        "type": "font",
+        "id": "text-font-family",
+        "label": "Text Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "text-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Text Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "text-font-color",
+        "label": "Text Font Color" 
+        
+        },
+        {
+        "type": "range",
+        "id": "text-size",
+        "min": 4,
+        "max": 160,
+        "step": 2,
+        "unit": "px",
+        "label": "Text Size",
+        "default": 26
+        },
+        {
+        "type": "range",
+        "id": "text-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Text Line Height",
+        "default": 1.2
+        }
+      ]
+    },
+    {
+        "type": "bottomtext",
+        "name": "Bottom text",
+        "settings": [
+            {
+                "type": "text",
+                "id": "bottom-text",
+                "default": "Add a Bottom Text",
+                "label": "Bottom Text"
+                },
+                {
+                "type": "font",
+                "id": "bottom-text-font-family",
+                "label": "Bottom Text Font Family"
+                },
+
+                {
+                "type": "range",
+                "id": "bottom-text-font-weight",
+                "min": 100,
+                "max": 900,
+                "step": 100,
+                "label": "Bottom Text Font Weight",
+                "default": 300
+                },
+
+                {
+                "type": "color",
+                "id": "bottom-text-font-color",
+                "label": "Bottom Text Font Color" 
+                
+                },
+                {
+                "type": "range",
+                "id": "bottom-text-size",
+                "min": 4,
+                "max": 300,
+                "step": 4,
+                "unit": "px",
+                "label": "Bottom Text Font Size",
+                "default": 16
+                },
+                {
+                "type": "range",
+                "id": "bottom-text-line-height",
+                "min": 0,
+                "max": 5,
+                "step": 0.2,
+                "label": "Bottom Text Line Height",
+                "default": 1.2
+                }
+        ]
+    },
+    {
+            "name": "spacer",
+            "type": "spacer",
+            "settings": [
+                {
+                    "type": "range",
+                    "id": "spacer-height",
+                    "min": 10,
+                    "max": 500,
+                    "step": 10,
+                    "unit": "px",
+                    "label": "Space height",
+                    "default": 50
+
+                }
+            ]
+    } 
+  ],
+  "presets": [
+    {
+      "name": "Ninety Single Column text",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
