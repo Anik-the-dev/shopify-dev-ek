@@ -403,6 +403,39 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "94dceb6d-57a9-4008-8d39-09a60ec83993": {
+      "type": "np-three-column-image",
+      "blocks": {
+        "c345e235-a971-494e-ab2a-80ba69a2e006": {
+          "type": "three-image-block",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/01_NFKW-0340-IVORY-YELLOW_002_1.png",
+            "second-image": "shopify:\/\/shop_images\/06_NFKW-0333-BLACK-NCBW-0313-OBSIDIAN_010_1.png",
+            "third-image": "shopify:\/\/shop_images\/09_NCDW-P-0040-BLOSSOM-BLIZZARD-PRINT_622_1.png",
+            "first-product-name": "<p>anik<\/p>",
+            "first-fabric-brand": "<p>anik<\/p>",
+            "first-product-price": "<p>anik<\/p>",
+            "second-product-name": "<p>anik<\/p>",
+            "second-fabric-brand": "<p>anik<\/p>",
+            "second-product-price": "<p>anik<\/p>",
+            "third-product-name": "<p>anik<\/p>",
+            "third-fabric-brand": "<p>anik<\/p>",
+            "third-product-price": "<p>anik<\/p>",
+            "caption-font-size": 16,
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-color": "#2b2725",
+            "show-caption": true,
+            "block-width": "custom",
+            "custom-block-width": 1350
+          }
+        }
+      },
+      "block_order": [
+        "c345e235-a971-494e-ab2a-80ba69a2e006"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -414,6 +447,7 @@
     "662aa8d4-f7a3-4a3c-8727-ddb9a5d2cc16",
     "24e34a4c-96b8-4329-85b9-0cd2617759ec",
     "dd39827d-8ff8-4ea0-a708-fe0b356fa7b0",
-    "424fb4bb-4473-4b79-8dfe-94cc76c580f9"
+    "424fb4bb-4473-4b79-8dfe-94cc76c580f9",
+    "94dceb6d-57a9-4008-8d39-09a60ec83993"
   ]
 }
