@@ -346,6 +346,63 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "424fb4bb-4473-4b79-8dfe-94cc76c580f9": {
+      "type": "ninety-single-col-text",
+      "blocks": {
+        "template--15927171842242__424fb4bb-4473-4b79-8dfe-94cc76c580f9-1668782158994fd6ba-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Values",
+            "heading-font-family": "",
+            "heading-font-weight": 400,
+            "heading-font-color": "#2b2725",
+            "heading-size": 26,
+            "heading-line-height": 2.1
+          }
+        },
+        "template--15927171842242__424fb4bb-4473-4b79-8dfe-94cc76c580f9-1668782158994fd6ba-1": {
+          "type": "text",
+          "settings": {
+            "text-block-width": 825,
+            "text": "<p>Since we begun using GOTS organic cotton in July 2020, we can estimate a saving of 217,558 litres of water compared with using conventional cotton. This is based on data from the Textile Exchange’s 2014 Life-Cycle Assessment of organic cotton which has calculated water usage during the life cycle of a cotton t-shirt. A t-shirt made from conventional cotton uses approximately 8206 litres of water compared with water usage of 704 litres for the same t-shirt made from cotton grown and processed organically, a saving of 7502 litres.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "text-size": 16,
+            "text-line-height": 1.8
+          }
+        },
+        "ee0a4d2a-b777-4033-8871-307365573f65": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 190
+          }
+        },
+        "b15f0669-2cfd-4a81-884e-45c764a6d5c4": {
+          "type": "bottomtext",
+          "settings": {
+            "bottom-text": "DOWNLOAD CERTIFICATES",
+            "bottom-text-font-family": "Helvetica, Arial, sans-serif",
+            "bottom-text-font-weight": 400,
+            "bottom-text-font-color": "#2b2725",
+            "bottom-text-size": 20,
+            "bottom-text-line-height": 1.2
+          }
+        }
+      },
+      "block_order": [
+        "template--15927171842242__424fb4bb-4473-4b79-8dfe-94cc76c580f9-1668782158994fd6ba-0",
+        "template--15927171842242__424fb4bb-4473-4b79-8dfe-94cc76c580f9-1668782158994fd6ba-1",
+        "ee0a4d2a-b777-4033-8871-307365573f65",
+        "b15f0669-2cfd-4a81-884e-45c764a6d5c4"
+      ],
+      "settings": {
+        "section-width": "custom",
+        "custom-section-width": 900,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -356,6 +413,7 @@
     "347f5d4d-2d30-45da-89fa-60b1d34abb12",
     "662aa8d4-f7a3-4a3c-8727-ddb9a5d2cc16",
     "24e34a4c-96b8-4329-85b9-0cd2617759ec",
-    "dd39827d-8ff8-4ea0-a708-fe0b356fa7b0"
+    "dd39827d-8ff8-4ea0-a708-fe0b356fa7b0",
+    "424fb4bb-4473-4b79-8dfe-94cc76c580f9"
   ]
 }
