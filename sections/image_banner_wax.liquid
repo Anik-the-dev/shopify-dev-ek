@@ -6,10 +6,6 @@
       width: {{ block.settings.Single_Image_Width }}px;
       margin: 0 auto;
     }
-    .single-image-container-{{ block.id }} p{
-      text-align:left;
-      margin-top: 0px;
-    }
 
     .single-image-container-{{ block.id }} img {
       width: 100%
@@ -34,6 +30,7 @@
     .section-{{ section.id }} .custom-caption-font-size-{{ block.id }} {
         font-size:{{ block.settings.caption-size }}px;
         margin-top: 0;
+        text-align:left;
         margin-bottom: 0;
         font-family: {{ block.settings.caption-font-family }};
         font-weight: {{ block.settings.caption-font-weight }};
@@ -76,7 +73,7 @@
 }
 {%- endstyle -%}
 
-<section id="section-{{ section.id }}">
+<section class="section-{{ section.id }}">
 {% for block in section.blocks %}
   {% case block.type %}
     {% when "image" %}
