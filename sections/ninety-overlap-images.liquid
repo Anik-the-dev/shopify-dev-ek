@@ -44,28 +44,24 @@
   .grid-container-nel-{{ section.id }} .grid-item-nel img{
     width: 100%;
   }
+
+  .grid-container-nel-{{ section.id }} .grid-item-nel .firstpara {     
+    position: absolute;
+    right: 126px;
+
+  }
   
-  .grid-container-nel-{{ section.id }} .grid-item-nel.firstpara p{
+  .grid-container-nel-{{ section.id }} .grid-item-nel .firstpara p{
     text-align: left;
+  }
+  .grid-container-nel-{{ section.id }} .grid-item-nel .secondpara {
     position: absolute;
-    top: 40%;
-    left: -126px;
-}
-.grid-container-nel-{{ section.id }} .grid-item-nel.firstpara .right-head-pos{
-   top: 25%;
-}
-.grid-container-nel-{{ section.id }} .grid-item-nel.secondpara p{
-    text-align: left;
-    position: absolute;
-    top: 20%;
     left: 10%;
-}
-.grid-container-nel-{{ section.id }} .grid-item-nel.secondpara .left-head-pos{
-   top: 8%;
-}
-.grid-container-nel-{{ section.id }} .grid-item-nel.secondpara .left-cap-pos{
-   top: 50%;
-}
+  }
+  .grid-container-nel-{{ section.id }} .grid-item-nel .secondpara p{
+    text-align: left;
+  }
+
 .grid-container-nel-{{ section.id }} .grid-item-nel.mt_el{
     margin-top: 100px;
 }
@@ -159,19 +155,25 @@
           {% endif %} 
         </div>
         <div class="grid-item-nel"> <p></p> </div>
-        <div class="grid-item-nel firstpara">
-          {% for block in section.blocks %} 
-            {% case block.type %} 
+        <div class="grid-item-nel">
+            <div class="firstpara">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                {%- when 'right-spacer' -%}
+                  <div class="right-space-container-{{ block.id }}">
+                  </div> 
                 {% when "heading" %}
-                    <p class="right-custom-heading-font-size-{{ block.id }} right-head-pos">{{ block.settings.right-heading }}</p>
+                    <h3 class="right-custom-heading-font-size-{{ block.id }} right-head-pos">{{ block.settings.right-heading }}</h3>
                 {% when "text" %}
                     <p class="ps-text right-custom-text-font-size-{{ block.id }}"> {{ block.settings.right-text | replace: 'p>', 'span>' }}</p>
-                {%- when 'spacer' -%}
-                    <div class="right-space-container-{{ block.id }}">
-                    </div>
+
                         
-            {% endcase %} 
-          {% endfor %}
+                {% endcase %} 
+              {% endfor %}
+
+
+            </div> 
+
         </div>
         <div class="grid-item-nel"><p></p></div>
         <div class="grid-item-nel mt_el">
@@ -186,21 +188,25 @@
             {% endif %} 
         </div>
         </div>
-        <div class="grid-item-nel secondpara">
-          {% for block in section.blocks %} 
-            {% case block.type %} 
-                {% when "heading" %}
-                    <p class="left-custom-heading-font-size-{{ block.id }} left-head-pos">{{ block.settings.left-heading }}</p>
-                {% when "text" %}
-                    <p class="ps-text left-custom-text-font-size-{{ block.id }}"> {{ block.settings.left-text | replace: 'p>', 'span>' }}</p>
-                {% when "caption" %}
-                    <p class=" left-custom-caption-font-size-{{ block.id }} left-cap-pos"> {{ block.settings.left-caption }}</p>
-                {%- when 'spacer' -%}
-                    <div class="left-space-container-{{ block.id }}">   
-                    </div>
-                        
-            {% endcase %} 
-          {% endfor %}
+        <div class="grid-item-nel">
+          <div class="secondpara">
+            {% for block in section.blocks %} 
+              {% case block.type %} 
+                  {% when "heading" %}
+                      <h3 class="left-custom-heading-font-size-{{ block.id }} left-head-pos">{{ block.settings.left-heading }}</h3>
+                  {% when "text" %}
+                      <p class="ps-text left-custom-text-font-size-{{ block.id }}"> {{ block.settings.left-text | replace: 'p>', 'span>' }}</p>
+                  {% when "caption" %}
+                      <p class=" left-custom-caption-font-size-{{ block.id }} left-cap-pos"> {{ block.settings.left-caption }}</p>
+                  {%- when 'left-spacer' -%}
+                      <div class="left-space-container-{{ block.id }}">   
+                      </div>
+                          
+              {% endcase %} 
+            {% endfor %}
+            
+          </div> 
+
         </div>
         <div class="grid-item-nel"><p></p></div>
       </div>
@@ -312,16 +318,16 @@
       "name": "Heading",
       "limit": 1,
       "settings": [
-        {
-          "type": "header",
-          "content": "Right Text Section"
-        },
-        {
-          "type": "text",
-          "id": "right-heading",
-          "default": "headline",
-          "label": "Right heading"
-        },
+          {
+            "type": "header",
+            "content": "Right Text Section"
+          },
+          {
+            "type": "text",
+            "id": "right-heading",
+            "default": "headline",
+            "label": "Right heading"
+          },
         {
         "type": "font",
         "id": "right-heading-font-family",
@@ -674,8 +680,8 @@
       ]
     },
     {
-            "name": "spacer",
-            "type": "spacer",
+            "name": "Right spacer",
+            "type": "right-spacer",
             "settings": [
                 {
                     "type": "range",
@@ -684,10 +690,17 @@
                     "max": 500,
                     "step": 10,
                     "unit": "px",
-                    "label": "Right top padding",
+                    "label": "Right Content Spacer",
                     "default": 50
 
-                },
+                }
+
+            ]
+    },
+    {
+            "name": "Left spacer",
+            "type": "left-spacer",
+            "settings": [
                 {
                     "type": "range",
                     "id": "left-spacer-height",
@@ -695,7 +708,7 @@
                     "max": 500,
                     "step": 10,
                     "unit": "px",
-                    "label": "Left padding bottom",
+                    "label": "Left Content Spacer",
                     "default": 50
 
                 }

@@ -8,6 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 50px;
+    
   }
   .col-gap-el {
     column-gap: 120px;
@@ -108,6 +110,42 @@
     }
 
   {% endfor %}
+
+  /* mobile screen responsive */
+  @media only screen and (max-width: 750px) {
+    .flex-two-col-el{
+      flex-direction: column;
+      padding: 0 50px;
+    }
+    .text-container-el{
+      margin: 50px 0;
+    }
+    .image-container-wrapper-el , .text-container-wrapper-el {
+      width: 100%
+    }
+    .image-container-wrapper-el img {
+      display: block;
+      width: 100%;
+    }
+    .text-container-wrapper-el h2{
+      font-size: 72px;
+    }
+    .text-container-wrapper-el p{
+      font-size: 22px;
+    } 
+    .text-container-wrapper-el h2 , .text-container-wrapper-el p{
+      width: 100%
+
+    }
+    
+    
+
+
+
+    
+}
+
+
 {%- endstyle -%}
 
 <section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">

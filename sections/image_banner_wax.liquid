@@ -32,6 +32,27 @@
     }
   
   {% endfor %}
+
+   /* mobile screen responsive */
+   @media only screen and (max-width: 750px) {
+    {% for block in section.blocks %}
+    .single-image-container-{{ block.id }}{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .single-image-container-{{ block.id }} p{
+      text-align:center;
+      font-size: 12px;
+      margin-top: 0px;
+    }
+
+    .single-image-container-{{ block.id }} img {
+      width: 100%
+    }
+  
+  {% endfor %}
+       
+}
 {%- endstyle -%}
 
 <section id="section-{{ section.id }}">
