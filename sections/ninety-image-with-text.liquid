@@ -112,24 +112,31 @@
   {% endfor %}
 
   /* mobile screen responsive */
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     .section-{{ section.id }}{
-      padding: 10px 25px;
+      padding: 25px 25px;
       overflow-x: hidden;
+      width: 100%;
     }
     .flex-two-col-el{
       flex-direction: column;
-      padding: 0 50px;
+      width: 100%;
     }
     .text-container-el{
       margin: 50px 0;
     }
+
     .image-container-wrapper-el , .text-container-wrapper-el {
       width: 100%
     }
+    .section-{{ section.id }} .image-container-wrapper-el img {
+    display: block;
+    width: 75%;
+  }
     .image-container-wrapper-el img {
       display: block;
-      width: 100%;
+      width: 80%;
+      margin: 0 auto;
     }
     .text-container-wrapper-el h2{
       font-size: 72px;
