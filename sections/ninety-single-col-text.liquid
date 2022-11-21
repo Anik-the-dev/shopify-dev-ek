@@ -77,6 +77,29 @@
     }
 
   {% endfor %}
+
+    /* mobile screen responsive */
+    @media only screen and (max-width: 750px) {
+      .section-{{ section.id }}{
+      padding: 10px 25px;
+      overflow-x: hidden;
+      }
+      .single-text-container-el-{{ section.id }} {
+        width: 100%;
+      }
+      .single-text-container-wrapper-el h2, .single-text-container-wrapper-el .custom-caption-font-size-{{ block.id }}{
+        width: 90%;
+        margin: auto
+      } 
+
+
+    {% for block in section.blocks %}
+      .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
+        width: 100%;
+        margin: auto
+      } 
+      
+    {% endfor %}
 {%- endstyle -%}
 
 <section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">

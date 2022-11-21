@@ -26,8 +26,8 @@
 .grid-container-nel-{{ section.id }} {
     display: grid;
     grid-template-columns: 43% 15% 42%;
-    padding: 10px;
-    width: 1340px;
+    padding: 50px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -71,7 +71,7 @@
   /* right text css */
     .right-space-container-{{ block.id }}{
             height: {{ block.settings.right-spacer-height }}px;
-            padding: 0px;
+            padding: 1px;
     }
     .right-custom-heading-font-size-{{ block.id }} {
         font-size:{{ block.settings.right-heading-size }}px;
@@ -140,6 +140,54 @@
 
   {% endfor %}
     
+    /* mobile screen responsive */
+  @media only screen and (max-width: 750px) {
+    .section-{{ section.id }}{
+      padding: 10px 25px;
+      overflow-x: hidden;
+    }
+    .grid-container-nel-{{ section.id }} {
+    grid-template-columns: 1fr;
+    padding: 25px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px
+    }
+
+    .grid-container-nel-{{ section.id }} .grid-item-nel .firstpara {     
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    width: 100%
+
+  }
+
+  .secondimg{
+    padding-top: 100px;
+
+  }
+  
+  .grid-container-nel-{{ section.id }} .grid-item-nel .firstpara p{
+    text-align: left;
+  }
+  .grid-container-nel-{{ section.id }} .grid-item-nel .secondpara {
+    position: absolute;
+    left: 0px;
+  }
+  .grid-container-nel-{{ section.id }} .grid-item-nel .secondpara p{
+    text-align: left;
+  }
+
+
+    {% for block in section.blocks %}
+      .right-custom-text-font-size-{{ block.id }} , 
+      .left-custom-text-font-size-{{ block.id }} {
+            width: 100%
+      }
+      
+    {% endfor %}
+
+  }
 {%- endstyle -%}
 
 <section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">

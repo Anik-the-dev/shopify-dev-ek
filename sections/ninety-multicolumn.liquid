@@ -182,6 +182,13 @@
 
   /* mobile screen responsive */
   @media only screen and (max-width: 750px) {
+    .section-{{ section.id }}{
+      padding: 10px 25px
+    }
+    .np-multicolumn-wrapper{
+      padding-top: 220px;
+      padding-bottom: 100px;
+    }
     .section-{{ section.id }} .np-multicolumn-wrapper.divider-bg{
             background: linear-gradient(#2B2725, #2B2725) center/0px 100% no-repeat,
                         linear-gradient(#2B2725, #2B2725) center/0px 100% no-repeat;
@@ -190,6 +197,7 @@
     .np-grid-container.column-3 {
         grid-template-columns: 1fr;
         align-items: center;
+        justify-content:center;
         width: 90%;
     }
     .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n+1)::after {
@@ -205,6 +213,11 @@
       line-height: 1.2
     }
     {% for block in section.blocks %}
+      .image-container-el-{{ block.id }} {
+          width: 100%;
+          margin: auto;
+        }
+
       
     {% endfor %}
 
