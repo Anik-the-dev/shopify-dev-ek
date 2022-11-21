@@ -20,7 +20,7 @@
             "heading-font-color": "",
             "heading-size": 100,
             "heading-line-height": 1,
-            "mobile-heading-size": 36,
+            "mobile-heading-size": 48,
             "mobile-heading-line-height": 1.6
           }
         },
@@ -40,7 +40,7 @@
             "text-font-color": "#000000",
             "text-size": 26,
             "text-line-height": 1.6,
-            "mobile-text-size": 36,
+            "mobile-text-size": 22,
             "mobile-text-line-height": 1.6
           }
         },
@@ -60,7 +60,7 @@
             "text-font-color": "#000000",
             "text-size": 16,
             "text-line-height": 1.8,
-            "mobile-text-size": 36,
+            "mobile-text-size": 16,
             "mobile-text-line-height": 1.6
           }
         }
@@ -143,6 +143,8 @@
             "heading-size": 100,
             "heading-line-height": 1.2,
             "heading-spacer-height": 15,
+            "mobile-heading-size": 36,
+            "mobile-heading-line-height": 1.6,
             "caption": "",
             "caption-font-family": "",
             "caption-font-weight": 300,
@@ -150,6 +152,8 @@
             "caption-size": 16,
             "caption-line-height": 1.2,
             "caption-spacer-height": 5,
+            "mobile-caption-size": 16,
+            "mobile-caption-line-height": 1.6,
             "description": "<p>of our profits are reinvested into the business to help us grow and explore the newest in sustainable ways of doing.<\/p>",
             "text-font-family": "",
             "text-font-weight": 400,
@@ -157,6 +161,8 @@
             "description-size": 16,
             "description-line-height": 1.8,
             "description-spacer-height": 0,
+            "mobile-text-size": 16,
+            "mobile-text-line-height": 1.6,
             "bottom-text": "",
             "bottom-text-font-weight": 300,
             "bottom-text-font-color": "",
@@ -805,6 +811,8 @@
             "heading-size": 20,
             "heading-line-height": 1.2,
             "heading-spacer-height": 0,
+            "mobile-heading-size": 36,
+            "mobile-heading-line-height": 1.6,
             "caption": "Sustainability & Materials",
             "caption-font-family": "",
             "caption-font-weight": 300,
@@ -812,6 +820,8 @@
             "caption-size": 16,
             "caption-line-height": 1.2,
             "caption-spacer-height": 45,
+            "mobile-caption-size": 16,
+            "mobile-caption-line-height": 1.6,
             "description": "<p>From the beginning, our purpose has been to create ready-to-wear clothing, cut in the finest materials, selected to have the lowest impact on our global environment. Pieces designed for longevity, made with purpose – for the world we want. <br\/><\/p>",
             "text-font-family": "",
             "text-font-weight": 300,
@@ -819,6 +829,8 @@
             "description-size": 16,
             "description-line-height": 1.6,
             "description-spacer-height": 50,
+            "mobile-text-size": 16,
+            "mobile-text-line-height": 1.6,
             "bottom-text": "EXPLORE SUSTAINABILITY & MATERIALS",
             "bottom-text-font-weight": 300,
             "bottom-text-font-color": "#2b2725",
