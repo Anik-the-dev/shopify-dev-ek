@@ -454,6 +454,30 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "a7b2b44c-9b42-47e5-b3e7-dac1c4dc1ac2": {
+      "type": "image_banner_wax",
+      "blocks": {
+        "d525d450-50f6-4d5e-b72b-6eb3c55cd1bf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/220818_NinetyPercent_SS22_02_160_R1_3.png",
+            "Single_Image_Width": 600,
+            "caption-image": "<p>(ABOVE) LOOK 00 FROM COLLECTION 20 MADE OF X MATERIAL. SHOP HERE<\/p>",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-font-weight": 300,
+            "caption-font-color": "#121212",
+            "caption-size": 12,
+            "caption-line-height": 1.2,
+            "image_height": "auto"
+          }
+        }
+      },
+      "block_order": [
+        "d525d450-50f6-4d5e-b72b-6eb3c55cd1bf"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -465,6 +489,7 @@
     "662aa8d4-f7a3-4a3c-8727-ddb9a5d2cc16",
     "24e34a4c-96b8-4329-85b9-0cd2617759ec",
     "dd39827d-8ff8-4ea0-a708-fe0b356fa7b0",
-    "424fb4bb-4473-4b79-8dfe-94cc76c580f9"
+    "424fb4bb-4473-4b79-8dfe-94cc76c580f9",
+    "a7b2b44c-9b42-47e5-b3e7-dac1c4dc1ac2"
   ]
 }
