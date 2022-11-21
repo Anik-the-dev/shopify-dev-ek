@@ -382,7 +382,7 @@
             "sub-heading-size": 16,
             "sub-heading-line-height": 1.2,
             "sub-heading-spacer-height": 30,
-            "mobile-sub-heading-size": 36,
+            "mobile-sub-heading-size": 16,
             "mobile-sub-heading-line-height": 1.6,
             "description": "<p>Founded by our co-founder, Children's Hope believes that education is a fundamental human right. The organisation set up in 2000 has three key aims: to provide education for the most disadvantaged children residing in Bangladesh’s Dhaka urban slums, to provide healthcare and to offer vital financial and nutritional support to their families.<\/p>",
             "text-font-family": "Helvetica, Arial, sans-serif",
@@ -391,7 +391,7 @@
             "description-size": 12,
             "description-line-height": 1.8,
             "description-spacer-height": 0,
-            "mobile-text-size": 36,
+            "mobile-text-size": 12,
             "mobile-text-line-height": 1.6
           }
         },
