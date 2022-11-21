@@ -30,6 +30,17 @@
       height: 1200px;
       overflow: hidden
     }
+
+    .section-{{ section.id }} .custom-caption-font-size-{{ block.id }} {
+        font-size:{{ block.settings.caption-size }}px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: {{ block.settings.caption-font-family }};
+        font-weight: {{ block.settings.caption-font-weight }};
+        color: {{ block.settings.caption-font-color }};
+        line-height: {{ block.settings.caption-line-height }} 
+    }
+
   
   {% endfor %}
 
@@ -58,28 +69,7 @@
 
   
   {% for block in section.blocks %}
-      /* mobile version */
-    .section-{{ section.id }} .custom-heading-font-size-{{ block.id }} {
-        font-size:{{ block.settings.mobile-heading-size }}px;
-        line-height: {{ block.settings.mobile-heading-line-height }} 
-    }
-    .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
-        width: 100%;
-        margin: auto;
-        font-size:{{ block.settings.mobile-text-size }}px;
-        line-height: {{ block.settings.mobile-text-line-height }} 
-    }
-    .section-{{ section.id }} .custom-caption-font-size-{{ block.id }} {
-        font-size:{{ block.settings.mobile-caption-size }}px;
-        line-height: {{ block.settings.mobile-caption-line-height }} 
-
-    }
-
-    .section-{{ section.id }} .custom-bottom-text-font-size-{{ block.id }} {
-        font-size: {{ block.settings.mobile-bottom-text-size }}px;
-        line-height: {{ block.settings.mobile-bottom-text-line-height }};
-
-    } 
+   
       
     {% endfor %}
        
@@ -95,7 +85,8 @@
           <img src=" {{ block.settings.image | img_url: "grande" }} " alt="" height="" width="" loading="lazy">
         </div>
         {% if block.settings.caption-image %}
-          {{ block.settings.caption-image }}
+          <p class="custom-caption-font-size-{{ block.id }}"> {{ block.settings.caption-image | replace: 'p>', 'span>' }}</p>
+
         {% endif %}
       </div>
   {% endcase %}  
@@ -104,7 +95,7 @@
 
 {% schema %}
   {
-    "name": "Single Wax Image",
+    "name": "Single Image",
     "tag": "section",
     "class": "section",
     "settings": [],
@@ -134,7 +125,49 @@
           "id": "caption-image",
           "default": "<p>Add Caption in Image</p>",
           "label": "Add a caption"
-          }, 
+          },
+        {
+        "type": "font",
+        "id": "caption-font-family",
+        "label": "Caption Font Family"
+        },
+
+        {
+        "type": "range",
+        "id": "caption-font-weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Caption Font Weight",
+        "default": 300
+
+        },
+
+        {
+        "type": "color",
+        "id": "caption-font-color",
+        "label": "Caption Font Color" 
+        
+        },
+        {
+        "type": "range",
+        "id": "caption-size",
+        "min": 4,
+        "max": 80,
+        "step": 1,
+        "unit": "px",
+        "label": "Caption Size",
+        "default": 14
+        },
+        {
+        "type": "range",
+        "id": "caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Caption Line Height",
+        "default": 1.2
+        }, 
           {
           "type": "select",
           "id": "image_height",
@@ -163,7 +196,7 @@
     ],
     "presets": [
       {
-        "name": "Single Wax Image"
+        "name": "Single Image"
       }
     ]
   }
