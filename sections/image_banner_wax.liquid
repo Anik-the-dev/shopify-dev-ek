@@ -55,6 +55,33 @@
     }
   
   {% endfor %}
+
+  
+  {% for block in section.blocks %}
+      /* mobile version */
+    .section-{{ section.id }} .custom-heading-font-size-{{ block.id }} {
+        font-size:{{ block.settings.mobile-heading-size }}px;
+        line-height: {{ block.settings.mobile-heading-line-height }} 
+    }
+    .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
+        width: 100%;
+        margin: auto;
+        font-size:{{ block.settings.mobile-text-size }}px;
+        line-height: {{ block.settings.mobile-text-line-height }} 
+    }
+    .section-{{ section.id }} .custom-caption-font-size-{{ block.id }} {
+        font-size:{{ block.settings.mobile-caption-size }}px;
+        line-height: {{ block.settings.mobile-caption-line-height }} 
+
+    }
+
+    .section-{{ section.id }} .custom-bottom-text-font-size-{{ block.id }} {
+        font-size: {{ block.settings.mobile-bottom-text-size }}px;
+        line-height: {{ block.settings.mobile-bottom-text-line-height }};
+
+    } 
+      
+    {% endfor %}
        
 }
 {%- endstyle -%}

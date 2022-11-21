@@ -62,7 +62,7 @@
         line-height: {{ block.settings.caption-line-height }} 
     }
 
-    .section-{{ section.id }} .custom-bottomtext-font-size-{{ block.id }} {
+    .section-{{ section.id }} .custom-bottom-text-font-size-{{ block.id }} {
         font-size: {{ block.settings.bottom-text-size }}px;
         margin-top: 0;
         margin-bottom: 0;
@@ -75,6 +75,8 @@
         text-underline-offset: 15px
 
     }
+
+   
 
   {% endfor %}
 
@@ -89,17 +91,44 @@
       }
       .single-text-container-wrapper-el h2, .single-text-container-wrapper-el .custom-caption-font-size-{{ block.id }}{
         width: 90%;
-        margin: auto
-      } 
+        margin: auto;
+        font-size: {{ block.settings.mobile-bottom-text-size }}px;
+        line-height: {{ block.settings.mobile-bottom-text-line-height }};
+
+      }
+      .single-text-container-wrapper-el .custom-caption-font-size-{{ block.id }}{
+        width: 90%;
+        margin: auto;
+
+      }  
 
 
     {% for block in section.blocks %}
-      .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
+      /* mobile version */
+    .section-{{ section.id }} .custom-heading-font-size-{{ block.id }} {
+        font-size:{{ block.settings.mobile-heading-size }}px;
+        line-height: {{ block.settings.mobile-heading-line-height }} 
+    }
+    .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
         width: 100%;
-        margin: auto
-      } 
+        margin: auto;
+        font-size:{{ block.settings.mobile-text-size }}px;
+        line-height: {{ block.settings.mobile-text-line-height }} 
+    }
+    .section-{{ section.id }} .custom-caption-font-size-{{ block.id }} {
+        font-size:{{ block.settings.mobile-caption-size }}px;
+        line-height: {{ block.settings.mobile-caption-line-height }} 
+
+    }
+
+    .section-{{ section.id }} .custom-bottom-text-font-size-{{ block.id }} {
+        font-size: {{ block.settings.mobile-bottom-text-size }}px;
+        line-height: {{ block.settings.mobile-bottom-text-line-height }};
+
+    } 
       
     {% endfor %}
+  }
 {%- endstyle -%}
 
 <section class="section-{{ section.id }} section-{{ section.id }}-padding section-width-{{ section.settings.section-width }} ">
@@ -113,8 +142,8 @@
                     <p class="custom-caption-font-size-{{ block.id }}"> {{ block.settings.caption }}</p>    
                 {% when "text" %}
                     <p class="custom-text-font-size-{{ block.id }}"> {{ block.settings.text | replace: 'p>', 'span>' }}</p>
-                {% when "bottomtext" %}
-                    <p class="custom-bottomtext-font-size-{{ block.id }}"> {{ block.settings.bottom-text }}</p>
+                {% when "bottom-text" %}
+                    <p class="custom-bottom-text-font-size-{{ block.id }}"> {{ block.settings.bottom-text }}</p>
                 {%- when 'spacer' -%}
                     <div class="space-container-{{ block.id }}">                           
                     </div>
@@ -247,6 +276,29 @@
         "step": 0.1,
         "label": "Heading Line Height",
         "default": 1.6
+        },
+        {
+        "type": "header",
+        "content": "Mobile Font Style"
+        },
+        {
+        "type": "range",
+        "id": "mobile-heading-size",
+        "min": 8,
+        "max": 200,
+        "step": 2,
+        "unit": "px",
+        "label": "Heading Size(Mobile)",
+        "default": 36
+        },
+        {
+        "type": "range",
+        "id": "mobile-heading-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Heading Line Height(Mobile)",
+        "default": 1.6
         }
       ]
     },
@@ -302,6 +354,29 @@
         "step": 0.1,
         "label": "Caption Line Height",
         "default": 1.2
+        },
+        {
+        "type": "header",
+        "content": "Mobile Font Style"
+        },
+        {
+        "type": "range",
+        "id": "mobile-caption-size",
+        "min": 8,
+        "max": 200,
+        "step": 2,
+        "unit": "px",
+        "label": "Caption Size(Mobile)",
+        "default": 36
+        },
+        {
+        "type": "range",
+        "id": "mobile-caption-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Caption Line Height(Mobile)",
+        "default": 1.6
         }
       ]
     },
@@ -368,11 +443,34 @@
         "step": 0.1,
         "label": "Text Line Height",
         "default": 1.2
+        },
+        {
+        "type": "header",
+        "content": "Mobile Font Style"
+        },
+        {
+        "type": "range",
+        "id": "mobile-text-size",
+        "min": 8,
+        "max": 200,
+        "step": 2,
+        "unit": "px",
+        "label": "Text Size(Mobile)",
+        "default": 36
+        },
+        {
+        "type": "range",
+        "id": "mobile-text-line-height",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Text Line Height(Mobile)",
+        "default": 1.6
         }
       ]
     },
     {
-        "type": "bottomtext",
+        "type": "bottom-text",
         "name": "Bottom text",
         "settings": [
             {
@@ -421,8 +519,31 @@
                 "step": 0.2,
                 "label": "Bottom Text Line Height",
                 "default": 1.2
+                },
+                {
+                "type": "header",
+                "content": "Mobile Font Style"
+                },
+                {
+                "type": "range",
+                "id": "mobile-bottom-text-size",
+                "min": 8,
+                "max": 200,
+                "step": 2,
+                "unit": "px",
+                "label": "Bottom Text Size(Mobile)",
+                "default": 36
+                },
+                {
+                "type": "range",
+                "id": "mobile-bottom-text-line-height",
+                "min": 0,
+                "max": 5,
+                "step": 0.1,
+                "label": "Bottom Text Line Height(Mobile)",
+                "default": 1.6
                 }
-        ]
+      ]
     },
     {
             "name": "spacer",
@@ -457,3 +578,4 @@
   ]
 }
 {% endschema %}
+
