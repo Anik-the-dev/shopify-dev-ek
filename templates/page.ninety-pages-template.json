@@ -558,7 +558,7 @@
             "text-font-color": "#000000",
             "text-size": 26,
             "text-line-height": 1.8,
-            "mobile-text-size": 36,
+            "mobile-text-size": 22,
             "mobile-text-line-height": 1.6
           }
         },
@@ -578,7 +578,7 @@
             "text-font-color": "#000000",
             "text-size": 16,
             "text-line-height": 2,
-            "mobile-text-size": 36,
+            "mobile-text-size": 14,
             "mobile-text-line-height": 1.6
           }
         }
