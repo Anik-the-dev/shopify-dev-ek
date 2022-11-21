@@ -170,6 +170,25 @@
             width: 1400px;
        }
 
+       {% if section.settings.section-width == "small" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
+            width: 600px;
+       }
+       {% elsif section.settings.section-width == "medium" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
+            width: 900px;
+       }
+       {% elsif section.settings.section-width == "full" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
+            width: 1400px;
+       }
+       {% elsif section.settings.section-width == "custom" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
+        width: {{ section.settings.custom-section-width | append: "px" }};
+       }
+       {% endif %}
+
+
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-last-child(3)::after , 
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-last-child(2)::after,
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-last-child(1)::after {
