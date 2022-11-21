@@ -455,6 +455,12 @@
         "padding_bottom": 36
       }
     },
+    "3c3c652f-bcf9-4ac4-80eb-0a510d5d96b5": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 100
+      }
+    },
     "a7b2b44c-9b42-47e5-b3e7-dac1c4dc1ac2": {
       "type": "image_banner_wax",
       "blocks": {
@@ -490,6 +496,7 @@
     "24e34a4c-96b8-4329-85b9-0cd2617759ec",
     "dd39827d-8ff8-4ea0-a708-fe0b356fa7b0",
     "424fb4bb-4473-4b79-8dfe-94cc76c580f9",
+    "3c3c652f-bcf9-4ac4-80eb-0a510d5d96b5",
     "a7b2b44c-9b42-47e5-b3e7-dac1c4dc1ac2"
   ]
 }
