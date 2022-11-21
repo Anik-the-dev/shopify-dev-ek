@@ -337,7 +337,7 @@
             "sub-heading-size": 16,
             "sub-heading-line-height": 1.2,
             "sub-heading-spacer-height": 30,
-            "mobile-sub-heading-size": 36,
+            "mobile-sub-heading-size": 16,
             "mobile-sub-heading-line-height": 1.6,
             "description": "<p>Since 2010, Big Life has worked on the ground in East Africa partnering with local communities to protect nature. Employing hundreds of Maasai rangers, they protect two million acres of wilderness in the Amboseli-Tsavo-Kilimanjaro ecosystem. Seeking to safeguard and sustain wildlife and wildlands, including one of the greatest populations of elephants left in the region. It is the first organisation with coordinated anti-poaching teams operating on both sides of the Kenya-Tanzania border.<br\/><\/p>",
             "text-font-family": "",
@@ -346,7 +346,7 @@
             "description-size": 12,
             "description-line-height": 1.8,
             "description-spacer-height": 100,
-            "mobile-text-size": 36,
+            "mobile-text-size": 12,
             "mobile-text-line-height": 1.6
           }
         },
