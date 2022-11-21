@@ -401,6 +401,12 @@
             "mobile-heading-line-height": 1.6
           }
         },
+        "f555a52f-ef70-4692-846e-bba28a48603f": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
         "template--15927171842242__424fb4bb-4473-4b79-8dfe-94cc76c580f9-1668782158994fd6ba-1": {
           "type": "text",
           "settings": {
@@ -420,12 +426,27 @@
           "settings": {
             "spacer-height": 190
           }
+        },
+        "18544fce-1d2b-4cbc-b474-8d6396353929": {
+          "type": "bottom-text",
+          "settings": {
+            "bottom-text": "DOWNLOAD CERTIFICATES",
+            "bottom-text-font-family": "Helvetica, Arial, sans-serif",
+            "bottom-text-font-weight": 300,
+            "bottom-text-font-color": "",
+            "bottom-text-size": 16,
+            "bottom-text-line-height": 1.2,
+            "mobile-bottom-text-size": 36,
+            "mobile-bottom-text-line-height": 1.6
+          }
         }
       },
       "block_order": [
         "template--15927171842242__424fb4bb-4473-4b79-8dfe-94cc76c580f9-1668782158994fd6ba-0",
+        "f555a52f-ef70-4692-846e-bba28a48603f",
         "template--15927171842242__424fb4bb-4473-4b79-8dfe-94cc76c580f9-1668782158994fd6ba-1",
-        "ee0a4d2a-b777-4033-8871-307365573f65"
+        "ee0a4d2a-b777-4033-8871-307365573f65",
+        "18544fce-1d2b-4cbc-b474-8d6396353929"
       ],
       "settings": {
         "section-width": "custom",
