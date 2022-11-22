@@ -647,7 +647,7 @@
             "description-size": 16,
             "description-line-height": 1.2,
             "description-spacer-height": 0,
-            "mobile-text-size": 36,
+            "mobile-text-size": 18,
             "mobile-text-line-height": 1.6
           }
         },
