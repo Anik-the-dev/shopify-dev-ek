@@ -609,7 +609,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2022-04-22_at_11.16_1.png",
-            "custom-image-width": 450,
+            "custom-image-width": 400,
             "caption": "IMAGE CAPTION HERE.",
             "caption-font-family": "",
             "caption-font-weight": 100,
@@ -701,7 +701,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2022-10-03_at_21.46_2.png",
-            "custom-image-width": 475,
+            "custom-image-width": 400,
             "caption": "IMAGE CAPTION HERE.",
             "caption-font-family": "",
             "caption-font-weight": 100,
