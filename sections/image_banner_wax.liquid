@@ -43,6 +43,26 @@
   
   {% endfor %}
 
+  @media only screen and (max-width: 1250px) and (min-width: 768px){
+
+    {% for block in section.blocks %}
+    .single-image-container-{{ block.id }}{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .single-image-container-{{ block.id }} p{
+      text-align:center;
+      font-size: 14px;
+      margin-top: 0px;
+    }
+
+    .single-image-container-{{ block.id }} img {
+      width: 100%
+    }
+  
+  {% endfor %}
+
+  }
    /* mobile screen responsive */
    @media only screen and (max-width: 768px) {
     .section-{{ section.id }}{
@@ -66,12 +86,6 @@
   
   {% endfor %}
 
-  
-  {% for block in section.blocks %}
-   
-      
-    {% endfor %}
-       
 }
 {%- endstyle -%}
 
