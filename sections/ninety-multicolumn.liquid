@@ -1,6 +1,8 @@
 {%- style -%}
   /* dynamic css - section */
   .section-{{ section.id }}-padding {
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
@@ -207,8 +209,11 @@
 
     }
     .np-multicolumn-wrapper{
-      padding-top: 220px;
-      padding-bottom: 100px;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    ..np-grid-item{
+      height: 100%;
     }
     .section-{{ section.id }} .np-multicolumn-wrapper.divider-bg{
             background: linear-gradient(#2B2725, #2B2725) center/0px 100% no-repeat,
