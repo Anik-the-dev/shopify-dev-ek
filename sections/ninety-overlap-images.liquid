@@ -248,12 +248,6 @@
         font-size:{{ block.settings.mobile-caption-size }}px;
         line-height: {{ block.settings.mobile-caption-line-height }} 
 
-    }
-
-    .section-{{ section.id }} .custom-bottom-text-font-size-{{ block.id }} {
-        font-size: {{ block.settings.mobile-bottom-text-size }}px;
-        line-height: {{ block.settings.mobile-bottom-text-line-height }};
-
     } 
       
     {% endfor %}
@@ -316,7 +310,7 @@
                   {% when "text" %}
                       <p class="ps-text left-custom-text-font-size-{{ block.id }}"> {{ block.settings.left-text | replace: 'p>', 'span>' }}</p>
                   {% when "caption" %}
-                      <p class=" left-custom-caption-font-size-{{ block.id }} left-cap-pos"> {{ block.settings.left-caption }}</p>
+                      <a href="{{ block.settings.caption-url }}"><p class=" left-custom-caption-font-size-{{ block.id }} left-cap-pos"> {{ block.settings.left-caption }}</p></a>
                   {%- when 'left-spacer' -%}
                       <div class="left-space-container-{{ block.id }}">   
                       </div>
@@ -614,6 +608,12 @@
           "default": "Add a caption",
           "label": "Left Text"
         },
+        {
+          "type": "url",
+          "id": "caption-url",
+          "label" : "Caption URL"
+        },
+
         {
         "type": "font",
         "id": "left-caption-font-family",
