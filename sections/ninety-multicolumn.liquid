@@ -171,31 +171,27 @@
             top: calc(100% + 45px);
             border-bottom: 0.25px solid #b8afab;
             max-width: 1400px;
-            width: 100%
        }
 
        {% if section.settings.section-width == "small" %} 
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
             max-width: 600px;
-            width: 100%
+            
 
        }
        {% elsif section.settings.section-width == "medium" %} 
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
             max-width: 900px;
-            width: 100%
 
        }
        {% elsif section.settings.section-width == "full" %} 
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
             max-width: 1400px;
-            width: 100%
 
        }
        {% elsif section.settings.section-width == "custom" %} 
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n + 1)::after {
         max-width: {{ section.settings.custom-section-width | append: "px" }};
-        width: 100%
 
        }
        {% endif %}
