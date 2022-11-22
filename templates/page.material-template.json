@@ -105,21 +105,16 @@
         "padding_bottom": 100
       }
     },
-    "71588702-3209-4866-acb5-ca394c38ae4e": {
-      "type": "spacer",
-      "settings": {
-        "spacer-height": 100
-      }
-    },
-    "347f5d4d-2d30-45da-89fa-60b1d34abb12": {
-      "type": "image_banner_wax",
+    "5c1a2987-5a4c-4004-8c38-7faadaa8b217": {
+      "type": "ninety-single-image",
       "blocks": {
-        "21a48219-1b9a-4fcf-89e9-fa0d0ed6c440": {
+        "cbc9b3d3-568e-43a5-b247-39b543111ae3": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/IMG_6191_1.png",
-            "Single_Image_Width": 1000,
+            "Single_Image_Width": 1050,
             "caption-image": "<p>(ABOVE) THE PACIFIC OCEAN IS HOME TO THE WILDLIFE CONSERVATION WILD AID WORK TOWARDS<\/p>",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
             "caption-font-weight": 300,
             "caption-font-color": "",
             "caption-size": 14,
@@ -129,9 +124,15 @@
         }
       },
       "block_order": [
-        "21a48219-1b9a-4fcf-89e9-fa0d0ed6c440"
+        "cbc9b3d3-568e-43a5-b247-39b543111ae3"
       ],
       "settings": {
+      }
+    },
+    "71588702-3209-4866-acb5-ca394c38ae4e": {
+      "type": "spacer",
+      "settings": {
+        "spacer-height": 100
       }
     },
     "662aa8d4-f7a3-4a3c-8727-ddb9a5d2cc16": {
@@ -184,6 +185,7 @@
             "right-caption-size": 12,
             "right-caption-line-height": 1.2,
             "left-caption": "EXPLORE STYLES",
+            "caption-url": "",
             "left-caption-font-family": "Helvetica, Arial, sans-serif",
             "left-caption-font-weight": 300,
             "left-caption-font-color": "#000000",
@@ -417,6 +419,7 @@
           "type": "bottom-text",
           "settings": {
             "bottom-text": "DOWNLOAD CERTIFICATES",
+            "bottom-text-url": "",
             "bottom-text-font-family": "Helvetica, Arial, sans-serif",
             "bottom-text-font-weight": 300,
             "bottom-text-font-color": "",
@@ -446,43 +449,18 @@
       "settings": {
         "spacer-height": 100
       }
-    },
-    "a7b2b44c-9b42-47e5-b3e7-dac1c4dc1ac2": {
-      "type": "image_banner_wax",
-      "blocks": {
-        "d525d450-50f6-4d5e-b72b-6eb3c55cd1bf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/220818_NinetyPercent_SS22_02_160_R1_3.png",
-            "Single_Image_Width": 1050,
-            "caption-image": "<p>(ABOVE) LOOK 00 FROM COLLECTION 20 MADE OF X MATERIAL. SHOP HERE<\/p>",
-            "caption-font-family": "Helvetica, Arial, sans-serif",
-            "caption-font-weight": 300,
-            "caption-font-color": "#121212",
-            "caption-size": 12,
-            "caption-line-height": 1.2,
-            "image_height": "auto"
-          }
-        }
-      },
-      "block_order": [
-        "d525d450-50f6-4d5e-b72b-6eb3c55cd1bf"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
     "1956c955-7534-4ef0-9c14-23876224241e",
     "dd8b0e8f-f791-471a-b0e9-843dd9f21248",
+    "5c1a2987-5a4c-4004-8c38-7faadaa8b217",
     "71588702-3209-4866-acb5-ca394c38ae4e",
-    "347f5d4d-2d30-45da-89fa-60b1d34abb12",
     "662aa8d4-f7a3-4a3c-8727-ddb9a5d2cc16",
     "24e34a4c-96b8-4329-85b9-0cd2617759ec",
     "dd39827d-8ff8-4ea0-a708-fe0b356fa7b0",
     "424fb4bb-4473-4b79-8dfe-94cc76c580f9",
-    "3c3c652f-bcf9-4ac4-80eb-0a510d5d96b5",
-    "a7b2b44c-9b42-47e5-b3e7-dac1c4dc1ac2"
+    "3c3c652f-bcf9-4ac4-80eb-0a510d5d96b5"
   ]
 }
