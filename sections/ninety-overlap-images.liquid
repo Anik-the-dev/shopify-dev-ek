@@ -144,6 +144,20 @@
   {% endfor %}
 
   @media only screen and (max-width: 1250px) and (min-width: 768px){
+    {% for block in section.blocks %}
+      .right-space-container-{{ block.id }}{
+            height: 10px;
+            padding: 1px;
+    }
+    .left-space-container-{{ block.id }}{
+            height: 20px;
+            padding: 1px;
+    }
+
+    {% endfor %}
+
+
+
     .grid-container-nel-{{ section.id }} .grid-item-nel .firstpara {     
     position: absolute;
     right: 0px;
@@ -155,6 +169,7 @@
   
   .grid-container-nel-{{ section.id }} .grid-item-nel .firstpara p{
     text-align: left;
+    width: 100%
   }
   .grid-container-nel-{{ section.id }} .grid-item-nel .secondpara {
     position: absolute;
@@ -162,6 +177,7 @@
   }
   .grid-container-nel-{{ section.id }} .grid-item-nel .secondpara p{
     text-align: left;
+    width: 100%
   }
 
 
