@@ -147,13 +147,13 @@
         "3327d360-af41-438b-96dc-4a18b046911b": {
           "type": "right-spacer",
           "settings": {
-            "right-spacer-height": 170
+            "right-spacer-height": 180
           }
         },
         "cebc72d4-629b-4623-9364-097e272d2887": {
           "type": "left-spacer",
           "settings": {
-            "left-spacer-height": 50
+            "left-spacer-height": 90
           }
         },
         "template--15927171842242__24e34a4c-96b8-4329-85b9-0cd2617759ec-166878163288e3c0d3-0": {
