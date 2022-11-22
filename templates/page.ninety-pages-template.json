@@ -189,29 +189,6 @@
         "spacer-height": 50
       }
     },
-    "90852813-7e9e-4b85-9085-9c6266216894": {
-      "type": "image_banner_wax",
-      "blocks": {
-        "95d41b3b-1e20-4b6b-9d62-ea087a9192c4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/blf-gallery-mg-3592-1600-1000-80_1.png",
-            "Single_Image_Width": 1100,
-            "caption-image": "<p>(ABOVE) THE PACIFIC OCEAN IS HOME TO THE WILDLIFE CONSERVATION WILD AID WORK TOWARDS<\/p>",
-            "caption-font-weight": 300,
-            "caption-font-color": "",
-            "caption-size": 14,
-            "caption-line-height": 1.2,
-            "image_height": "auto"
-          }
-        }
-      },
-      "block_order": [
-        "95d41b3b-1e20-4b6b-9d62-ea087a9192c4"
-      ],
-      "settings": {
-      }
-    },
     "781db3fe-a934-449c-8435-4f179bdc22fa": {
       "type": "ninety-multicolumn",
       "blocks": {
@@ -501,29 +478,6 @@
         "multicolumn-style": "style1",
         "padding_top": 32,
         "padding_bottom": 32
-      }
-    },
-    "dbfd5346-0501-4b34-b9a8-c79801d81222": {
-      "type": "image_banner_wax",
-      "blocks": {
-        "36c995de-a976-47b8-aa55-c8fce9e62248": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2022-10-03_at_21.50_1.png",
-            "Single_Image_Width": 1150,
-            "caption-image": "<p>(ABOVE) FEMALE WORKERS AT OUR FACTORY ARE SUPPORTED BY BRAC<\/p>",
-            "caption-font-weight": 300,
-            "caption-font-color": "",
-            "caption-size": 14,
-            "caption-line-height": 1.2,
-            "image_height": "auto"
-          }
-        }
-      },
-      "block_order": [
-        "36c995de-a976-47b8-aa55-c8fce9e62248"
-      ],
-      "settings": {
       }
     },
     "765f3ea4-7f6d-41d2-8b02-0c765073756c": {
@@ -858,9 +812,7 @@
     "056d8f6f-e3b8-44f4-9ee5-b240abe5fea8",
     "b579c213-d6c6-4584-81d7-028cacf54d3c",
     "dde32a3a-8b22-4001-86e8-beeaf7de5bfc",
-    "90852813-7e9e-4b85-9085-9c6266216894",
     "781db3fe-a934-449c-8435-4f179bdc22fa",
-    "dbfd5346-0501-4b34-b9a8-c79801d81222",
     "765f3ea4-7f6d-41d2-8b02-0c765073756c",
     "ac748ad0-aa91-4d4e-adff-d9020a1142d8",
     "571efd0a-1fd5-4efa-8797-582ae0bbb306"
