@@ -29,6 +29,9 @@
         padding: 10px 25px
 
     }
+    .section-{{ section.id }} a{
+      text-decoration: none
+    }
 
   {% for block in section.blocks %}
     .section-{{ section.id }} .space-container-{{ block.id }}{
@@ -145,7 +148,7 @@
                 {% when "text" %}
                     <p class="custom-text-font-size-{{ block.id }}"> {{ block.settings.text | replace: 'p>', 'span>' }}</p>
                 {% when "bottom-text" %}
-                    <p class="custom-bottom-text-font-size-{{ block.id }}"> {{ block.settings.bottom-text }}</p>
+                  <a href="{{ block.settings.bottom-text-url }}"><p class="custom-bottom-text-font-size-{{ block.id }}"> {{ block.settings.bottom-text }}</p></a>
                 {%- when 'spacer' -%}
                     <div class="space-container-{{ block.id }}">                           
                     </div>
@@ -481,6 +484,12 @@
                 "default": "Add a Bottom Text",
                 "label": "Bottom Text"
                 },
+                {
+                "type": "url",
+                "id": "bottom-text-url",
+                "label" : "Bottom Text URL"
+                },
+
                 {
                 "type": "font",
                 "id": "bottom-text-font-family",

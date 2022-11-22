@@ -7,6 +7,10 @@
     padding: 50px 50px;
 
   }
+  .two-col-section-{{ section.id }} a{
+      text-decoration: none
+}
+
   .wax-grid-container-2-col-{{ section.id }} {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -192,8 +196,7 @@
             <div class="description-space-container-{{ block.id }}">                           
             </div>
             {% if block.settings.bottom-text %}
-              <p class="customized-bottom-text-{{ block.id }}">{{ block.settings.bottom-text | replace: 'p>', 'span>' }}</p>
-            
+              <a href="{{ block.settings.bottom-text-url }}"><p class="customized-bottom-text-{{ block.id }}">{{ block.settings.bottom-text | replace: 'p>', 'span>' }}</p></a>            
             {% endif %}
             <div class="bottom-text-space-container-{{ block.id }}">                           
             </div>
@@ -525,6 +528,11 @@
           "id": "bottom-text",
           "default": "Add a Bottom Text",
           "label": "Bottom Text"
+        },
+        {
+        "type": "url",
+        "id": "bottom-text-url",
+        "label" : "Bottom Text URL"
         },
         {
         "type": "font",
