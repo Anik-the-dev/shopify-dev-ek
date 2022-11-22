@@ -1,7 +1,7 @@
 {%- style -%}
   /* dynamic css - section */  
   .two-col-section-{{ section.id }} {
-    width: {{ section.settings.full-text-section-width }}px;
+    max-width: {{ section.settings.full-text-section-width }}px;
     margin: 0 auto;
     height: auto;
     padding: 50px 50px;
@@ -16,7 +16,8 @@
 
   {% for block in section.blocks %}
     #wrapper-{{ block.id }} {
-      width: {{ block.settings.block-custom-width }}px
+      max-width: {{ block.settings.block-custom-width }}px;
+      width: 100%
     }
 
     #wrapper-{{ block.id }} .customized-heading-{{ block.id }} {
