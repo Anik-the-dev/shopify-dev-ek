@@ -88,6 +88,102 @@
 
   {% endfor %}
 
+  /* screen from 769 - 1300 */
+   @media only screen and (max-width: 992px) and (min-width: 768px){
+    .flex-two-col-el{
+      width: 100%;
+    }
+
+
+    .image-container-wrapper-el , .text-container-wrapper-el {
+      width: 100%
+    }
+
+    .section-{{ section.id }} .image-container-wrapper-el img {
+    display: block;
+    width: 80%;
+  }
+    .image-container-wrapper-el img {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .text-container-wrapper-el h2{
+      font-size: 72px;
+    }
+    .text-container-wrapper-el p{
+      font-size: 22px;
+    } 
+    .text-container-wrapper-el h2 , .text-container-wrapper-el p{
+      width: 100%
+
+    }
+
+}
+   @media only screen and (max-width: 768px) {
+    .section-{{ section.id }}{
+      padding: 25px 25px;
+      overflow-x: hidden;
+      width: 100%;
+    }
+    .flex-two-col-el{
+      flex-direction: column;
+      width: 100%;
+    }
+    .text-container-el{
+      margin: 50px 0;
+    }
+
+    .image-container-wrapper-el , .text-container-wrapper-el {
+      width: 100%
+    }
+    .section-{{ section.id }} .image-container-wrapper-el p{
+    text-align:center;
+    margin-top: 0px;
+  }
+    .section-{{ section.id }} .image-container-wrapper-el img {
+    display: block;
+    width: 75%;
+  }
+    .image-container-wrapper-el img {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .text-container-wrapper-el h2{
+      font-size: 72px;
+    }
+    .text-container-wrapper-el p{
+      font-size: 22px;
+    } 
+    .text-container-wrapper-el h2 , .text-container-wrapper-el p{
+      width: 100%
+
+    }
+    
+
+    {% for block in section.blocks %}
+      /* mobile version */
+    .section-{{ section.id }} .custom-heading-font-size-{{ block.id }} {
+        font-size:{{ block.settings.mobile-heading-size }}px;
+        line-height: {{ block.settings.mobile-heading-line-height }} 
+    }
+    .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
+        width: 100%;
+        margin: auto;
+        font-size:{{ block.settings.mobile-text-size }}px;
+        line-height: {{ block.settings.mobile-text-line-height }} 
+    } 
+      
+    {% endfor %}
+    
+
+
+
+    
+}
+
+
   /* mobile screen responsive */
   @media only screen and (max-width: 768px) {
     .section-{{ section.id }}{
