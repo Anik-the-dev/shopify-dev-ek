@@ -117,7 +117,8 @@
         }
 
         .image-container-el-{{ block.id }} {
-          width: {{ block.settings.custom-image-width }}px;
+          max-width: {{ block.settings.custom-image-width }}px;
+          width: 100%;
           margin: auto;
         }
 
@@ -169,7 +170,8 @@
             position: absolute;
             top: calc(100% + 45px);
             border-bottom: 0.25px solid #b8afab;
-            width: 1400px;
+            max-width: 1400px;
+            width: 100%
        }
 
        {% if section.settings.section-width == "small" %} 
