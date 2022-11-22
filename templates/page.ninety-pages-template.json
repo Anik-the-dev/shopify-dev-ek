@@ -504,6 +504,30 @@
         "padding_bottom": 32
       }
     },
+    "eb4d5c76-ebd3-4961-b3b4-42af819e4045": {
+      "type": "ninety-single-image",
+      "blocks": {
+        "21a3018f-dc7e-4d31-adbc-fc5ad36bb266": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-10-03_at_21.50_1.png",
+            "Single_Image_Width": 1150,
+            "caption-image": "<p>(ABOVE) FEMALE WORKERS AT OUR FACTORY ARE SUPPORTED BY BRAC<\/p>",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-font-weight": 300,
+            "caption-font-color": "",
+            "caption-size": 14,
+            "caption-line-height": 1.2,
+            "image_height": "auto"
+          }
+        }
+      },
+      "block_order": [
+        "21a3018f-dc7e-4d31-adbc-fc5ad36bb266"
+      ],
+      "settings": {
+      }
+    },
     "765f3ea4-7f6d-41d2-8b02-0c765073756c": {
       "type": "ninety-image-with-text",
       "blocks": {
@@ -838,6 +862,7 @@
     "0f7f7735-83ac-449b-bbbb-a756ecc952c8",
     "dde32a3a-8b22-4001-86e8-beeaf7de5bfc",
     "781db3fe-a934-449c-8435-4f179bdc22fa",
+    "eb4d5c76-ebd3-4961-b3b4-42af819e4045",
     "765f3ea4-7f6d-41d2-8b02-0c765073756c",
     "ac748ad0-aa91-4d4e-adff-d9020a1142d8",
     "571efd0a-1fd5-4efa-8797-582ae0bbb306"
