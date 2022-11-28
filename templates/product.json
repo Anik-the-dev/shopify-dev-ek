@@ -49,20 +49,6 @@
           "settings": {
           }
         },
-        "80c9617e-963e-4551-8e9d-5ad2d97b548c": {
-          "type": "shopify:\/\/apps\/product-inventory-information\/blocks\/inventory_block\/41c4d695-f86f-4624-a597-91d945ab0f26",
-          "settings": {
-            "heading": "Product Inventory",
-            "heading_color": "#000000",
-            "heading_font_size": 14,
-            "font_color": "#000000",
-            "inventory_font_color": "#000000",
-            "font_size": 14,
-            "remove_list_bullet": true,
-            "loadingtext": "loading..",
-            "custom_css": ""
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -120,7 +106,6 @@
         "quantity_selector",
         "buy_buttons",
         "b05d8254-a172-403f-a0a6-1f32accc774f",
-        "80c9617e-963e-4551-8e9d-5ad2d97b548c",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
