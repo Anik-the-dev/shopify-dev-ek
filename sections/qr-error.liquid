@@ -1,4 +1,7 @@
 {%- style -%}
+    .text-justify-el {
+        text-align: justify
+    }
    
     /* dynamic */
       .section-{{ section.id }}-padding {
@@ -41,8 +44,8 @@
       }
       .section-{{ section.id }} .custom-heading-font-size-{{ block.id }} {
           font-size:{{ block.settings.heading-size }}px;
-          margin-top: 10px;
-          margin-bottom: 10px;
+          margin-top: 15px;
+          margin-bottom: 15px;
           font-family: {{ block.settings.heading-font-family }};
           font-weight: {{ block.settings.heading-font-weight }};
           color: {{ block.settings.heading-font-color }};
@@ -51,8 +54,8 @@
       .section-{{ section.id }} .custom-text-font-size-{{ block.id }} {
           width:{{ block.settings.text-block-width }}px;
           font-size:{{ block.settings.text-size }}px;
-          margin-top: 10px;
-          margin-bottom: 20px;
+          margin-top: 15px;
+          margin-bottom: 15px;
           font-family: {{ block.settings.text-font-family }};
           font-weight: {{ block.settings.text-font-weight }};
           color: {{ block.settings.text-font-color }};
@@ -103,7 +106,7 @@
                   {% when "heading" %}
                       <h2 class="custom-heading-font-size-{{ block.id }}">{{ block.settings.heading }}</h2>    
                   {% when "text" %}
-                      <p class="custom-text-font-size-{{ block.id }}"> {{ block.settings.text | replace: 'p>', 'span>' }}</p>
+                      <p class="custom-text-font-size-{{ block.id }} {%- if block.settings.text_justify -%}text-justify-el {% endif %}"> {{ block.settings.text | replace: 'p>', 'span>' }}</p>
                   {%- when 'spacer' -%}
                       <div class="space-container-{{ block.id }}">                           
                       </div>
@@ -284,6 +287,12 @@
             "label": "Content"
           },
           {
+            "type": "checkbox",
+            "id": "text_justify",
+            "label": "Justify Content",
+            "default": false
+          },
+          {
           "type": "font",
           "id": "text-font-family",
           "label": "Text Font Family"
@@ -376,8 +385,8 @@
           {
             "type": "text"
           },
-          {
-            "type": "spacer"
+                  {
+            "type": "text"
           },
           {
             "type": "text"
