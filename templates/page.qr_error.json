@@ -16,7 +16,7 @@
             "text-font-family": "Trebuchet MS, sans-serif",
             "text-font-weight": 400,
             "text-font-color": "#2b2725",
-            "text-size": 50,
+            "text-size": 54,
             "text-line-height": 1.2,
             "mobile-text-size": 12,
             "mobile-text-line-height": 1.6
@@ -26,12 +26,26 @@
           "type": "text",
           "settings": {
             "text-block-width": 600,
-            "text": "<p>All of our profits are now shared equally between our charities.<\/p>",
+            "text": "<p>We’ve updated our profit sharing and removed our voting system. Inline with our values, we’re taking a more balanced approach and equally distributing our profits between our five charities. Your vote lies in your purchase.<\/p>",
             "text-font-family": "",
             "text-font-weight": 400,
             "text-font-color": "#2b2725",
-            "text-size": 48,
+            "text-size": 26,
             "text-line-height": 1.2,
+            "mobile-text-size": 28,
+            "mobile-text-line-height": 1.6
+          }
+        },
+        "4b1f44c9-303b-41dc-bc2e-efe7c64ba3ff": {
+          "type": "text",
+          "settings": {
+            "text-block-width": 600,
+            "text": "<p>When you shop with Ninety Percent, you’re supporting a business model rooted in people, planet and our values. We’re a responsible luxury fashion label sharing 90% of our profits with the people and causes we believe in. We’re cultivating a culture of beauty that goes beyond our clothing, pioneering a new business culture rooted in community – making tangible strides for the world we want. <\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 400,
+            "text-font-color": "#2B2725",
+            "text-size": 20,
+            "text-line-height": 1.6,
             "mobile-text-size": 28,
             "mobile-text-line-height": 1.6
           }
@@ -39,7 +53,8 @@
       },
       "block_order": [
         "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-0",
-        "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-2"
+        "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-2",
+        "4b1f44c9-303b-41dc-bc2e-efe7c64ba3ff"
       ],
       "settings": {
         "section-width": "custom",
