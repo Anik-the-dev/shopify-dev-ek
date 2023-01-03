@@ -70,7 +70,7 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -251,6 +251,78 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "9ad871c6-5aa9-4704-a269-b16e6b1fb73b": {
+      "type": "ninety-single-col-text",
+      "blocks": {
+        "template--15909486657730__9ad871c6-5aa9-4704-a269-b16e6b1fb73b-16727468629c5b3763-1": {
+          "type": "text",
+          "settings": {
+            "text-block-width": 925,
+            "text": "<p>All of our profits are now shared equally between our charities.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "text-size": 80,
+            "text-line-height": 1,
+            "mobile-text-size": 16,
+            "mobile-text-line-height": 1.6
+          }
+        },
+        "de2e3dfb-bef9-4d88-a46b-4d64bdb3707b": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 20
+          }
+        },
+        "1f5f9cf2-59f7-48e9-aaa3-46cb821e6d84": {
+          "type": "text",
+          "settings": {
+            "text-block-width": 600,
+            "text": "<p>We’ve updated our profit sharing and removed our voting system. Inline with our values, we’re taking a more balanced approach and equally distributing our profits between our five charities. Your vote lies in your purchase.<\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 400,
+            "text-font-color": "",
+            "text-size": 26,
+            "text-line-height": 1.3,
+            "mobile-text-size": 16,
+            "mobile-text-line-height": 1.6
+          }
+        },
+        "d3a9d2f9-220a-4a88-a830-2818b7c776b8": {
+          "type": "spacer",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "4c147c78-7cad-40bb-8e11-865219762ec5": {
+          "type": "text",
+          "settings": {
+            "text-block-width": 600,
+            "text": "<p>When you shop with Ninety Percent, you’re supporting a business model rooted in people, planet and our values. We’re a responsible luxury fashion label sharing 90% of our profits with the people and causes we believe in. We’re cultivating a culture of beauty that goes beyond our clothing, pioneering a new business culture rooted in community – making tangible strides for the world we want. <\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "text-size": 16,
+            "text-line-height": 1.2,
+            "mobile-text-size": 16,
+            "mobile-text-line-height": 1.6
+          }
+        }
+      },
+      "block_order": [
+        "template--15909486657730__9ad871c6-5aa9-4704-a269-b16e6b1fb73b-16727468629c5b3763-1",
+        "de2e3dfb-bef9-4d88-a46b-4d64bdb3707b",
+        "1f5f9cf2-59f7-48e9-aaa3-46cb821e6d84",
+        "d3a9d2f9-220a-4a88-a830-2818b7c776b8",
+        "4c147c78-7cad-40bb-8e11-865219762ec5"
+      ],
+      "settings": {
+        "section-width": "custom",
+        "custom-section-width": 1275,
+        "padding_top": 16,
+        "padding_bottom": 56
+      }
     }
   },
   "order": [
@@ -260,6 +332,7 @@
     "collage",
     "video",
     "multicolumn",
-    "5aec3337-6798-4c00-a625-88f53d471c49"
+    "5aec3337-6798-4c00-a625-88f53d471c49",
+    "9ad871c6-5aa9-4704-a269-b16e6b1fb73b"
   ]
 }
