@@ -2,7 +2,30 @@
   "sections": {
     "main": {
       "type": "qr-error",
+      "blocks": {
+        "e5f9242f-6cb9-439c-9633-69f953ffcd69": {
+          "type": "text",
+          "settings": {
+            "text-block-width": 600,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "text-size": 26,
+            "text-line-height": 1.2,
+            "mobile-text-size": 16,
+            "mobile-text-line-height": 1.6
+          }
+        }
+      },
+      "block_order": [
+        "e5f9242f-6cb9-439c-9633-69f953ffcd69"
+      ],
       "settings": {
+        "section-width": "custom",
+        "custom-section-width": 800,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
