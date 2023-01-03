@@ -58,13 +58,22 @@
             "mobile-text-size": 28,
             "mobile-text-line-height": 1.6
           }
+        },
+        "ad3d9803-c76a-4154-b427-5146e004b87d": {
+          "type": "button-el",
+          "settings": {
+            "btn-text-box": "Button Text",
+            "btn-link": "",
+            "btn-link-text": "LEARN MORE ABOUT PROFIT SHARING"
+          }
         }
       },
       "block_order": [
         "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-0",
         "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-2",
         "9d03b70d-d9ab-45df-97c9-35c841254db2",
-        "4b1f44c9-303b-41dc-bc2e-efe7c64ba3ff"
+        "4b1f44c9-303b-41dc-bc2e-efe7c64ba3ff",
+        "ad3d9803-c76a-4154-b427-5146e004b87d"
       ],
       "settings": {
         "section-width": "custom",
