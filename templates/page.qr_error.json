@@ -13,19 +13,13 @@
           "settings": {
             "text-block-width": 600,
             "text": "<p>All of our profits are now shared equally between our charities.<\/p>",
-            "text-font-family": "",
+            "text-font-family": "Trebuchet MS, sans-serif",
             "text-font-weight": 400,
-            "text-font-color": "#2B2725",
-            "text-size": 83,
+            "text-font-color": "#2b2725",
+            "text-size": 50,
             "text-line-height": 1.2,
             "mobile-text-size": 12,
             "mobile-text-line-height": 1.6
-          }
-        },
-        "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-1": {
-          "type": "spacer",
-          "settings": {
-            "spacer-height": 50
           }
         },
         "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-2": {
@@ -35,7 +29,7 @@
             "text": "<p>All of our profits are now shared equally between our charities.<\/p>",
             "text-font-family": "",
             "text-font-weight": 400,
-            "text-font-color": "#2B2725",
+            "text-font-color": "#2b2725",
             "text-size": 48,
             "text-line-height": 1.2,
             "mobile-text-size": 28,
@@ -45,7 +39,6 @@
       },
       "block_order": [
         "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-0",
-        "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-1",
         "template--15958305669314__3d7d9c80-cadf-4600-bf06-78bf5d9d2319-1672751690f35c1e58-2"
       ],
       "settings": {
