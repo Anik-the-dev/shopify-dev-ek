@@ -308,6 +308,19 @@
             "mobile-text-size": 16,
             "mobile-text-line-height": 1.6
           }
+        },
+        "f47c9153-b4ea-4881-a741-aae78da0f883": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-font-weight": 300,
+            "caption-font-color": "",
+            "caption-size": 14,
+            "caption-line-height": 1.2,
+            "mobile-caption-size": 14,
+            "mobile-caption-line-height": 1.6
+          }
         }
       },
       "block_order": [
@@ -315,7 +328,8 @@
         "de2e3dfb-bef9-4d88-a46b-4d64bdb3707b",
         "1f5f9cf2-59f7-48e9-aaa3-46cb821e6d84",
         "d3a9d2f9-220a-4a88-a830-2818b7c776b8",
-        "4c147c78-7cad-40bb-8e11-865219762ec5"
+        "4c147c78-7cad-40bb-8e11-865219762ec5",
+        "f47c9153-b4ea-4881-a741-aae78da0f883"
       ],
       "settings": {
         "section-width": "custom",
