@@ -2,7 +2,19 @@
     .text-justify-el {
         text-align: justify
     }
-   
+    .button-el {
+    display: inline-block;
+    padding: 0.85em 1.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5c6ac4;
+    border: none;
+    border-radius: 0.62em;
+    box-shadow: 0 0.25em #999999; 
+    }
+    
     /* dynamic */
       .section-{{ section.id }}-padding {
         padding-left: 50px;
@@ -110,6 +122,10 @@
                   {%- when 'spacer' -%}
                       <div class="space-container-{{ block.id }}">                           
                       </div>
+                  {%- when 'button-el' -%}
+                    <div id="btn-cta">
+                        <a href="{{ block.settings.btn-link }}" class="button-el">{{ block.settings.btn-link-text }}</a>
+                    </div>
                             
               {% endcase %} 
           {% endfor %}
@@ -361,6 +377,29 @@
         ]
       },
       {
+        "name": "Button",
+        "type": "button-el",
+        "settings": [
+        {
+        "id": "btn-text-box",
+        "type": "text",
+        "label": "Heading",
+        "default": "Button Text"
+        },
+        {
+        "id": "btn-link",
+        "type": "url",
+        "label": "Button link"
+        },
+        {
+        "id": "btn-link-text",
+        "type": "text",
+        "label": "Button text",
+        "default": "LEARN MORE ABOUT PROFIT SHARING"
+        }
+    ]
+      },
+      {
               "name": "spacer",
               "type": "spacer",
               "settings": [
@@ -385,7 +424,7 @@
           {
             "type": "text"
           },
-          {
+                  {
             "type": "text"
           },
           {
