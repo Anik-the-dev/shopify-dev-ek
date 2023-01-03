@@ -1,14 +1,32 @@
 {
   "sections": {
-    "main": {
+    "b0e75213-8ca4-4257-88ee-f116c68b047b": {
+      "type": "np-double-column-text",
+      "settings": {
+      }
+    },
+    "3d22a801-7494-455e-b4c4-cca14fac5a30": {
       "type": "qr-error",
       "blocks": {
-        "e5f9242f-6cb9-439c-9633-69f953ffcd69": {
+        "template--15958305669314__3d22a801-7494-455e-b4c4-cca14fac5a30-16727503012ef300b5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Headline",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 36,
+            "heading-line-height": 1.6,
+            "mobile-heading-size": 36,
+            "mobile-heading-line-height": 1.6
+          }
+        },
+        "template--15958305669314__3d22a801-7494-455e-b4c4-cca14fac5a30-16727503012ef300b5-1": {
           "type": "text",
           "settings": {
             "text-block-width": 600,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-family": "",
             "text-font-weight": 300,
             "text-font-color": "",
             "text-size": 26,
@@ -19,7 +37,8 @@
         }
       },
       "block_order": [
-        "e5f9242f-6cb9-439c-9633-69f953ffcd69"
+        "template--15958305669314__3d22a801-7494-455e-b4c4-cca14fac5a30-16727503012ef300b5-0",
+        "template--15958305669314__3d22a801-7494-455e-b4c4-cca14fac5a30-16727503012ef300b5-1"
       ],
       "settings": {
         "section-width": "custom",
@@ -30,6 +49,7 @@
     }
   },
   "order": [
-    "main"
+    "b0e75213-8ca4-4257-88ee-f116c68b047b",
+    "3d22a801-7494-455e-b4c4-cca14fac5a30"
   ]
 }
